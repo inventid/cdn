@@ -1,0 +1,58 @@
+<div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-4 bold">{{ 'Gebruikersgegevens' | i18n < $ }}</div>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-xs-4">{{ 'Name' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ user:name }}</div>
+      </div>
+      <div class="row" rv-if="#session:user:admin">
+        <div class="col-xs-4">{{ 'Email address' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ user:email_address }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">{{ 'Locale' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ user:locale }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-primary" rv-each-order="user:orders">
+    <div class="panel-heading row">
+      <div class="col-xs-4 bold">{{ 'Order' | i18n < $ }} #{{ order.id }}</div>
+      <div class="col-xs-8">{{ 'Status' | i18n < $ }}: {{ order:status | i18n < $ }}</div>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-xs-4">{{ 'Organization' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ order:shop:event:organization:name }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">{{ 'Event' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ order:shop:event:name }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">{{ 'Sales channel' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ order:shop:name }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">{{ 'Shop link' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ order:shop:url }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">{{ 'Date' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ order:created_at | time order:shop:event:timezone }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">{{ 'Products' | i18n < $ }}</div>
+      </div>
+      <div class="row" rv-each-product_quantity="order.productQuantityOverview">
+        <div class="col-xs-8 col-xs-offset-4">{{ product_quantity.quantity }}x {{ product_quantity.shop_product:product:name }}</div>
+      </div>
+    </div>
+  </div>
+
+</div>

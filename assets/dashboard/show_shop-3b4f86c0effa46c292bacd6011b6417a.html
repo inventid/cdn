@@ -1,0 +1,133 @@
+<div>
+
+  <div class="panel panel-primary">
+
+    <div class="panel-heading">
+      {{ 'Details' | i18n < $ }}
+
+      <div class="btn panel-heading-btn pull-right edit-shop" rv-if="editable | negate">
+        {{ 'Edit' | i18n < $ }}
+        <i class="fa fa-pencil"></i>
+      </div>
+
+      <div class="btn panel-heading-btn pull-right save-shop" rv-if="editable">
+        {{ 'Save' | i18n < $ }}
+        <i class="fa fa-check"></i>
+      </div>
+    </div>
+
+    <div class="panel-body">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="col-xs-3 control-label" for="shop-name">{{ 'Shop name' | i18n < $ }}</label>
+          <div class="col-xs-9">
+            <p class="form-control-static" rv-show="editable | negate">{{ shop:name }}</p>
+            <input class="form-control" rv-show="editable" id="shop-name" type="text" rv-value="shop:name" rv-placeholder="'Shop name' | i18n < $" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-xs-3 control-label">{{ 'Opens at' | i18n < $ }}</label>
+          <div class="date" rv-class-col-xs-9="shop:opens_at | negate" rv-class-col-xs-8="shop:opens_at">
+            <p class="form-control-static" rv-show="editable | negate">{{ shop:opens_at | time shop:event:timezone }}</p>
+            <input type="text" class="form-control" data-attribute="opens_at" rv-show="editable" rv-value="shop:opens_at | time shop:event:timezone" />
+          </div>
+          <div class="col-xs-1" rv-show="shop:opens_at | and editable < editable">
+            <span class="btn btn-round clear-date" data-attribute="opens_at">
+              <i class="fa fa-trash"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-xs-3 control-label">{{ 'Closes at' | i18n < $ }}</label>
+          <div class="date" rv-class-col-xs-9="shop:closes_at | negate" rv-class-col-xs-8="shop:closes_at">
+            <p class="form-control-static" rv-show="editable | negate">{{ shop:closes_at | time shop:event:timezone }}</p>
+            <input type="text" class="form-control" data-attribute="closes_at" rv-show="editable" rv-value="shop:closes_at | time shop:event:timezone" />
+          </div>
+          <div class="col-xs-1" rv-show="shop:closes_at | and editable < editable">
+            <span class="btn btn-round clear-date" data-attribute="closes_at">
+              <i class="fa fa-trash"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group" rv-show="#session:user:admin">
+          <label for="shop-demo" class="col-xs-3 control-label">
+            {{ 'Demo shop?' | i18n < $ }}
+          </label>
+
+          <div class="col-xs-9">
+            <p class="form-control-static" rv-show="editable | negate">{{ shop:demo | active | i18n | capitalize < $ }}</p>
+            <p class="form-control-static" rv-show="editable">
+              <input id="shop-demo" type="checkbox" rv-checked="shop:demo" />
+            </p>
+          </div>
+
+        </div>
+
+        <hr rv-show="shop:url" />
+
+        <div class="form-group" rv-show="shop:url">
+          <label class="col-xs-3 control-label">{{ 'Shop URL' | i18n < $ }}</label>
+          <div class="col-xs-9">
+            <p class="form-control-static">
+              <a rv-href="shop:url" target="_blank">
+                {{ shop:url }}
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="form-group" rv-show="shop:short_url | or #session:user:admin">
+          <label class="col-xs-3 control-label">{{ 'Short URL' | i18n < $ }}</label>
+          <div class="col-xs-9">
+            <p class="form-control-static" rv-show="editable | and #session:user:admin | negate">
+              <a rv-href="shop.completeShortUrl < :short_url" target="_blank">
+                {{ shop.completeShortUrl < :short_url }}
+              </a>
+            </p>
+            <p class="form-control-static" rv-show="editable | and #session:user:admin">
+              http://inventid.to/<input class="form-control form-control-inline" type="text" rv-value="shop:short_url" rv-placeholder="'Shop name' | i18n < $" />
+            </p>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="panel panel-primary" rv-show="shop:id">
+    <div class="panel-heading">
+      {{ 'Products' | i18n < $ }}
+
+      <div class="btn-group pull-right">
+        <div class="btn panel-heading-btn" data-toggle="dropdown" aria-expanded="false">
+          {{ 'Add' | i18n < $ }}
+          <i class="fa fa-plus-circle"></i>
+        </div>
+
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-wider" role="menu">
+          <div rv-each-product="products.models" rv-show="product | call productFilter < usedProducts.length" class="list-item clickable create-shop-product" rv-data-product-id="product:id">
+            <div class="col-xs-12 pull-right" rv-unless="product:archived">{{ product:name }}</div>
+          </div>
+          <div class="list-item clickable create-product">
+            <div class="col-xs-12">
+              <i class="fa fa-plus"></i>
+              {{ 'Create new product' | i18n < $ }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel-body list">
+      <div rv-view="shopProductsView">
+        <!-- Here be the different shops of the event with the options etc -->
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

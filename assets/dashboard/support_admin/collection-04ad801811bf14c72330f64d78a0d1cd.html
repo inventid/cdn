@@ -1,0 +1,42 @@
+<div>
+  <div role="tabpanel">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="open-requests" rv-class-active="options.config.filter | eq 'open'">
+        <a href="#" role="tab" data-toggle="tab">
+          Open ({{ children | countCollectionViewWithCondition 'status' 'open' }})
+        </a>
+      </li>
+      <li role="presentation" class="answered-requests" rv-class-active="options.config.filter | eq 'answered'">
+        <a href="#" role="tab" data-toggle="tab">
+          Answered ({{ children | countCollectionViewWithCondition 'status' 'answered' }})
+        </a>
+      </li>
+      <li role="presentation" class="pending-requests" rv-class-active="options.config.filter | eq 'pending'">
+        <a href="#" role="tab" data-toggle="tab">
+          Pending ({{ children | countCollectionViewWithCondition 'status' 'pending' }})
+        </a>
+      </li>
+      <li role="presentation" class="closed-requests" rv-class-active="options.config.filter | eq 'closed'">
+        <a href="#" role="tab" data-toggle="tab">
+          Closed ({{ children | countCollectionViewWithCondition 'status' 'closed' }})
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-3">Onderwerp</div>
+      <div class="col-xs-3">Naam</div>
+      <div class="col-xs-3">Datum</div>
+      <div class="col-xs-1"><i class="fa fa-user-secret"></i></div>
+      <div class="col-xs-2">Status</div>
+    </div>
+
+    <div class="panel-body">
+      <div class="children" rv-views="children"></div>
+    </div>
+  </div>
+</div>

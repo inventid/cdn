@@ -1,0 +1,15 @@
+<div class="row clickable list-item">
+  <div class="col-sm-6 col-xs-7 open-download">
+    {{ model:order_product:shop_product:product:name }}
+  </div>
+  <div class="col-sm-6 hidden-xs open-download">
+    {{ model:order_product:shop_product:product:valid_from | time model:order_product:order:shop:event:timezone }}
+  </div>
+  <div class="col-xs-2 visible-xs-block open-qr">
+    <i class="fa fa-lg fa-mobile"></i>
+  </div>
+  <div class="col-xs-3 visible-xs-block open-download">
+    <i class="fa fa-print"></i>
+    {{ 'PDF' | i18n < $ }}
+  </div>
+</div>
