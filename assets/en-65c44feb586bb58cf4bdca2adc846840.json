@@ -1,0 +1,540 @@
+{
+   "domain": "messages",
+   "locale_data": {
+      "messages": {
+         "": {
+            "domain": "messages",
+            "plural_forms": "nplurals=2; plural=(n != 1);",
+            "lang": "en"
+         },
+         "Add": [
+            "Add"
+         ],
+         "Additional information": [
+            "Additional information"
+         ],
+         "Administration fee": [
+            "Administration fee"
+         ],
+         "Amount": [
+            "Amount"
+         ],
+         "Back": [
+            "Back"
+         ],
+         "BancontactmrcashBuckarooPaymentMethod": [
+            "Bancontact Mr Cash"
+         ],
+         "BancontactmrcashMolliePaymentMethod": [
+            "Bancontact Mr Cash"
+         ],
+         "Below you will find a summary of your order.": [
+            "Below you will find a summary of your order."
+         ],
+         "Best regards,": [
+            "Best regards,"
+         ],
+         "BitcoinMolliePaymentMethod": [
+            "Bitcoin"
+         ],
+         "Bought products in this order": [
+            "Bought products in this order"
+         ],
+         "Cancel": [
+            "Cancel"
+         ],
+         "Change password": [
+            "Change password"
+         ],
+         "Change picture": [
+            "Change picture"
+         ],
+         "Checkout": [
+            "Checkout"
+         ],
+         "ClientInventidPaymentMethod": [
+            "Internal payment"
+         ],
+         "Closes at": [
+            "Closes at"
+         ],
+         "Congratulations on your purchase": [
+            "Congratulations on your purchase"
+         ],
+         "Connect with Facebook": [
+            "Connect with Facebook"
+         ],
+         "Continue": [
+            "Continue"
+         ],
+         "Create new product": [
+            "Create new product"
+         ],
+         "Create new shop": [
+            "Create new shop"
+         ],
+         "CreditcardMolliePaymentMethod": [
+            "Creditcard"
+         ],
+         "Current password": [
+            "Current password"
+         ],
+         "Currently, we have the following information about you on file.": [
+            "Currently, we have the following information about you in our system."
+         ],
+         "Date": [
+            "Date"
+         ],
+         "Demo shop?": [
+            "Demo shop?"
+         ],
+         "DemoInventidPaymentMethod": [
+            "Demo"
+         ],
+         "Description": [
+            "Description"
+         ],
+         "Details": [
+            "Details"
+         ],
+         "Do you want to get paid automatically as well? Please send your IBAN and BIC number to your account manager.": [
+            "Do you want to get paid automatically as well? Please send your IBAN and BIC number to your account manager."
+         ],
+         "Doors close at": [
+            "Doors close at"
+         ],
+         "Earlier you have bought products using the following shops.": [
+            "Earlier you have bought products using the following shops."
+         ],
+         "Edit": [
+            "Edit"
+         ],
+         "Email address": [
+            "Email address"
+         ],
+         "Etickets are ready for download for the following products.": [
+            "Etickets are ready for download for the following products."
+         ],
+         "Event": [
+            "Event"
+         ],
+         "Event options": [
+            "Event options"
+         ],
+         "Extern": [
+            "External"
+         ],
+         "Fee": [
+            "Fee"
+         ],
+         "Finalize": [
+            "Finalize"
+         ],
+         "Finally if you have any questions, please contact us by replying to this email. I'll be glad to help": [
+            "Finally if you have any questions, please contact us by replying to this email. I'll be glad to help."
+         ],
+         "Financial Overview": [
+            "Financial overview"
+         ],
+         "GET YOUR TICKETS": [
+            "GET YOUR TICKETS"
+         ],
+         "Gebruikersgegevens": [
+            "User details"
+         ],
+         "Hi %1$s,": [
+            "Hi %1$s,"
+         ],
+         "I would like to notify you that your password has been changed with the password reset link which was provided earlier.": [
+            "I would like to notify you that your password has been changed with the password reset link which was provided earlier."
+         ],
+         "IdealMolliePaymentMethod": [
+            "iDeal"
+         ],
+         "IdealRaboPaymentMethod": [
+            "iDeal"
+         ],
+         "In case (some of this) information is incorrect, you may contact our support desk to change it.": [
+            "In case (some of this) information is incorrect, you may contact our support desk to change it."
+         ],
+         "In case something is not entirely clear, please do contact our support desk. These hipster boys and smooth girls are working around the clock to answer your question as soon as possible": [
+            "In case something is not entirely clear, please do contact our support desk. They are working around the clock to answer your question as soon as possible."
+         ],
+         "In case the button does not work, you can copy the following link to your browser:": [
+            "In case the button does not work, you can copy the following link to your browser:"
+         ],
+         "In case you did not do this, please reply to this email immediately to contact our support desk.": [
+            "In case you did not do this, please reply to this email immediately to contact our support desk."
+         ],
+         "In case you did not request this email, you can safely ignore it. Your password has not been given to somebody or changed.": [
+            "In case you did not request this email, you can safely ignore it. Your password has not been given to somebody or changed."
+         ],
+         "Invoice": [
+            "Invoice"
+         ],
+         "Invoice date": [
+            "Invoice date"
+         ],
+         "Invoice number": [
+            "Invoice number"
+         ],
+         "Invoices": [
+            "Invoices"
+         ],
+         "Item price": [
+            "Item price"
+         ],
+         "Last minute the following products might be useful:": [
+            "Last minute the following products might be useful:"
+         ],
+         "Let's go social": [
+            "Let's go social"
+         ],
+         "Locale": [
+            "Locale"
+         ],
+         "Looking forward to go with friends? Let them know and share the event on Facebook!": [
+            "Looking forward to go with friends? Let them know and share the event on Facebook!"
+         ],
+         "Luckily, there is no need to worry. You can simply login to your personal page using the following link. On this page you can reset your password.": [
+            "Luckily, there is no need to worry. You can simply login to your personal page using the following link. On this page you can reset your password."
+         ],
+         "Mobile ticket": [
+            "Mobile ticket"
+         ],
+         "More information on the protection of private information can be found in our %1$sPrivacy Statement%2$s": [
+            "More information on the protection of private information can be found in our %1$sPrivacy Statement%2$s"
+         ],
+         "Name": [
+            "Name"
+         ],
+         "New": [
+            "New"
+         ],
+         "New password": [
+            "New password"
+         ],
+         "Next": [
+            "Next"
+         ],
+         "No name or email address was supplied. Paying is not yet possible.": [
+            "No name or email address was supplied. Paying is not yet possible."
+         ],
+         "No products were selected. Paying is not yet possible.": [
+            "No products were selected. Paying is not yet possible."
+         ],
+         "Not VAT applicable": [
+            "Not VAT applicable"
+         ],
+         "Not all required fields were completed. Paying is not yet possible.": [
+            "Not all required fields were completed. Paying is not yet possible."
+         ],
+         "ORDER ADDITIONAL PRODUCTS": [
+            "ORDER ADDITIONAL PRODUCTS"
+         ],
+         "On this sale the %1$sTerms and conditions%2$s of inventid are applicable": [
+            "On this sale the %1$sTerms and conditions%2$s of inventid are applicable."
+         ],
+         "One-time key": [
+            "One-time key"
+         ],
+         "Opens at": [
+            "Opens at"
+         ],
+         "Order": [
+            "Order"
+         ],
+         "Order cancellation for %1$s": [
+            "Order cancellation for %1$s"
+         ],
+         "Organization": [
+            "Organization"
+         ],
+         "Others also bought": [
+            "Others also bought"
+         ],
+         "PDF": [
+            "PDF"
+         ],
+         "Password": [
+            "Password"
+         ],
+         "Password reset": [
+            "Password reset"
+         ],
+         "Pay using %1$s": [
+            "Pay directly using %1$s"
+         ],
+         "PaypalBuckarooPaymentMethod": [
+            "PayPal"
+         ],
+         "PaypalMolliePaymentMethod": [
+            "Paypal"
+         ],
+         "Pick your bank": [
+            "Pick your bank"
+         ],
+         "Please note, this is a demo shop!": [
+            "Please note, this is a demo shop!"
+         ],
+         "Price": [
+            "Price"
+         ],
+         "Product": [
+            "Product"
+         ],
+         "Product name": [
+            "Product name"
+         ],
+         "Products": [
+            "Products"
+         ],
+         "Quantity": [
+            "Quantity"
+         ],
+         "Quick reminder for %1$s": [
+            "Quick reminder for %1$s"
+         ],
+         "Reminder": [
+            "Reminder"
+         ],
+         "Repeat new password": [
+            "Repeat new password"
+         ],
+         "Reset password": [
+            "Reset password"
+         ],
+         "Revenue": [
+            "Revenue"
+         ],
+         "Sales": [
+            "Sales"
+         ],
+         "Sales channel": [
+            "Sales channel"
+         ],
+         "Sales channels": [
+            "Sales channels"
+         ],
+         "Save": [
+            "Save"
+         ],
+         "Select one": [
+            "Select one"
+         ],
+         "Send": [
+            "Send"
+         ],
+         "Services": [
+            "Services"
+         ],
+         "Set password": [
+            "Set password"
+         ],
+         "Set picture": [
+            "Set picture"
+         ],
+         "Share on Facebook": [
+            "Share on Facebook"
+         ],
+         "Share this purchase on Facebook": [
+            "Share this purchase on Facebook"
+         ],
+         "Shop": [
+            "Sales channel"
+         ],
+         "Shop URL": [
+            "Shop URL"
+         ],
+         "Shop link": [
+            "Shop link"
+         ],
+         "Shop name": [
+            "Shop name"
+         ],
+         "Short URL": [
+            "Short URL"
+         ],
+         "Since you clicked the secret link in our email, you can now reset your password here safely. In case you do not want to reset your password, you can just close this page.": [
+            "Since you clicked the secret link in our email, you can now reset your password here safely. In case you do not want to reset your password, you can just close this page."
+         ],
+         "So, if you got a question (or if you are just curious of a supporter, just send an email to %1$s. Also tell us your order number, the name of the event, and if useful, a screenshot of your payment": [
+            "So, if you got a question, just send an email to %1$s. Also tell us your order number, the name of the event, and if applicable, a screenshot of your payment."
+         ],
+         "SofortbankingMolliePaymentMethod": [
+            "Sofort banking"
+         ],
+         "Sold out!": [
+            "Sold out!"
+         ],
+         "Somebody (we hope it was you) indicated they forgot their password, which can happen to anyone.": [
+            "Somebody (we hope it was you) indicated they forgot their password, which can happen to anyone."
+         ],
+         "Something unclear or there seems to be an error? Contact our support desk directly through %1$s and don't forget to tell us your order number (#%2$s).": [
+            "Something unclear or there seems to be an error? Please contact our support desk directly through %1$s. In your communication, please also mention your order number (#%2$s)."
+         ],
+         "Status": [
+            "Status"
+         ],
+         "Subtotal": [
+            "Subtotal"
+         ],
+         "Support": [
+            "Support"
+         ],
+         "Terms and conditions:": [
+            "Terms and conditions:"
+         ],
+         "The organization of %1$s has cancelled your order (#%2$s)": [
+            "The organization of %1$s has cancelled your order (#%2$s)"
+         ],
+         "The status of your order ('#%1$s') is %2$s.": [
+            "The status of your order ('#%1$s') is %2$s."
+         ],
+         "The status of your payment is:": [
+            "The status of your payment is:"
+         ],
+         "These products can be bought from the same page as were you can download your tickets ( https://%1$s/u/%2$s ).": [
+            "These products can be bought from the same page as were you can download your tickets ( https://%1$s/u/%2$s )."
+         ],
+         "This order contained the following products:": [
+            "This order contained the following products:"
+         ],
+         "This order contains the following products:": [
+            "This order contains the following products:"
+         ],
+         "This personal page allows you to easily download your tickets, view your data, and get insight in yuor order history. If required, you can always contact our support desk.": [
+            "This personal page allows you to easily download your tickets, view your data, and get insight in your order history. If required, you can always contact our support desk."
+         ],
+         "This sales channel requires authentication": [
+            "This sales channel requires authentication"
+         ],
+         "Ticketshop by inventid": [
+            "Ticketshop by inventid"
+         ],
+         "Today is the day!": [
+            "Today is the day!"
+         ],
+         "Today it's time for %1$s!": [
+            "Today it's time for %1$s!"
+         ],
+         "Total": [
+            "Total"
+         ],
+         "VAT": [
+            "VAT 21%"
+         ],
+         "VAT applicable": [
+            "VAT applicable"
+         ],
+         "Valid from": [
+            "Valid from"
+         ],
+         "Valid until": [
+            "Valid until"
+         ],
+         "Want to order additional products?": [
+            "Want to order additional products?"
+         ],
+         "We have sent your tickets to": [
+            "We have sent your tickets to"
+         ],
+         "WiretransferPaymentMethod": [
+            "Wire transfer"
+         ],
+         "With this email we want to help you easily find your etickets, which you can download from https://%1$s/u/%2$s": [
+            "With this email we want to help you easily find your etickets, which you can download from https://%1$s/u/%2$s"
+         ],
+         "YOUR INVENTID": [
+            "YOUR INVENTID"
+         ],
+         "You have started the following orders with us.": [
+            "You have started the following orders with us."
+         ],
+         "Your E-mail address": [
+            "Your E-mail address"
+         ],
+         "Your etickets can be downloaded from https://%1$s/downloads/u/%2$s": [
+            "Your etickets can be downloaded from https://%1$s/downloads/u/%2$s"
+         ],
+         "Your etickets for %1$s - inventid": [
+            "Your etickets for %1$s - inventid"
+         ],
+         "Your etickets have been retracted and the remaining money amount will be automatically refunded. An overview of your orders can be obtained from https://%1$s/downloads/u/%2$s": [
+            "Your etickets have been retracted and the remaining money amount will be automatically refunded. An overview of your orders can be obtained from https://%1$s/downloads/u/%2$s"
+         ],
+         "Your name": [
+            "Your name"
+         ],
+         "Your personal data": [
+            "Your personal data"
+         ],
+         "Your personal page": [
+            "Your personal page"
+         ],
+         "Your picture": [
+            "Your picture"
+         ],
+         "Your purchase contains products which are not etickets. You will receive more information on how to obtain these later.": [
+            "Your purchase contains products which are not etickets. You will receive more information on how to obtain these later."
+         ],
+         "Your purchase for %1$s was processed successfully.": [
+            "Your purchase for %1$s was processed successfully."
+         ],
+         "Your tickets are ready for download on your personal page.": [
+            "Your tickets are ready for download on your personal page."
+         ],
+         "active": [
+            "active"
+         ],
+         "cancelled": [
+            "cancelled"
+         ],
+         "completed": [
+            "completed"
+         ],
+         "email address": [
+            "email address"
+         ],
+         "excluding fees": [
+            "excluding fees"
+         ],
+         "expired": [
+            "expired"
+         ],
+         "for %1$s": [
+            "for %1$s"
+         ],
+         "inactive": [
+            "inactive"
+         ],
+         "inventid hopes you will enjoy %1$s!": [
+            "inventid hopes you will enjoy %1$s!"
+         ],
+         "inventid password reset request": [
+            "inventid password reset request"
+         ],
+         "inventid works as a third party for %1$s. inventid focuses on providing entrance tickets for (closed) events. For more information:": [
+            "inventid works as a third party for %1$s. inventid focuses on providing entrance tickets for (closed) events. For more information:"
+         ],
+         "open": [
+            "open"
+         ],
+         "or": [
+            "or"
+         ],
+         "password": [
+            "password"
+         ],
+         "refunded": [
+            "refunded"
+         ],
+         "required": [
+            "required"
+         ],
+         "success": [
+            "successful"
+         ]
+      }
+   }
+}
