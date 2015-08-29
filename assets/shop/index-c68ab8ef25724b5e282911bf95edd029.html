@@ -1,0 +1,87 @@
+<div>
+  <nav class="navbar navbar-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="col-xs-12 col-sm-10">
+          <a class="company" href="#">invent<span>id</span> <img alt="" height="34px" src="//cdn.inventid.nl/assets/logo_white-d0f24493fe83544e57f19443d81c8f20.png" />
+            <small class="hidden-xs">{{ shop:name }}</small>
+            <small class="visible-xs-inline">{{ shop:event:name }}</small>
+          </a>
+        </div>
+        <div class="hidden-xs col-sm-2 language-picker text-right">
+          <div class="nav-element dropdown full-width text-right">
+            <div class="dropdown-toggle grey-text text-uppercase" data-toggle="dropdown">
+              {{ #session:user:locale }} <i class="fa fa-lg fa-language"></i>
+            </div>
+            <ul class="dropdown-menu black-text">
+              <li class="full-width hover sub-tab lang-nl">Nederlands</li>
+              <li class="full-width hover sub-tab lang-en">English</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="header row">
+      <nav class="shop-nav left col-sm-4 col-xs-12">
+        <div class="show-products nav-container">
+          <span class="fa-stack fa-lg nav-element" rv-class-active="#active | eq 'show-products'">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-user nav-container">
+          <span class="fa-stack fa-lg nav-element" rv-class-active="#active | eq 'show-user'">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-order nav-container">
+          <span class="fa-stack fa-lg nav-element" rv-class-active="#active | eq 'show-order'">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-eur fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+      </nav>
+
+      <div class="right col-sm-8 hidden-xs text-right">
+        <h1>{{ shop:event:name }}</h1>
+      </div>
+    </div>
+
+
+    <div rv-view="view"></div>
+
+    <div class="alert alert-danger text-center" rv-if="shop:demo">
+      <i class="fa fa-warning"></i>
+      {{ 'Please note, this is a demo shop!' | i18n < $ }}
+    </div>
+
+    <nav class="navbar navbar-bottom row">
+      <div class="col-xs-4 text-left">
+        <span class="btn previous" rv-show="hasPrevious">
+           {{ 'Back' | i18n < $ }}
+          <i class="fa fa-arrow-circle-left"></i>
+        </span>
+      </div>
+
+      <a href="https://www.inventid.nl" target="_blank" class="no-underline">
+        <div class="col-xs-4 text-center credits">
+          {{ 'Ticketshop by inventid' | i18n < $ }}
+          <img alt="Ticketshop by inventid" height="32px" src="//cdn.inventid.nl/assets/logo_without_name-45a8501d87d20ea4d80aeccf03f682e3.png" />
+        </div>
+      </a>
+
+      <div class="col-xs-4 text-right">
+        <span class="btn btn-primary next" rv-show="hasNext">
+          <i class="fa fa-arrow-circle-right"></i>
+           {{ 'Next' | i18n < $ }}
+        </span>
+      </div>
+    </nav>
+
+  </div>
+</div>

@@ -1,0 +1,73 @@
+<div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-12 bold">{{ 'Invoice' | i18n < $ }} {{ invoice:reference }} {{ invoice.lines }}</div>
+    </div>
+    <div class="panel-body">
+      <!-- General header -->
+      <div class="row">
+        <div class="col-xs-4 grey italic">{{ 'Invoice number' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ invoice:reference }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 grey italic">{{ 'Invoice date' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ invoice:created_at | time 'Europe/Amsterdam' }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 grey italic">{{ 'Event' | i18n < $ }}</div>
+        <div class="col-xs-8">{{ invoice:event:name }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">&nbsp; <!--intentionally blank line --></div>
+      </div>
+      <!-- Table stuff -->
+      <div class="row bold">
+        <div class="col-xs-4">{{ 'Description' | i18n < $ }}</div>
+        <div class="col-xs-3">{{ 'Item price' | i18n < $ }}</div>
+        <div class="col-xs-2">{{ 'Quantity' | i18n < $ }}</div>
+        <div class="col-xs-3">{{ 'Price' | i18n < $ }}</div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-7 bold">{{ 'Products' | i18n < $ }}</div>
+        <div class="col-xs-5 pull-right grey italic">{{ 'Not VAT applicable' | i18n < $ }}</div>
+      </div>
+      <div class="row" rv-each-invoice_line="invoice:invoice_lines | filter 'should_add_btw' false">
+        <div class="col-xs-4">{{ invoice_line:description }}</div>
+        <div class="col-xs-3">{{ invoice_line:item_price | currency }}</div>
+        <div class="col-xs-2">{{ invoice_line:quantity }}</div>
+        <div class="col-xs-3">{{ invoice_line:item_price | multiply invoice_line:quantity | currency }}</div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-7 bold">{{ 'Services' | i18n < $ }}</div>
+        <div class="col-xs-5 pull-right grey italic">{{ 'VAT applicable' | i18n < $ }}</div>
+      </div>
+      <div class="row" rv-each-invoice_line="invoice:invoice_lines | filter 'should_add_btw' true">
+        <div class="col-xs-4">{{ invoice_line:description }}</div>
+        <div class="col-xs-3">{{ invoice_line:item_price | currency }}</div>
+        <div class="col-xs-2">{{ invoice_line:quantity }}</div>
+        <div class="col-xs-3">{{ invoice_line:item_price | multiply invoice_line:quantity | currency }}</div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">&nbsp; <!--intentionally blank line --></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-9">{{ 'Subtotal' | i18n < $ }}</div>
+        <div class="col-xs-3">{{ invoice:bruto | currency }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-9">{{ 'VAT' | i18n < $ }}</div>
+        <div class="col-xs-3">{{ invoice:bruto | minus invoice:netto | currency }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-9">{{ 'Total' | i18n < $ }}</div>
+        <div class="col-xs-3">{{ invoice:netto | currency }}</div>
+      </div>
+    </div>
+  </div>
+
+</div>

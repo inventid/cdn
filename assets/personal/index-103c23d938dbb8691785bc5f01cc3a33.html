@@ -1,0 +1,92 @@
+<div>
+  <nav class="navbar navbar-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="col-xs-12 col-sm-10">
+          <a class="company" href="#">invent<span>id</span> <img alt="" height="34px" src="//cdn.inventid.nl/assets/logo_white-d0f24493fe83544e57f19443d81c8f20.png" />
+            <small class="hidden-xs">{{ 'Your personal page' | i18n < $ }}</small>
+            <small class="visible-xs-inline-block">{{ user:name }}</small>
+          </a>
+        </div>
+        <div class="hidden-xs col-sm-2 language-picker text-right">
+          <div class="nav-element dropdown full-width text-right">
+            <div class="dropdown-toggle grey-text text-uppercase" data-toggle="dropdown">
+              {{ #session:user:locale }} <i class="fa fa-lg fa-language"></i>
+            </div>
+            <ul class="dropdown-menu black-text">
+              <li class="full-width hover sub-tab lang-nl">Nederlands</li>
+              <li class="full-width hover sub-tab lang-en">English</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="header row">
+      <nav class="shop-nav left col-sm-6 col-xs-12">
+        <div class="show-user nav-container">
+          <span class="fa-stack fa-lg previous nav-element" rv-class-active="#active | eq 'show-user'">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-downloads nav-container">
+          <span class="fa-stack fa-lg nav-element" rv-class-active="#active | eq 'show-downloads'">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-cloud-download fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-orders nav-container">
+          <span class="fa-stack fa-lg previous nav-element" rv-class-active="#active | eq 'show-orders'">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-eur fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-shops nav-container">
+          <span class="fa-stack fa-lg previous nav-element" rv-class-active="#active | eq 'show-shops'">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-support nav-container">
+          <span class="fa-stack fa-lg previous nav-element" rv-class-active="#active | eq 'show-support'">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-crews nav-container" rv-show="#session:user.crewsSomething" style="margin-left: 25px;">
+          <span class="fa-stack fa-lg previous nav-element" rv-class-active="#active | eq 'show-crews'">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+
+
+
+      </nav>
+
+      <div class="right hidden-xs col-sm-6 text-right">
+        <h1>{{ user:name }}</h1>
+      </div>
+    </div>
+
+
+    <div rv-view="view"></div>
+
+
+    <nav class="navbar navbar-bottom row">
+
+      <a href="https://www.inventid.nl" target="_blank" class="no-underline">
+        <div class="col-xs-4 col-xs-offset-4 text-center credits">
+          {{ 'Ticketshop by inventid' | i18n < $ }}
+          <img alt="Ticketshop by inventid" height="32px" src="//cdn.inventid.nl/assets/logo_without_name-45a8501d87d20ea4d80aeccf03f682e3.png" />
+        </div>
+      </a>
+
+    </nav>
+
+  </div>
+</div>

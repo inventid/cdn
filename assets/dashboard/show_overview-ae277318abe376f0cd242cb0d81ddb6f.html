@@ -1,0 +1,39 @@
+<div>
+  <div rv-view="eventsView">
+    <!-- Here be the listing of products in the shop -->
+  </div>
+
+  <div rv-show="user.admin | negate">
+    <div rv-each-organization="user:organizations">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          Organisatie: {{ organization:name }}
+        </div>
+        <div class="panel-body list">
+          <div class="row list-item">
+            <div class="col-xs-1"><i class="fa fa-medkit"></i></div>
+            <div class="col-xs-4">
+              <p>
+                {{ organization:sales_manager.name }}<br>
+                {{ organization:sales_manager.email_address }}<br>
+                {{ organization:sales_manager.phone_number }}
+              </p>
+            </div>
+            <div class="col-xs-3">
+              <div class="btn btn-primary organization-invoices" rv-organization-id="organization.id">
+                <i class="fa fa-eur"></i>
+                <span>Factuuroverzicht</span>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="btn btn-primary edit-organization" rv-organization-id="organization.id">
+                <i class="fa fa-cog"></i>
+                <span>Organisatieinstellingen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

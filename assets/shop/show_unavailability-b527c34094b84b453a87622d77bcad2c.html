@@ -1,0 +1,48 @@
+<div>
+  <nav class="navbar navbar-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="company" href="#">invent<span>id <img alt="" height="24px" src="//cdn.inventid.nl/assets/logo_white-d0f24493fe83544e57f19443d81c8f20.png" /></span>
+          <small>{{ shop:name }}</small>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="panel panel-primary">
+
+      <div class="panel-heading row">
+        <div class="col-xs-12">{{ 'Shop unavailable' | i18n < $ }}</div>
+      </div>
+
+      <div class="panel-body">
+
+        <div class="row">
+          <div class="col-sm-12 text-center">{{ 'This web shop for %1$s is currently unavailable.' | i18n shop:event:name < $ }}
+            <span rv-show="shop:closure_reason | eq 'opens-in-future'">{{ 'However it will open in the future. Check the organization website for dates and times.' | i18n < $ }}</span>
+            <span rv-show="shop:closure_reason | eq 'closed-in-past'">{{ 'It has already been closed.' | i18n < $ }}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-xs-12 col-sm-offset-3 text-center pull-down">
+            {{ 'If you believe this is an error, please contact us through support@inventid.nl' | i18n < $ }}
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  <nav class="navbar navbar-bottom row">
+
+    <div class="col-xs-4 col-xs-offset-4 text-center credits">
+      {{ 'Ticketshop by inventid' | i18n < $ }}
+      <img alt="Ticketshop by inventid" height="32px" src="//cdn.inventid.nl/assets/logo-788aee17fe6539b6f9d5cbc517346c75.png" />
+    </div>
+
+  </nav>
+
+
+</div>

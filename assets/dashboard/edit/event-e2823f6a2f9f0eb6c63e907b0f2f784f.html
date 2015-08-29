@@ -1,0 +1,67 @@
+<div>
+  <form class="form-horizontal" role="form">
+    <div class="panel panel-primary">
+
+      <div class="panel-heading">
+        Gegevens van je evenement
+        <div class="btn panel-heading-btn pull-right create" rv-show="step2">
+          {{ 'Save' | i18n < $ }}
+          <i class="fa fa-check"></i>
+        </div>
+      </div>
+
+      <div class="panel-body">
+        <div rv-show="step1">
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <select class="form-control organization-selector">
+                <option disabled="disabled" value="picker">Kies een organisatie...</option>
+                <option rv-each-organization="user:organizations" rv-value="organization:id" rv-text="organization:name"></option>
+              </select>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <button class="btn btn-primary pull-right to-step-two" type="button">Naar stap 2</button>
+            </div>
+          </div>
+        </div>
+
+        <div rv-show="step2">
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control event-name" type="text" rv-value="event:name" placeholder="Evenementnaam">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control event-name" type="text" rv-value="event:contact_person" placeholder="Naam van de contactpersoon van de organisatie">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control" type="text" rv-value="event:location_address" placeholder="Adres van het evenement">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control" type="text" rv-value="event:location_postal_code" placeholder="Postcode van het evenement">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control" type="text" rv-value="event:location_city" placeholder="Stad van het evenement">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <textarea class="form-control agreement-text"
+                        placeholder="Extra informatie voor bezoekers, zoals voorwaarden"
+                        rv-live-value="event:agreement"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
