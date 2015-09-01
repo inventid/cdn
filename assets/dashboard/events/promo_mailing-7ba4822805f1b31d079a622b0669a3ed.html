@@ -1,0 +1,51 @@
+<div>
+  <form class="form-horizontal" role="form">
+    <div class="panel panel-primary">
+
+      <div class="panel-heading">
+        Gegevens voor je promomailing
+        <div class="btn panel-heading-btn pull-right create" rv-show="step2">
+          {{ 'Send' | i18n < $ }}
+          <i class="fa fa-check"></i>
+        </div>
+      </div>
+
+      <div class="panel-body">
+        <div rv-show="step1">
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <select class="form-control shop-selector">
+                <option disabled="disabled" value="picker">Kies een verkoopkanaal...</option>
+                <option rv-each-shop="event:shops" rv-value="shop:id">{{ shop:event:name }} - {{ shop:name }}</option>
+              </select>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <button class="btn btn-primary pull-right to-step-two" type="button">Naar stap 2</button>
+            </div>
+          </div>
+        </div>
+
+        <div rv-show="step2">
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control mailing-subject" type="text" rv-value="promoMailing:subject" placeholder="Onderwerp">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <textarea class="form-control mailing-receipients" rows="12" rv-value="promoMailing:receipients" placeholder="Een lijst van emailadressen, gescheiden met komma's of puntkomma's"></textarea>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <textarea class="form-control mailing-message" rows="12" rv-value="promoMailing:message" placeholder="De tekst van je bericht. Gebruik <link> om de link naar de webshop te plaatsen."></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
