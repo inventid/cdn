@@ -1,0 +1,35 @@
+<div>
+  <form class="form-horizontal" role="form">
+    <div class="panel panel-primary">
+
+      <div class="panel-heading">
+        Gegevens van het support request
+        <div class="btn panel-heading-btn pull-right create">
+          {{ 'Save' | i18n < $ }}
+          <i class="fa fa-check"></i>
+        </div>
+      </div>
+
+      <div class="panel-body">
+        <div class="row form-group">
+          <div class="col-xs-12">
+            <input class="form-control event-name" type="text" rv-value="supportRequest:email_address" placeholder="Emailadres">
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-12">
+            <input class="form-control event-name" type="text" rv-value="supportRequest:subject" placeholder="Onderwerp">
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <div class="col-xs-12">
+              <textarea class="form-control"
+                        placeholder="Vraag of opmerking"
+                        rv-live-value="supportRequest:question"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
