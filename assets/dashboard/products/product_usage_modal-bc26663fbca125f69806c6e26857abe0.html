@@ -1,0 +1,29 @@
+<div class="modal fade" role="dialog" aria-hidden="hidden">
+  <div class="modal-dialog modal-l">
+    <div class="panel">
+
+      <div class="panel panel-primary">
+
+        <div class="panel-heading row bold">
+          <div class="col-xs-12">
+            Productgebruik voor {{event:name}}
+          </div>
+        </div>
+
+        <div class="panel-body list">
+          <div class="list-item row" rv-each-product="event:products">
+            <div class="col-xs-6">
+              {{ product:name }}
+            </div>
+            <div class="col-xs-6">
+              {{ product:used_quantity }} gescand ({{ product:sold_quantity }} verkocht)
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+

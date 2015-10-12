@@ -1,0 +1,53 @@
+<div>
+  <p class="intro-text">
+    {{ 'You have access as crew to the following entities.' | i18n < $ }}
+  </p>
+
+  <div rv-if="user:admin | negate">
+    <div class="panel panel-primary">
+      <div class="panel-heading row">
+        <div class="col-xs-12">{{ 'Organizations' | i18n < $ }}</div>
+      </div>
+
+      <div class="panel-body list" rv-show="user:organizations | length | gt 0">
+        <div class="row dashboard clickable list-item" rv-each-organization="user:organizations">
+          <div class="col-xs-11">{{ organization:name }}</div>
+          <div class="col-xs-1"><i class="fa fa-external-link"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading row">
+        <div class="col-xs-12">{{ 'Events' | i18n < $ }}</div>
+      </div>
+
+      <div class="panel-body list" rv-show="user:events | length | gt 0">
+        <div class="row dashboard clickable list-item" rv-each-event="user:events">
+          <div class="col-xs-11">{{ event:name }}</div>
+          <div class="col-xs-1"><i class="fa fa-external-link"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading row">
+        <div class="col-xs-12">{{ 'Shops' | i18n < $ }}</div>
+      </div>
+
+      <div class="panel-body list" rv-show="user:shops | length | gt 0">
+        <div class="row dashboard clickable list-item" rv-each-shop="user:shops">
+          <div class="col-xs-11">{{ shop:name }} ({{shop:event:name}})</div>
+          <div class="col-xs-1"><i class="fa fa-external-link"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div rv-if="user:admin">
+    <p>Koning, je bent gewoon een medewerker van inventid! Wat AWESOME!!!111ONEONE1!</p>
+
+    <p>Helaas kunnen we je dus niet direct doorsturen naar je dashboard (veiligheid bladiebladiebla), dus klik op het volgende linkje en dan moet je even inloggen:<br><br>
+      <span class="dashboard clickable">Dashboard <i class="fa fa-external-link"></i></span></p>
+  </div>
+</div>
