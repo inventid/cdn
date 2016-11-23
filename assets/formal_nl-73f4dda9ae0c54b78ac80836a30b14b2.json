@@ -1,0 +1,332 @@
+{
+   "domain": "messages",
+   "locale_data": {
+      "messages": {
+         "": {
+            "domain": "messages",
+            "plural_forms": "nplurals=2; plural=(n != 1);",
+            "lang": "nl"
+         },
+         "Additional information": [
+            null,
+            "Extra informatie"
+         ],
+         "Administration fee": [
+            null,
+            "Administratiekosten"
+         ],
+         "Back": [
+            null,
+            "Terug"
+         ],
+         "BancontactmrcashBuckarooPaymentMethod": [
+            null,
+            "Bancontact Mr Cash"
+         ],
+         "BancontactmrcashMolliePaymentMethod": [
+            null,
+            "Bancontact Mr Cash"
+         ],
+         "Below you will find a summary of your order.": [
+            null,
+            "Hieronder staat een overzicht van uw bestelling"
+         ],
+         "BitcoinMolliePaymentMethod": [
+            null,
+            "Bitcoin"
+         ],
+         "Change password": [
+            null,
+            "Wijzig wachtwoord"
+         ],
+         "Checkout": [
+            null,
+            "Kassa"
+         ],
+         "ClientInventidPaymentMethod": [
+            null,
+            "Interne betaling"
+         ],
+         "Connect with Facebook": [
+            null,
+            "Verbind met Facebook"
+         ],
+         "CreditcardMolliePaymentMethod": [
+            null,
+            "Creditcard"
+         ],
+         "Current password": [
+            null,
+            "Huidig wachtwoord"
+         ],
+         "Currently, we have the following information about you on file.": [
+            null,
+            "Op dit moment staat de volgende informatie van u bij ons geregistreerd."
+         ],
+         "Date": [
+            null,
+            "Datum"
+         ],
+         "DemoInventidPaymentMethod": [
+            null,
+            "Demo"
+         ],
+         "Earlier you have bought products using the following shops.": [
+            null,
+            "In het verleden heeft u bij de volgende verkoopkanalen producten aangeschaft."
+         ],
+         "Etickets are ready for download for the following products.": [
+            null,
+            "Download hieronder uw e-tickets."
+         ],
+         "Event": [
+            null,
+            "Evenement"
+         ],
+         "Hi %1$s,": [
+            null,
+            "Beste %1$s,"
+         ],
+         "IdealRaboPaymentMethod": [
+            null,
+            "iDeal"
+         ],
+         "In case (some of this) information is incorrect, you may contact our support desk to change it.": [
+            null,
+            "In het geval dat hiervan iets niet correct is, neem dan contact op met onze klantenservice."
+         ],
+         "In case something is not entirely clear, please do contact our support desk. These hipster boys and smooth girls are working around the clock to answer your question as soon as possible": [
+            null,
+            "In het geval dat er iets niet geheel duidelijk is, neem alstublieft contact op met onze klantenservice. Zij werken rond de klok om uw vraag te beantwoorden."
+         ],
+         "Let's go social": [
+            null,
+            "Sociale media"
+         ],
+         "Looking forward to go with friends? Let them know and share the event on Facebook!": [
+            null,
+            "Kijkt u ernaar uit om met vrienden te gaan? Deel dan het evenement op sociale media!"
+         ],
+         "Mobile ticket": [
+            null,
+            "Mobiele ticket"
+         ],
+         "Name": [
+            null,
+            "Naam"
+         ],
+         "New password": [
+            null,
+            "Nieuw wachtwoord"
+         ],
+         "Next": [
+            null,
+            "Verder"
+         ],
+         "No name or email address was supplied. Paying is not yet possible.": [
+            null,
+            "U heeft nog geen naam of E-mailadres ingevoerd. Betalen is daarom nog niet mogelijk."
+         ],
+         "No products were selected. Paying is not yet possible.": [
+            null,
+            "U heeft nog geen producten geselecteerd. Betalen is dus ook nog niet mogelijk."
+         ],
+         "On this sale the %1$sTerms and conditions%2$s of inventid are applicable": [
+            null,
+            "Op deze verkoop zijn de %1$sAlgemene Voorwaarden%2$s van inventid van toepassing"
+         ],
+         "Order": [
+            null,
+            "Order"
+         ],
+         "Others also bought": [
+            null,
+            "Anderen kochten ook"
+         ],
+         "PDF": [
+            null,
+            ""
+         ],
+         "Password": [
+            null,
+            "Wachtwoord"
+         ],
+         "Pay using %1$s": [
+            null,
+            "Betaal direct met %1$s"
+         ],
+         "PaypalBuckarooPaymentMethod": [
+            null,
+            "PayPal"
+         ],
+         "PaypalMolliePaymentMethod": [
+            null,
+            "PayPal"
+         ],
+         "Pick your bank": [
+            null,
+            "Kies uw bank"
+         ],
+         "Please note, this is a demo shop!": [
+            null,
+            "Let op: dit is een webshop bedoeld voor demonstratiedoeleinden!"
+         ],
+         "Price": [
+            null,
+            "Prijs"
+         ],
+         "Product": [
+            null,
+            "Product"
+         ],
+         "Quantity": [
+            null,
+            "Aantal"
+         ],
+         "Repeat new password": [
+            null,
+            "Herhaal nieuwe wachtwoord"
+         ],
+         "Sales channel": [
+            null,
+            "Verkoopkanaal"
+         ],
+         "Save": [
+            null,
+            "Opslaan"
+         ],
+         "Select one": [
+            null,
+            "Selecteer"
+         ],
+         "Set password": [
+            null,
+            "Wachtwoord instellen"
+         ],
+         "Share on Facebook": [
+            null,
+            "Deel op Facebook"
+         ],
+         "Shop": [
+            null,
+            "Verkoopkanaal"
+         ],
+         "So, if you got a question (or if you are just curious of a supporter, just send an email to %1$s. Also tell us your order number, the name of the event, and if useful, a screenshot of your payment": [
+            null,
+            "Dus in het geval dat u een vraag heeft, stuur dan een E-mail naar %1$s. Vermeld ook alstublieft uw ordernummer en het evenement. Indien het gaat over financiële zaken, stuur dan ook een screenshot van de betaling mee."
+         ],
+         "Something unclear or there seems to be an error? Contact our support desk directly through %1$s and don't forget to tell us your order number (#%2$s).": [
+            null,
+            "Is er iets onduidelijk of vermoed u een fout? U kunt direct contact opnemen met onze klantenservice via %1$s. Vermeld in uw E-mail alstublieft uw ordernummer (#%2$s)."
+         ],
+         "Status": [
+            null,
+            "Status"
+         ],
+         "Support": [
+            null,
+            "Ondersteuning"
+         ],
+         "Terms and conditions:": [
+            null,
+            "Algemene voorwaarden"
+         ],
+         "The status of your payment is:": [
+            null,
+            "De eindstatus van uw betaling is:"
+         ],
+         "This personal page allows you to easily download your tickets, view your data, and get insight in yuor order history. If required, you can always contact our support desk.": [
+            null,
+            "Via deze persoonlijke pagina kunt u simpel uw E-tickets downloaden, uw data inzien en uw ordergeschiedenis raadplegen. Indien nodig kunt u ook direct contact opnemen met onze klantenservice."
+         ],
+         "This sales channel requires authentication": [
+            null,
+            "Dit verkoopkanaal vereist authenticatie"
+         ],
+         "Ticketshop by inventid": [
+            null,
+            "Ticketshop verzorgd door inventid"
+         ],
+         "Token": [
+            null,
+            "Token"
+         ],
+         "Total": [
+            null,
+            "Totaal"
+         ],
+         "Total' | i18n < $ }} <small>({{ 'excluding fees": [
+            null,
+            ""
+         ],
+         "We have sent your tickets to": [
+            null,
+            "Uw tickets zijn gestuurd naar"
+         ],
+         "WiretransferPaymentMethod": [
+            null,
+            "Overboeking"
+         ],
+         "You have started the following orders with us.": [
+            null,
+            "U heeft de volgende order bij ons gestart."
+         ],
+         "Your E-mail address": [
+            null,
+            "Uw E-mailadres"
+         ],
+         "Your most recent payment was %1$s": [
+            null,
+            "De eindstatus van je betaling is %1$s"
+         ],
+         "Your name": [
+            null,
+            "Uw naam"
+         ],
+         "Your personal data": [
+            null,
+            "Uw gegevens"
+         ],
+         "Your personal page": [
+            null,
+            "Uw persoonlijke pagina"
+         ],
+         "cancelled": [
+            null,
+            "geannuleerd"
+         ],
+         "completed": [
+            null,
+            "voltooid"
+         ],
+         "excluding fees": [
+            null,
+            "Exclusief transactiekosten"
+         ],
+         "expired": [
+            null,
+            "verlopen"
+         ],
+         "open": [
+            null,
+            "open"
+         ],
+         "or": [
+            null,
+            "of"
+         ],
+         "refunded": [
+            null,
+            "teruggeboekt"
+         ],
+         "sales channel": [
+            null,
+            "verkoopkanaal"
+         ],
+         "success": [
+            null,
+            "succesvol"
+         ]
+      }
+   }
+}

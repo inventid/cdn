@@ -1,0 +1,72 @@
+<div>
+  <nav class="navbar navbar-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="company" href="#">invent<span>id <img alt="" height="24px" src="//cdn.inventid.nl/assets/logo_white-117dc7e352ee4864b438caa766cda4a2.png" /></span>
+          <small>{{ shop:name }} kaartverkoop</small>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="header row">
+      <nav class="shop-nav left col-xs-4">
+        <div class="show-products nav-container">
+          <span class="fa-stack fa-lg nav-element">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-user nav-container">
+          <span class="fa-stack fa-lg previous nav-element">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-order nav-container">
+          <span class="fa-stack fa-lg previous nav-element">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-eur fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+      </nav>
+
+      <div class="right col-xs-8 text-right">
+        <h1>{{ shop:event:name }}
+          <small>{{ shop:event:organization:name }}</small>
+        </h1>
+      </div>
+    </div>
+
+
+    <div rv-view="view"></div>
+
+
+
+    <nav class="navbar navbar-bottom row">
+
+      <div class="col-xs-4 text-left">
+        <span class="btn previous" rv-show="hasPrevious">
+           Terug
+          <i class="fa fa-arrow-circle-left"></i>
+        </span>
+      </div>
+
+      <div class="col-xs-4 text-center credits">
+        Ticketshop by inventid
+        <img alt="Ticketshop by inventid" height="32px" src="//cdn.inventid.nl/assets/logo-31d76eea19223518132018c083fab3d2.png" />
+      </div>
+
+      <div class="col-xs-4 text-right">
+        <span class="btn btn-primary next" rv-show="hasNext">
+          <i class="fa fa-arrow-circle-right"></i>
+           Verder
+        </span>
+      </div>
+
+    </nav>
+
+  </div>
+</div>

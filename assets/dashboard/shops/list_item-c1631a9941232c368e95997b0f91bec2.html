@@ -1,0 +1,20 @@
+<div class="row list-item">
+  <div class="col-xs-4">
+    <span class="fa-stack info inline-text-icon" rv-show="#session:user:admin">
+      <i class="fa fa-square fa-lg fa-stack-1x"></i>
+      <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ model:name }}
+  </div>
+  <div class="col-xs-5">
+    <a rv-href="model:url" target="_blank">
+      {{ model:url }}
+    </a>
+  </div>
+  <div class="col-xs-1 col-xs-offset-1">
+    <li title="Verkoopkanaal geopend" class="fa fa-circle traffic-light-green" rv-show="isGreen < model"></li>
+    <li title="Demo verkoopkanaal" class="fa fa-circle traffic-light-orange" rv-show="isOrange < model"></li>
+    <li title="Verkoopkanaal gesloten" class="fa fa-circle traffic-light-red" rv-show="isRed < model"></li>
+  </div>
+  <div class="col-xs-1 edit clickable"><i class="fa fa-pencil-square-o"></i></div>
+</div>

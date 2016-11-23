@@ -1,0 +1,19 @@
+<div>
+  <div class="panel panel-primary" rv-each-event="user:events">
+    <div class="panel-heading">
+      {{ event:name }}
+    </div>
+    <div class="panel-body">
+      <div class="row list-item">
+        <div class="col-xs-5 bold">Naam</div>
+        <div class="col-xs-4 bold">Verkopen</div>
+        <div class="col-xs-3 bold">Omzet</div>
+      </div>
+      <div class="row list-item" rv-each-product="event:products">
+        <div class="col-xs-5"><!--<i class="fa fa-pencil-square-o"></i> -->{{ product:name }}</div>
+        <div class="col-xs-4">{{ product:sold }}<span rv-if="product.hasLimitedQuantity"> / {{ product:max_quantity }}</span></div>
+        <div class="col-xs-3">{{ product:revenue | currency }}</div>
+      </div>
+    </div>
+  </div>
+</div>

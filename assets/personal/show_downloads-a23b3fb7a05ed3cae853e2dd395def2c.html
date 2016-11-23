@@ -1,0 +1,16 @@
+<div>
+  <p class="intro-text">
+    {{ 'Etickets are ready for download for the following products.' | i18n < $ }}
+  </p>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-8">{{ 'Name' | i18n < $ }}</div>
+      <div class="col-xs-4">{{ 'Date' | i18n < $ }}</div>
+    </div>
+
+    <div class="panel-body" rv-view="orderProductIdentifiersView">
+      <!-- Here be the listing of order_product_identifier in the user -->
+    </div>
+  </div>
+</div>

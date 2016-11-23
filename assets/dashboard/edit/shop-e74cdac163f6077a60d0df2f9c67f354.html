@@ -1,0 +1,68 @@
+<div>
+  <form class="form-horizontal" role="form">
+    <div class="panel panel-primary">
+
+      <div class="panel-heading row">
+        <div class="col-xs-12">Gegevens van je verkoopkanaal</div>
+      </div>
+
+      <div class="panel-body">
+        <div rv-show="step1">
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <select class="form-control event-selector">
+                <option disabled="disabled" value="picker">Kies een evenement...</option>
+                <option rv-each-event="user:events" rv-value="event:id">{{ event:organization:name }} - {{ event:name }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <button class="btn-primary pull-right to-step-two" type="button">Naar stap 2</button>
+            </div>
+          </div>
+        </div>
+
+        <div rv-show="step2">
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control" type="text" rv-value="shop:name" placeholder="Verkoopkanaalnaam">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-4">Openingstijd van het verkoopkanaal</div>
+            <div class="col-xs-1">
+              <div class="input-group date opens-at">
+                <input class="form-control" type="hidden">
+                    <span class="input-group-addon">
+                      <span class="fa fa-calendar"></span>
+                    </span>
+              </div>
+            </div>
+            <div class="col-xs-2 col-xs-offset-1">{{ shop:opens_at | time shop:event:timezone 'DD-MM-YYYY' }}</div>
+            <div class="col-xs-2" rv-show="shop:opens_at">{{ shop:opens_at | time shop:event:timezone 'HH:mm' }}</div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-4">Sluitingstijd van het verkoopkanaal</div>
+            <div class="col-xs-1">
+              <div class="input-group date closes-at">
+                <input class="form-control" type="hidden">
+                    <span class="input-group-addon">
+                      <span class="fa fa-calendar"></span>
+                    </span>
+              </div>
+            </div>
+            <div class="col-xs-2 col-xs-offset-1">{{ shop:closes_at | time shop:event:timezone 'DD-MM-YYYY' }}</div>
+            <div class="col-xs-2" rv-show="shop:closes_at">{{ shop:closes_at | time shop:event:timezone 'HH:mm' }}</div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <button class="btn-primary pull-right create" type="button">Opslaan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

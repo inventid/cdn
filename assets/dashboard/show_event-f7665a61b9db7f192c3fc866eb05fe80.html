@@ -1,0 +1,85 @@
+<div>
+  <div class="panel panel-primary" rv-show="#session:user:admin">
+
+    <div class="panel-heading row bold internal">
+      <div class="col-xs-12">
+        <i class="fa fa-eur"></i>
+        Financieel overzicht
+      </div>
+    </div>
+
+    <div class="panel-body">
+      <div class="list-item row bold">
+        <div class="col-xs-7">Totaal omzet incl btw</div>
+        <div class="col-xs-5">{{ event:financial_statistics.total | currency }}</div>
+      </div>
+      <div class="list-item row" rv-each-payment_method="event:financial_statistics.payment_methods">
+        <div class="col-xs-6 col-xs-offset-1">{{ payment_method.payment_method }}</div>
+        <div class="col-xs-5">{{ payment_method.bruto | currency }}</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-7">Evenement omzet incl btw</div>
+        <div class="col-xs-5">{{ event:financial_statistics.event_revenue | currency }}</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-7">inventid omzet incl btw excl payment fees</div>
+        <div class="col-xs-5">{{ event:financial_statistics.internal_revenue_incl | currency }}</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-7">inventid omzet excl btw excl payment fees</div>
+        <div class="col-xs-5">{{ event:financial_statistics.internal_revenue_excl | currency }}</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-7">Payment fees incl btw</div>
+        <div class="col-xs-5">{{ event:financial_statistics.payment_fees | currency }}</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-7">Verkopen</div>
+        <div class="col-xs-5">{{ event:financial_statistics.sales }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-primary">
+
+    <div class="panel-heading row bold">
+      <div class="col-xs-4">Product</div>
+      <div class="col-xs-4">Verkopen</div>
+      <div class="col-xs-3">Omzet</div>
+    </div>
+
+    <div class="panel-body">
+      <div rv-view="productsView">
+        <!-- Here be the listing of products in the shop -->
+      </div>
+      <div class="list-item bold row">
+        <div class="col-xs-4">Totaal</div>
+        <div class="col-xs-4">{{ event.total.sold_quantity }}</div>
+        <div class="col-xs-3">{{ event.total.revenue | currency }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-4 bold">Verkoopkanaal</div>
+      <div class="col-xs-6 bold">Link</div>
+      <div class="col-xs-2 bold">Status</div>
+    </div>
+
+    <div class="panel-body" rv-view="shopsView">
+      <!-- Here be the listing of products in the shop -->
+    </div>
+  </div>
+
+  <!--<div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-4 bold">Naam koper</div>
+      <div class="col-xs-8 bold" rv-show="#session:user:admin">E-mailadres</div>
+    </div>
+    <div class="panel-body" rv-view="usersView">
+      <!- Here be the listing of user in the event ->
+    </div>
+  </div>-->
+
+</div>

@@ -1,0 +1,215 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2015-02-05 10:58:+0000\n"
+"Project-Id-Version: inventid neo\n"
+"Language-Team: tech <tech@inventid.nl>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-02-14 18:00+0000"
+
+#: 
+msgid "success"
+msgstr ""
+
+#: 
+msgid "completed"
+msgstr ""
+
+#: 
+msgid "expired"
+msgstr ""
+
+#: 
+msgid "cancelled"
+msgstr ""
+
+#: 
+msgid "open"
+msgstr ""
+
+#: 
+msgid "refunded"
+msgstr ""
+
+#: 
+msgid "IdealRaboPaymentMethod"
+msgstr ""
+
+#: 
+msgid "PaypalBuckarooPaymentMethod"
+msgstr ""
+
+#: 
+msgid "BancontactmrcashBuckarooPaymentMethod"
+msgstr ""
+
+#: 
+msgid "WiretransferPaymentMethod"
+msgstr ""
+
+#: 
+msgid "CreditcardMolliePaymentMethod"
+msgstr ""
+
+#: 
+msgid "BitcoinMolliePaymentMethod"
+msgstr ""
+
+#: 
+msgid "DemoInventidPaymentMethod"
+msgstr ""
+
+#: 
+msgid "BancontactmrcashMolliePaymentMethod"
+msgstr ""
+
+#: 
+msgid "PaypalMolliePaymentMethod"
+msgstr ""
+
+#: 
+msgid "ClientInventidPaymentMethod"
+msgstr ""
+
+#: 
+msgid "Your personal page"
+msgstr ""
+
+#: 
+msgid "sales channel"
+msgstr ""
+
+#: 
+msgid "Back"
+msgstr ""
+
+#: 
+msgid "Ticketshop by inventid"
+msgstr ""
+
+#: 
+msgid "Next"
+msgstr ""
+
+#: 
+msgid "Pick your bank"
+msgstr ""
+
+#: 
+msgid "Please wait while we prepare your payment"
+msgstr ""
+
+#: 
+msgid "This sales channel requires authentication"
+msgstr ""
+
+#: 
+msgid "Password"
+msgstr ""
+
+#: 
+msgid "Token"
+msgstr ""
+
+#: 
+msgid "Pay"
+msgstr ""
+
+#: 
+msgid "Checkout"
+msgstr ""
+
+#: 
+msgid "Administration fee"
+msgstr ""
+
+#: 
+msgid "Subtotal"
+msgstr ""
+
+#: 
+msgid "Transaction costs"
+msgstr ""
+
+#: 
+msgid "Others also bought"
+msgstr ""
+
+#: 
+msgid "Total"
+msgstr ""
+
+#: 
+msgid "No name or email address was supplied. Paying is not yet possible."
+msgstr ""
+
+#: 
+msgid "No products were selected. Paying is not yet possible."
+msgstr ""
+
+#: 
+msgid "Pay directly using %1$s"
+msgstr ""
+
+#: 
+msgid "Product"
+msgstr ""
+
+#: 
+msgid "Price"
+msgstr ""
+
+#: 
+msgid "Quantity"
+msgstr ""
+
+#: 
+msgid "Your personal data"
+msgstr ""
+
+#: 
+msgid "Connect with Facebook"
+msgstr ""
+
+#: 
+msgid "or"
+msgstr ""
+
+#: 
+msgid "Your name"
+msgstr ""
+
+#: 
+msgid "Your E-mail address"
+msgstr ""
+
+#: 
+msgid "Terms and conditions:"
+msgstr ""
+
+#: 
+msgid "On this sale the %1$sTerms and conditions%2$s of inventid are applicable"
+msgstr ""
+
+#: 
+msgid "Hi %1$s,"
+msgstr ""
+
+#: 
+msgid "The status of your payment is %1$s"
+msgstr ""
+
+#: 
+msgid "We have sent your tickets to %1$s."
+msgstr ""
+
+#: 
+msgid "Below you will find a summary of your order."
+msgstr ""
+
+#: 
+msgid "Something unclear or there seems to be an error? Contact our support desk directly through %1$s and don't forget to tell us your order number (#%2$s)."
+msgstr ""
+

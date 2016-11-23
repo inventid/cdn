@@ -1,0 +1,56 @@
+<div>
+  <nav class="navbar navbar-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="company" href="#">invent<span>id <img alt="" height="24px" src="//cdn.inventid.nl/assets/logo_white-4b652db5b46681c3543da6393ae7acdd.png" /></span>
+          <small>{{ shop:name }} {{ 'sales channel' | i18n < $ }}</small>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        {{ 'This sales channel requires authentication' | i18n < $ }}
+      </div>
+      <div class="panel-body">
+        <form class="form-horizontal" role="form">
+
+          <div class="form-group">
+            <label for="token" class="col-xs-2 control-label">{{ 'One-time key' | i18n < $ }}</label>
+
+            <div class="col-xs-10">
+              <input type="text" class="form-control" id="token" rv-placeholder="'One-time key' | i18n < $"/>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="pull-down">
+          Your one time key is valid only once! If you close or refresh the shop after you have entered,
+          your key has become invalid.
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-bottom row">
+
+      <div class="col-xs-4 col-xs-offset-4 text-center credits">
+        {{ 'Ticketshop by inventid' | i18n < $ }}
+        <img alt="Ticketshop by inventid" height="32px" src="//cdn.inventid.nl/assets/logo-fdbe319283eeddbc4da7d800a394f4a0.png" />
+      </div>
+
+      <div class="col-xs-4 text-right">
+        <span class="btn btn-primary" id="authenticate">
+          <i class="fa fa-arrow-circle-right"></i>
+           {{ 'Next' | i18n < $ }}
+        </span>
+      </div>
+
+    </nav>
+
+
+  </div>
+</div>

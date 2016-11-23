@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-02-05 10:58:+0000Project-Id-Version: inventid neoLanguage-Team: tech <tech@inventid.nl>Language: enMIME-Version: 1.0Content-Type: text/plain; charset=UTF-8Content-Transfer-Encoding: 8bitPO-Revision-Date: 2015-02-13 12:09+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Rogier Slag <rogier@in-ventid.nl>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "success"
+msgstr "succes"
+
+msgid "completed"
+msgstr "voltooid"
+
+msgid "expired"
+msgstr "verlopen"
+
+msgid "cancelled"
+msgstr "geannuleerd"
+
+msgid "open"
+msgstr "open"
+
+msgid "refunded"
+msgstr "teruggeboekt"
+
+msgid "IdealRaboPaymentMethod"
+msgstr "iDeal"
+
+msgid "PaypalBuckarooPaymentMethod"
+msgstr "PayPal"
+
+msgid "BancontactmrcashBuckarooPaymentMethod"
+msgstr "Bancontact Mr Cash"
+
+msgid "WiretransferPaymentMethod"
+msgstr "Overboeking"
+
+msgid "CreditcardMolliePaymentMethod"
+msgstr "Creditcard"
+
+msgid "BitcoinMolliePaymentMethod"
+msgstr "Bitcoin"
+
+msgid "DemoInventidPaymentMethod"
+msgstr "Demo"
+
+msgid "BancontactmrcashMolliePaymentMethod"
+msgstr "Bancontact Mr Cash"
+
+msgid "PaypalMolliePaymentMethod"
+msgstr "PayPal"
+
+msgid "ClientInventidPaymentMethod"
+msgstr "Interne betaling"
+
+msgid "sales channel"
+msgstr "verkoopkanaal"
+
+msgid "Back"
+msgstr "Terug"
+
+msgid "Ticketshop by inventid"
+msgstr "Ticketshop verzorgd door inventid"
+
+msgid "Next"
+msgstr "Verder"
+
+msgid "Pick your bank"
+msgstr "Kies uw bank"
+
+msgid "This sales channel requires authentication"
+msgstr "Dit verkoopkanaal vereist authenticatie"
+
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgid "Token"
+msgstr "Token"
+
+msgid "Pay"
+msgstr "Betaal"
+
+msgid "Checkout"
+msgstr "Kassa"
+
+msgid "Administration fee"
+msgstr "Administratiekosten"
+
+msgid "Subtotal"
+msgstr "Subtotaal"
+
+msgid "Transaction costs"
+msgstr "Transactiekosten"
+
+msgid "Others also bought"
+msgstr "Anderen kochten ook"
+
+msgid "Total"
+msgstr "Totaal"
+
+msgid "No name or email address was supplied. Paying is not yet possible."
+msgstr "U heeft nog geen naam of E-mailadres ingevoerd. Betalen is daarom nog niet mogelijk."
+
+msgid "No products were selected. Paying is not yet possible."
+msgstr "U heeft nog geen producten geselecteerd. Betalen is dus ook nog niet mogelijk."
+
+msgid "Pay directly using %1$s"
+msgstr "Betaal direct met %1$s"
+
+msgid "Product"
+msgstr "Product"
+
+msgid "Price"
+msgstr "Prijs"
+
+msgid "Quantity"
+msgstr "Aantal"
+
+msgid "Your personal data"
+msgstr "Uw gegevens"
+
+msgid "Connect with Facebook"
+msgstr "Verbind met Facebook"
+
+msgid "or"
+msgstr "of"
+
+msgid "Your name"
+msgstr "Uw naam"
+
+msgid "Your E-mail address"
+msgstr "Uw E-mailadres"
+
+msgid "Terms and conditions:"
+msgstr "Algemene voorwaarden"
+
+msgid "On this sale the %1$sTerms and conditions%2$s of inventid are applicable"
+msgstr "Op deze verkoop zijn de %1$sAlgemene Voorwaarden%2$s van inventid van toepassing"
+
+#~ msgid "Including fees"
+#~ msgstr "Inclusief transactiekosten"

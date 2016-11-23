@@ -1,0 +1,286 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-02-05 10:58:+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Rogier Slag <rogier@in-ventid.nl>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "success"
+msgstr "successful"
+
+msgid "completed"
+msgstr "completed"
+
+msgid "expired"
+msgstr "expired"
+
+msgid "cancelled"
+msgstr "cancelled"
+
+msgid "open"
+msgstr "open"
+
+msgid "refunded"
+msgstr "refunded"
+
+msgid "IdealRaboPaymentMethod"
+msgstr "iDeal"
+
+msgid "PaypalBuckarooPaymentMethod"
+msgstr "PayPal"
+
+msgid "BancontactmrcashBuckarooPaymentMethod"
+msgstr "Bancontact Mr Cash"
+
+msgid "WiretransferPaymentMethod"
+msgstr "Wire transfer"
+
+msgid "CreditcardMolliePaymentMethod"
+msgstr "Creditcard"
+
+msgid "BitcoinMolliePaymentMethod"
+msgstr "Bitcoin"
+
+msgid "DemoInventidPaymentMethod"
+msgstr "Demo"
+
+msgid "BancontactmrcashMolliePaymentMethod"
+msgstr "Bancontact Mr Cash"
+
+msgid "PaypalMolliePaymentMethod"
+msgstr "Paypal"
+
+msgid "ClientInventidPaymentMethod"
+msgstr "Internal payment"
+
+msgid "Your personal page"
+msgstr "Your personal page"
+
+msgid "Ticketshop by inventid"
+msgstr "Ticketshop by inventid"
+
+msgid "Share on Facebook"
+msgstr "Social media"
+
+msgid "Etickets are ready for download for the following products."
+msgstr "Etickets are ready for download for the following products."
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "You have started the following orders with us."
+msgstr "You have started the following orders with us."
+
+msgid "Event"
+msgstr "Event"
+
+msgid "Sales channel"
+msgstr "Sales channel"
+
+msgid "Order"
+msgstr "Order"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Earlier you have bought products using the following shops."
+msgstr "Earlier you have bought products using the following shops."
+
+msgid "Shop"
+msgstr "Sales channel"
+
+msgid "Let's go social"
+msgstr "Social media"
+
+msgid ""
+"Looking forward to go with friends? Let them know and share the event on "
+"Facebook!"
+msgstr ""
+"Looking forward to go with friends? Let them know and share the event on "
+"Facebook!"
+
+msgid "Support"
+msgstr "Support"
+
+msgid ""
+"In case something is not entirely clear, please do contact our support desk. "
+"These hipster boys and smooth girls are working around the clock to answer "
+"your question as soon as possible"
+msgstr ""
+"In case something is not entirely clear, please do contact our support desk. "
+"Our personnel is working around the clock to answer your question as soon as "
+"possible."
+
+msgid ""
+"So, if you got a question (or if you are just curious of a supporter, just "
+"send an email to %1$s. Also tell us your order number, the name of the "
+"event, and if useful, a screenshot of your payment"
+msgstr ""
+"So, if you got a question, just send an email to %1$s. Also tell us your "
+"order number, the name of the event, and if applicable, a screenshot of your "
+"payment."
+
+msgid "Your most recent payment was %1$s"
+msgstr "The status of your payment is %1$s."
+
+msgid "Hi %1$s,"
+msgstr "Dear %1$s,"
+
+msgid "Currently, we have the following information about you on file."
+msgstr "Currently, we have the following information about you on file."
+
+msgid ""
+"In case (some of this) information is incorrect, you may contact our support "
+"desk to change it."
+msgstr ""
+"In case (some of this) information is incorrect, you may contact our support "
+"desk to change it."
+
+msgid "Your name"
+msgstr "Your name"
+
+msgid "Your E-mail address"
+msgstr "Your E-mail address"
+
+msgid "Change password"
+msgstr "Change password"
+
+msgid "Set password"
+msgstr "Set password"
+
+msgid "Current password"
+msgstr "Current password"
+
+msgid "New password"
+msgstr "New password"
+
+msgid "Repeat new password"
+msgstr "Repeat new password"
+
+msgid "Save"
+msgstr "Save"
+
+msgid ""
+"This personal page allows you to easily download your tickets, view your "
+"data, and get insight in yuor order history. If required, you can always "
+"contact our support desk."
+msgstr ""
+"This personal page allows you to easily download your tickets, view your "
+"data, and get insight in your order history. If required, you can always "
+"contact our support desk."
+
+msgid "sales channel"
+msgstr "sales channel"
+
+msgid "Back"
+msgstr "Back"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Pick your bank"
+msgstr "Pick your bank"
+
+msgid "Please wait while we prepare your payment"
+msgstr "Please wait while we prepare your payment"
+
+msgid "This sales channel requires authentication"
+msgstr "This sales channel requires authentication"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Token"
+msgstr "Token"
+
+msgid "Pay"
+msgstr "Pay"
+
+msgid "Checkout"
+msgstr "Checkout"
+
+msgid "Administration fee"
+msgstr "Administration fee"
+
+msgid "Subtotal"
+msgstr "Subtotal"
+
+msgid "Transaction costs"
+msgstr "Transaction costs"
+
+msgid "Others also bought"
+msgstr "Others also bought"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "No name or email address was supplied. Paying is not yet possible."
+msgstr "No name or email address was supplied. Paying is not yet possible."
+
+msgid "No products were selected. Paying is not yet possible."
+msgstr "No products were selected. Paying is not yet possible."
+
+msgid "Pay directly using %1$s"
+msgstr "Pay directly using %1$s"
+
+msgid "Product"
+msgstr "Product"
+
+msgid "Price"
+msgstr "Price"
+
+msgid "Quantity"
+msgstr "Quantity"
+
+msgid "Your personal data"
+msgstr "Your personal data"
+
+msgid "Connect with Facebook"
+msgstr "Connect with Facebook"
+
+msgid "or"
+msgstr "or"
+
+msgid "Terms and conditions:"
+msgstr "Terms and conditions:"
+
+msgid ""
+"On this sale the %1$sTerms and conditions%2$s of inventid are applicable"
+msgstr ""
+"On this sale the %1$sTerms and conditions%2$s of inventid are applicable."
+
+msgid "The status of your payment is:"
+msgstr "The status of your payment is:"
+
+msgid "We have sent your tickets to %1$s."
+msgstr "We have sent your tickets to %1$s."
+
+msgid "Below you will find a summary of your order."
+msgstr "Below you will find a summary of your order."
+
+msgid ""
+"Something unclear or there seems to be an error? Contact our support desk "
+"directly through %1$s and don't forget to tell us your order number (#%2$s)."
+msgstr ""
+"Something unclear or there seems to be an error? Please contact our support "
+"desk directly through %1$s. In your communication, please also mention your "
+"order number (#%2$s)."
+
+#~ msgid "Order number"
+#~ msgstr "Order number"
+
+#~ msgid "Change"
+#~ msgstr "Change"
+
+#~ msgid "Including fees"
+#~ msgstr "Including fees"

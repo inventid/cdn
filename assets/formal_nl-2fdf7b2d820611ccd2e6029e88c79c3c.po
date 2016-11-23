@@ -1,0 +1,281 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-02-05 10:58:+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Rogier Slag <rogier@in-ventid.nl>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "success"
+msgstr "succesvol"
+
+msgid "completed"
+msgstr "voltooid"
+
+msgid "expired"
+msgstr "verlopen"
+
+msgid "cancelled"
+msgstr "geannuleerd"
+
+msgid "open"
+msgstr "open"
+
+msgid "refunded"
+msgstr "teruggeboekt"
+
+msgid "IdealRaboPaymentMethod"
+msgstr "iDeal"
+
+msgid "PaypalBuckarooPaymentMethod"
+msgstr "PayPal"
+
+msgid "BancontactmrcashBuckarooPaymentMethod"
+msgstr "Bancontact Mr Cash"
+
+msgid "WiretransferPaymentMethod"
+msgstr "Overboeking"
+
+msgid "CreditcardMolliePaymentMethod"
+msgstr "Creditcard"
+
+msgid "BitcoinMolliePaymentMethod"
+msgstr "Bitcoin"
+
+msgid "DemoInventidPaymentMethod"
+msgstr "Demo"
+
+msgid "BancontactmrcashMolliePaymentMethod"
+msgstr "Bancontact Mr Cash"
+
+msgid "PaypalMolliePaymentMethod"
+msgstr "PayPal"
+
+msgid "ClientInventidPaymentMethod"
+msgstr "Interne betaling"
+
+msgid "Your personal page"
+msgstr "Uw persoonlijke pagina"
+
+msgid "Ticketshop by inventid"
+msgstr "Ticketshop verzorgd door inventid"
+
+msgid "Share on Facebook"
+msgstr "Deel op Facebook"
+
+msgid "Etickets are ready for download for the following products."
+msgstr "Voor de volgende producten kunt u uw E-tickets downloaden."
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "You have started the following orders with us."
+msgstr "U heeft de volgende order bij ons gestart."
+
+msgid "Event"
+msgstr "Evenement"
+
+msgid "Shop"
+msgstr "Verkoopkanaal"
+
+msgid "Order number"
+msgstr "Ordernummer"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Earlier you have bought products using the following shops."
+msgstr ""
+"In het verleden heeft u bij de volgende verkoopkanalen producten aangeschaft."
+
+msgid "Let's go social"
+msgstr "Sociale media"
+
+msgid ""
+"Looking forward to go with friends? Let them know and share the event on "
+"Facebook!"
+msgstr ""
+"Kijkt u ernaar uit om met vrienden te gaan? Deel dan het evenement op "
+"sociale media!"
+
+msgid "Support"
+msgstr "Ondersteuning"
+
+msgid ""
+"In case something is not entirely clear, please do contact our support desk. "
+"These hipster boys and smooth girls are working around the clock to answer "
+"your question as soon as possible"
+msgstr ""
+"In het geval dat er iets niet geheel duidelijk is, neem alstublieft contact "
+"op met onze klantenservice. Zij werken rond de klok om uw vraag te "
+"beantwoorden."
+
+msgid ""
+"So, if you got a question (or if you are just curious of a supporter, just "
+"send an email to %1$s. Also tell us your order number, the name of the "
+"event, and if useful, a screenshot of your payment"
+msgstr ""
+"Dus in het geval dat u een vraag heeft, stuur dan een E-mail naar %1$s. "
+"Vermeld ook alstublieft uw ordernummer en het evenement. Indien het gaat "
+"over financiële zaken, stuur dan ook een screenshot van de betaling mee."
+
+msgid "Your most recent payment was %1$s"
+msgstr "De eindstatus van je betaling is %1$s"
+
+msgid "Hi %1$s,"
+msgstr "Beste %1$s,"
+
+msgid "Currently, we have the following information about you on file."
+msgstr ""
+"Op dit moment staat de volgende informatie van u bij ons geregistreerd."
+
+msgid ""
+"In case (some of this) information is incorrect, you may contact our support "
+"desk to change it."
+msgstr ""
+"In het geval dat hiervan iets niet correct is, neem dan contact op met onze "
+"klantenservice."
+
+msgid "Your name"
+msgstr "Uw naam"
+
+msgid "Your E-mail address"
+msgstr "Uw E-mailadres"
+
+msgid "Change password"
+msgstr "Wijzig wachtwoord"
+
+msgid "Current password"
+msgstr "Huidig wachtwoord"
+
+msgid "New password"
+msgstr "Nieuw wachtwoord"
+
+msgid "Repeat new password"
+msgstr "Herhaal nieuwe wachtwoord"
+
+msgid "Change"
+msgstr "Wijzig"
+
+msgid ""
+"This personal page allows you to easily download your tickets, view your "
+"data, and get insight in yuor order history. If required, you can always "
+"contact our support desk."
+msgstr ""
+"Via deze persoonlijke pagina kunt u simpel uw E-tickets downloaden, uw data "
+"inzien en uw ordergeschiedenis raadplegen. Indien nodig kunt u ook direct "
+"contact opnemen met onze klantenservice."
+
+msgid "sales channel"
+msgstr "verkoopkanaal"
+
+msgid "Back"
+msgstr "Terug"
+
+msgid "Next"
+msgstr "Verder"
+
+msgid "Pick your bank"
+msgstr "Kies uw bank"
+
+msgid "Please wait while we prepare your payment"
+msgstr "Een moment geduld aub, uw betaling wordt klaargezet"
+
+msgid "This sales channel requires authentication"
+msgstr "Dit verkoopkanaal vereist authenticatie"
+
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgid "Token"
+msgstr "Token"
+
+msgid "Pay"
+msgstr "Betaal"
+
+msgid "Checkout"
+msgstr "Kassa"
+
+msgid "Administration fee"
+msgstr "Administratiekosten"
+
+msgid "Subtotal"
+msgstr "Subtotaal"
+
+msgid "Transaction costs"
+msgstr "Transactiekosten"
+
+msgid "Others also bought"
+msgstr "Anderen kochten ook"
+
+msgid "Total"
+msgstr "Totaal"
+
+msgid "No name or email address was supplied. Paying is not yet possible."
+msgstr ""
+"U heeft nog geen naam of E-mailadres ingevoerd. Betalen is daarom nog niet "
+"mogelijk."
+
+msgid "No products were selected. Paying is not yet possible."
+msgstr ""
+"U heeft nog geen producten geselecteerd. Betalen is dus ook nog niet "
+"mogelijk."
+
+msgid "Pay directly using %1$s"
+msgstr "Betaal direct met %1$s"
+
+msgid "Product"
+msgstr "Product"
+
+msgid "Price"
+msgstr "Prijs"
+
+msgid "Quantity"
+msgstr "Aantal"
+
+msgid "Your personal data"
+msgstr "Uw gegevens"
+
+msgid "Connect with Facebook"
+msgstr "Verbind met Facebook"
+
+msgid "or"
+msgstr "of"
+
+msgid "Terms and conditions:"
+msgstr "Algemene voorwaarden"
+
+msgid ""
+"On this sale the %1$sTerms and conditions%2$s of inventid are applicable"
+msgstr ""
+"Op deze verkoop zijn de %1$sAlgemene Voorwaarden%2$s van inventid van "
+"toepassing"
+
+msgid "The status of your payment is %1$s"
+msgstr "Uw betaling heeft de status %1$s"
+
+msgid "We have sent your tickets to %1$s."
+msgstr "Uw tickets zijn gestuurd naar %1$s."
+
+msgid "Below you will find a summary of your order."
+msgstr "Hieronder staat een overzicht van uw bestelling"
+
+msgid ""
+"Something unclear or there seems to be an error? Contact our support desk "
+"directly through %1$s and don't forget to tell us your order number (#%2$s)."
+msgstr ""
+"Is er iets onduidelijk of vermoed u een fout? U kunt direct contact opnemen "
+"met onze klantenservice via %1$s. Vermeld in uw E-mail alstublieft uw "
+"ordernummer (#%2$s)."
+
+#~ msgid "Including fees"
+#~ msgstr "Inclusief transactiekosten"

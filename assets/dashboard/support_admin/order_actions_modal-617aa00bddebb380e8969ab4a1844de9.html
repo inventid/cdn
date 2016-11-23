@@ -1,0 +1,93 @@
+<div class="modal fade" role="dialog" aria-hidden="hidden">
+  <div class="modal-dialog modal-l">
+    <div class="panel modal-content-padding">
+
+      <p class="bold">Order #{{order.id}}</p>
+
+      <div role="tabpanel">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="resend active">
+            <a href="#" role="tab" data-toggle="tab">
+              Stuur orderbevestiging
+            </a>
+          </li>
+          <li role="presentation" class="transfer">
+            <a href="#" role="tab" data-toggle="tab">
+              Transfer order
+            </a>
+          </li>
+          <li role="presentation" class="user">
+            <a href="#" role="tab" data-toggle="tab">
+              User data
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pull-down">
+        <div rv-show="currentView | eq 'resend'">
+          <p>
+            Je kunt naar {{ order:user:name }} ({{order:user:email_address}}) de orderbevestiging opnieuw sturen.
+            De gebruiker ontvangt dan een email met daarin: een lijst met de gekochte producten en een link naar zijn persoonlijke pagina.
+          </p>
+
+          <button class="btn btn-primary resend-action">Verstuur de orderbevestiging opnieuw</button>
+        </div>
+
+        <div rv-show="currentView | eq 'transfer'">
+          Je kunnen deze order overzetten naar een andere gebruiker. Van deze nieuwe gebruiker hebben we het emailadres nodig.
+          De order wordt dan naar die gebruiker overgezet en hij/zij ontvangt direct een nieuwe orderbevestiging.
+
+          <form class="form-horizontal" role="form">
+
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input type="text" placeholder="emailadres nieuwe gebruiker" class="form-control new-user-email-address">
+              </div>
+              <div class="col-xs-12 pull-down">
+                <button class="btn btn-primary transfer-action">Transfer deze order</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div rv-show="currentView | eq 'user'">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading row bold">
+              <div class="col-xs-12">
+                Data
+              </div>
+            </div>
+
+            <div class="panel-body list">
+              <div class="list-item row">
+                <div class="col-xs-12">
+                  {{ order:user:name }}
+                </div>
+              </div>
+              <div class="list-item row">
+                <div class="col-xs-12">
+                  {{ order:user:email_address }}
+                </div>
+              </div>
+              <div class="list-item row">
+                <div class="col-xs-12">
+                  https://your.inventid.nl/u/{{ order:user:uuid }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+

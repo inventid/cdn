@@ -1,0 +1,49 @@
+<div>
+
+  <p rv-show="paymentStatus" class="success col-sm-12">Je meest recente betaling is {{ paymentStatus | statuscode }}</p>
+
+  <p class="bold">Beste {{user:name }},</p>
+
+  <p>Momenteel staat de volgende informatie over jou bij ons geregistreerd.<br>
+    Mocht deze informatie incorrect zijn, kun je dit laten aanpassen via onze support afdeling.</p>
+
+  <div class="row">
+    <div class="col-xs-3">Naam</div>
+    <div class="col-xs-3">{{ user:name }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">E-mailadres</div>
+    <div class="col-xs-3">{{ user:email_address }}</div>
+  </div>
+
+  <div>
+    <p class="toggle-password-box clickable" style="text-decoration: underline;">Wachtwoord wijzigen</p>
+
+    <div rv-show="passwordEdit" style="margin-bottom: 25px;">
+      <form>
+        <div class="row form-group" rv-show="user:has_password">
+          <div class="col-xs-5">
+            <input type="password" class="form-control" rv-value="user:old_password" placeholder="Huidige wachtwoord"/>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-5">
+            <input type="password" class="form-control" rv-value="user:password" placeholder="Nieuwe wachtwoord"/>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-5">
+            <input type="password" class="form-control" rv-value="user:password_confirmation" placeholder="Herhaal nieuwe wachtwoord"/></div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-5">
+            <button class="full-width btn save-user">Wijzigen</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <p>Via deze persoonlijke pagina kun je eenvoudig je e-tickets downloaden, je gegevens bekijken, of je
+    ordergeschiedenis inzien. Tevens kun je, indien nodig, direct contact opnemen met onze supportafdeling.</p>
+</div>

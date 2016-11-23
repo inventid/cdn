@@ -1,0 +1,13 @@
+<div class="panel panel-primary">
+
+  <div class="panel-heading row">
+    <div class="col-xs-8 col-sm-8">{{ 'Product' | i18n < $ }}</div>
+    <div class="hidden-xs col-sm-2 text-right">{{ 'Price' | i18n < $ }}</div>
+    <div class="col-xs-4 col-sm-2 text-right">{{ 'Quantity' | i18n < $ }}</div>
+  </div>
+
+  <div class="panel-body" rv-view="shopProductsView">
+    <!-- Here be the listing of products in the shop -->
+  </div>
+
+</div>

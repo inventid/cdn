@@ -1,0 +1,58 @@
+<div>
+  <nav class="navbar navbar-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="company" href="#">invent<span>id</span> <img alt="" height="34px" src="//cdn.inventid.nl/assets/logo_white-117dc7e352ee4864b438caa766cda4a2.png" />
+          <small>Dashboard</small>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="header row">
+      <nav class="shop-nav left">
+        <h1 class="col-xs-7 overview">
+          {{ #title }}
+        </h1>
+        <div class="col-xs-4">
+          <div rv-view="menuView"></div>
+        </div>
+        <div class="col-xs-1">
+          <div class="add nav-container">
+          <span class="fa-stack fa-lg previous nav-element">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+          </span>
+          </div>
+        </div>
+      </nav>
+
+
+    </div>
+
+
+    <div rv-view="view"></div>
+
+
+    <nav class="navbar navbar-bottom row">
+
+      <div class="col-xs-4 text-left">
+        &nbsp;
+      </div>
+
+      <div class="col-xs-4 text-center credits">
+        Event services by inventid
+        <img alt="Ticketshop by inventid" height="32px" src="//cdn.inventid.nl/assets/logo_without_name-ced1e4957e28d5df477b338237e15386.png" />
+      </div>
+
+      <div class="col-xs-4 text-right">
+        &nbsp;
+      </div>
+
+    </nav>
+
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+<div class="row list-item">
+  <div class="col-xs-1">
+    <input type="checkbox" rv-checked="model:selected" rv-disabled="model:cannotUnselect"/>
+  </div>
+  <div class="col-xs-4">
+    {{ model:name }}
+  </div>
+  <div class="col-xs-4" rv-show="model:selected">
+    &euro;
+    <input type="text" rv-value="model:priceInt" placeholder="0" class="form-control form-small inline number"/>,<input type="text" placeholder="00" rv-value="model:priceFloat" class="form-control form-small inline number"/>
+  </div>
+  <div class="col-xs-2 col-xs-offset-1" rv-show="model:selected">
+    <input type="text" rv-value="model:max_quantity" class="form-control" placeholder="0"/>
+  </div>
+</div>

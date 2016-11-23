@@ -1,0 +1,12 @@
+<div class="row list-item clickable" rv-show="isVisible">
+  <div class="col-xs-6 go-to-request">
+    {{ model:subject }}
+  </div>
+  <div class="col-xs-3 go-to-request">
+    <span rv-show="model.isAssigned">{{ model:assignee:name }}</span>
+    <span rv-hide="model.isAssigned" class="italic">Niet toegewezen</span>
+  </div>
+  <div class="col-xs-3 go-to-request">
+    {{ model:status }}
+  </div>
+</div>

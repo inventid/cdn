@@ -1,0 +1,42 @@
+<div>
+  <div class="form-group col-sm-6" rv-if="model:input_type | eq 'text'" >
+    <label>{{ model:description }}<span rv-if="model:required" class="regular italic grey-darker font-small"> ({{ 'required' | i18n < $ }})</span></label>
+    <input type="text" class="form-control answer answer-text" rv-name="model:id" rv-placeholder="model:description" />
+  </div>
+
+  <div class="form-group col-sm-6" rv-if="model:input_type | eq 'number'" >
+    <label>{{ model:description }}<span rv-if="model:required" class="regular italic grey-darker font-small"> ({{ 'required' | i18n < $ }})</span></label>
+    <input type="number" class="form-control answer answer-number" rv-name="model:id" rv-placeholder="model:description" />
+  </div>
+
+  <div class="col-sm-6" rv-if="model:input_type | eq 'radio'">
+    <label>{{ model:description }}<span rv-if="model:required" class="regular italic grey-darker font-small"> ({{ 'required' | i18n < $ }})</span></label>
+    <div rv-each-option="model:options" class="radio">
+      <label>
+        <input type="radio" class="answer answer-radio" rv-name="model:id" rv-option-id="option:id" />
+        {{ option:value }}
+      </label>
+    </div>
+  </div>
+
+  <div class="col-sm-6" rv-if="model:input_type | eq 'check'">
+    <label>{{ model:description }}<span rv-if="model:required" class="regular italic grey-darker font-small"> ({{ 'required' | i18n < $ }})</span></label>
+    <div rv-each-option="model:options" class="checkbox">
+      <label>
+        <input type="checkbox" class="answer answer-check" rv-name="model:id" rv-option-id="option:id" />
+        {{ option:value }}
+      </label>
+    </div>
+  </div>
+
+  <div class="col-sm-6" rv-if="model:input_type | eq 'select'">
+    <label>{{ model:description }}<span rv-if="model:required" class="regular italic grey-darker font-small"> ({{ 'required' | i18n < $ }})</span></label>
+    <select class="form-control answer answer-select">
+      <option>- {{ 'Select one' | i18n < $ }} -</option>
+      <option rv-each-option="model:options" rv-option-id="option:id">
+        {{ option:value }}
+      </option>
+    </select>
+  </div>
+
+</div>

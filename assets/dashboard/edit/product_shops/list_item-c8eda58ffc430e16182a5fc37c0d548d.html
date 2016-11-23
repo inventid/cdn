@@ -1,0 +1,14 @@
+<div class="row form-group">
+  <div class="col-xs-1">
+    <input type="checkbox" rv-checked="model:selected" rv-disabled="model:cannotUnselect" />
+  </div>
+  <div class="col-xs-5">
+    {{ model:name }}
+  </div>
+  <div class="col-xs-2" rv-show="model:selected">
+    <input type="text" rv-value="model:price | currency" class="form-control" placeholder="Prijs"/>
+  </div>
+  <div class="col-xs-2 col-xs-offset-2" rv-show="model:selected">
+    <input type="text" rv-value="model:max_quantity" class="form-control" placeholder="Aantal kaarten"/>
+  </div>
+</div>

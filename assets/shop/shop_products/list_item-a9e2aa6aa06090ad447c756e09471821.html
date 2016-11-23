@@ -1,0 +1,11 @@
+<div class="row list-item">
+  <div class="col-xs-8 col-sm-8">
+    {{ model:product:name }}
+  </div>
+  <div class="hidden-xs col-sm-2 text-right">
+    {{ model:bruto | currency }}
+  </div>
+  <div class="col-xs-4 col-sm-2 quantity">
+    <input class="form-control" type="number" min="0" rv-value="quantity | number"/>
+  </div>
+</div>

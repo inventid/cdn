@@ -1,0 +1,40 @@
+<div>
+  <div class="panel panel-primary">
+
+    <div class="panel-heading row bold">
+      <div class="col-xs-4">Product</div>
+      <div class="col-xs-4">Verkopen</div>
+      <div class="col-xs-3">Omzet</div>
+    </div>
+
+    <div class="panel-body">
+      <div rv-view="productsView">
+        <!-- Here be the listing of products in the shop -->
+      </div>
+      <div class="list-item bold row">
+        <div class="col-xs-4">Totaal</div>
+        <div class="col-xs-4">{{ event.total.sold_quantity }}</div>
+        <div class="col-xs-3">{{ event.total.revenue | currency }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-4 bold">Verkoopkanaal</div>
+      <div class="col-xs-5 bold">Link</div>
+      <div class="col-xs-2 bold">Status</div>
+      <div class="col-xs-1 bold">&nbsp;</div>
+    </div>
+
+    <div class="panel-body" rv-view="shopsView">
+      <!-- Here be the listing of products in the shop -->
+    </div>
+  </div>
+
+  <button class="btn btn-primary pull-right new-product">
+    <i class="fa fa-plus-circle"></i>
+    Maak een nieuw product
+  </button>
+
+</div>

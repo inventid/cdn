@@ -1,0 +1,8 @@
+<div class="row pointer list-item">
+  <div class="col-xs-8 open-download">
+    {{ model:order_product:shop_product:product:name }}
+  </div>
+  <div class="col-xs-4 open-download">
+    {{ model:order_product:shop_product:product:valid_at | time model:order_product:order:shop:event:timezone }}
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="panel panel-primary">
+  <div class="panel-heading row">
+    <div class="col-xs-12">{{ 'Mobile ticket' | i18n < $ }}</div>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-6">{{ orderProductIdentifier:order_product:order:user:name }}</div>
+      <div class="col-xs-6">{{ orderProductIdentifier:order_product:shop_product:product:name }}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6">
+        <i class="fa fa-barcode"></i>
+        {{ orderProductIdentifier:code }}
+      </div>
+      <div class="col-xs-6">
+        <i class="fa fa-clock-o"></i>
+        {{ orderProductIdentifier:order_product:shop_product:product:valid_from | time orderProductIdentifier:order_product:order:shop:event:timezone 'DD-MM HH:mm' }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center pull-down" rv-qr="orderProductIdentifier:code"></div>
+    </div>
+  </div>
+</div>

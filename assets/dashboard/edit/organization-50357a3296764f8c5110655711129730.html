@@ -1,0 +1,38 @@
+<div>
+  <form class="form-horizontal" role="form">
+    <div class="panel panel-primary">
+
+      <div class="panel-heading row">
+        <div class="col-xs-12">Gegevens van de organisatie</div>
+      </div>
+
+      <div class="panel-body">
+        <div class="row form-group">
+          <div class="col-xs-12">
+            <input class="form-control" type="text" rv-value="organization:name" placeholder="Naam">
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-12">
+            <input class="form-control" type="text" rv-value="organization:iban" placeholder="IBAN nummer">
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-12">
+            <input class="form-control" type="text" rv-value="organization:kvk" placeholder="KvK nummer">
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-12">
+            {{ organization:sales_manager.name }}
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-12">
+            <button class="btn-primary pull-right create" type="button">Opslaan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

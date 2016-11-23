@@ -1,0 +1,14 @@
+<div class="row list-item pointer">
+  <div class="col-xs-5 col-sm-4 open-order ">
+    {{ model:shop:event:name }}
+  </div>
+  <div class="col-sm-3 hidden-xs open-order">
+    {{ model:shop:name }}
+  </div>
+  <div class="col-xs-3 col-sm-2 open-order">
+    {{ model:id }}
+  </div>
+  <div class="col-xs-4 col-sm-3 open-order">
+    {{ model:status | i18n < $ }}
+  </div>
+</div>

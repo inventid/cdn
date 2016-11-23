@@ -1,0 +1,8 @@
+<div class="row list-item">
+  <div class="col-xs-4">{{ model:name }}</div>
+  <div class="col-xs-4">
+    {{ model:sold_quantity }}<span rv-if="hasLimitedQuantity"> / {{ model:max_quantity }}</span>
+  </div>
+  <div class="col-xs-3">{{ model:revenue | currency }}</div>
+  <div class="col-xs-1 edit clickable"><i class="fa fa-pencil-square-o"></i></div>
+</div>

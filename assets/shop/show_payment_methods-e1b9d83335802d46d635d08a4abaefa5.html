@@ -1,0 +1,20 @@
+<div>
+  <div class="row" rv-show="order:user.allowedToPay | negate < order:user:name order:user:email_address">
+  <div class="col-xs-12 error text-center">
+    <i class="fa fa-warning"></i>
+    Je hebt nog geen naam of emailadres ingevuld in de vorige stap. Betalen is nog niet mogelijk.
+  </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-12">
+        Kassa
+      </div>
+    </div>
+
+    <div class="panel-body">
+      <div rv-view="shopPaymentMethodsView">
+      </div>
+    </div>
+  </div>
+</div>

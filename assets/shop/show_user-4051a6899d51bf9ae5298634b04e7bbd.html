@@ -1,0 +1,52 @@
+<div class="panel panel-primary">
+
+  <div class="panel-heading row">
+    <div class="col-xs-12">{{ 'Your personal data' | i18n < $ }}</div>
+  </div>
+
+  <div class="panel-body">
+
+    <div class="row">
+      <div class="col-sm-6 left">
+
+        <button class="col-xs-12 facebook" id="connect-facebook">
+          <i class="fa fa-facebook"></i>
+          <span class="button-text">{{ 'Connect with Facebook' | i18n < $ }}</span>
+        </button>
+
+        <em class="col-xs-12 text-center" style="margin: 1.5em 0">&mdash; {{ 'or' | i18n < $ }} &mdash;</em>
+
+        <form class="form-horizontal" role="form">
+
+          <div class="form-group">
+            <div class="col-xs-12">
+              <input type="text" class="form-control" id="name" rv-placeholder="'Your name' | i18n < $"
+                     rv-value="user:name"/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-xs-12">
+              <input type="email" class="form-control" id="email-address" rv-placeholder="'Your E-mail address' | i18n < $"
+                     rv-value="user:email_address"/>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+      <div class="col-sm-6 right">
+        <div rv-show="shop:event:agreement">
+          {{ 'Terms and conditions:' | i18n < $ }}
+        <p>
+          {{ shop:event:agreement }}
+        </p>
+        </div>
+        <p rv-html="'On this sale the %1$sTerms and conditions%2$s of inventid are applicable' | i18n '&lt;a href=&quot;https://www.inventid.nl/docs/algemene-voorwaarden.pdf&quot; target=&quot;_blank&quot;&gt;' '&lt;/a&gt;' < $ "></p>
+
+      </div>
+    </div>
+    <div id="fb-root"></div>
+  </div>
+</div>

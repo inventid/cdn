@@ -1,0 +1,20 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    {{ model:name }}
+  </div>
+  <div class="panel-body">
+    <div class="row list-item">
+      <div class="col-xs-4 bold">Product</div>
+      <div class="col-xs-4 bold">Verkopen</div>
+      <div class="col-xs-3 bold">Omzet</div>
+    </div>
+    <div rv-view="productsView">
+      <!-- Here be the listing of products in the shop -->
+    </div>
+    <div class="row list-item bold">
+      <div class="col-xs-4">Totaal</div>
+      <div class="col-xs-4">{{ model.total.sold_quantity }}</div>
+      <div class="col-xs-3">{{ model.total.revenue | currency }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,414 @@
+{
+   "domain": "messages",
+   "locale_data": {
+      "messages": {
+         "": {
+            "domain": "messages",
+            "plural_forms": "nplurals=2; plural=(n != 1);",
+            "lang": "nl"
+         },
+         "Add": [
+            "Toevoegen"
+         ],
+         "Additional information": [
+            "Extra informatie"
+         ],
+         "Administration fee": [
+            "Administratiekosten"
+         ],
+         "Amount": [
+            "Aantal"
+         ],
+         "Back": [
+            "Terug"
+         ],
+         "BancontactmrcashBuckarooPaymentMethod": [
+            "Bancontact Mr Cash"
+         ],
+         "BancontactmrcashMolliePaymentMethod": [
+            "Bancontact Mr Cash"
+         ],
+         "Below you will find a summary of your order.": [
+            "Hieronder staat een overzicht van je bestelling."
+         ],
+         "BitcoinMolliePaymentMethod": [
+            "Bitcoin"
+         ],
+         "Bought products in this order": [
+            "Gekochte producten in deze order"
+         ],
+         "Change password": [
+            "Wijzig wachtwoord"
+         ],
+         "Checkout": [
+            "Kassa"
+         ],
+         "ClientInventidPaymentMethod": [
+            "Interne betaling"
+         ],
+         "Closes at": [
+            "Sluit om"
+         ],
+         "Congratulations on your purchase": [
+            "Gefeliciteerd met je aankoop"
+         ],
+         "Connect with Facebook": [
+            "Verbind met Facebook"
+         ],
+         "Create new": [
+            "Maak een nieuw"
+         ],
+         "CreditcardMolliePaymentMethod": [
+            "Creditcard"
+         ],
+         "Current password": [
+            "Huidig wachtwoord"
+         ],
+         "Currently, we have the following information about you on file.": [
+            "Op dit moment staat de volgende informatie van je bij ons in het systeem."
+         ],
+         "DOWNLOAD YOUR TICKETS": [
+            "DOWNLOAD JE TICKETS"
+         ],
+         "Date": [
+            "Datum"
+         ],
+         "Demo shop?": [
+            "Demo shop?"
+         ],
+         "DemoInventidPaymentMethod": [
+            "Demo"
+         ],
+         "Details": [
+            "Details"
+         ],
+         "Doors close at": [
+            "Deuren sluiten om"
+         ],
+         "Earlier you have bought products using the following shops.": [
+            "In het verleden heb je via de volgende verkoopkanalen producten aangeschaft."
+         ],
+         "Edit": [
+            "Aanpassen"
+         ],
+         "Email address": [
+            "Emailadres"
+         ],
+         "Etickets are ready for download for the following products.": [
+            "Download hieronder je e-tickets."
+         ],
+         "Event": [
+            "Evenement"
+         ],
+         "Finalize": [
+            "Afronden"
+         ],
+         "Fee": [
+            "Fee"
+         ],
+         "Financial Overview": [
+            "Financieel overzicht"
+         ],
+         "Gebruikersgegevens": [
+            "Gebruikersgegevens"
+         ],
+         "Hi %1$s,": [
+            "Beste %1$s,"
+         ],
+         "IdealMolliePaymentMethod": [
+            "iDeal"
+         ],
+         "IdealRaboPaymentMethod": [
+            "iDeal"
+         ],
+         "In case (some of this) information is incorrect, you may contact our support desk to change it.": [
+            "In het geval dat hiervan iets niet correct is, neem dan contact op met onze supportafdeling."
+         ],
+         "In case something is not entirely clear, please do contact our support desk. These hipster boys and smooth girls are working around the clock to answer your question as soon as possible": [
+            "Mocht er iets niet geheel duidelijk zijn, neem dan vooral contact op met onze helpdesk! Deze attente jongens en vlotte meiden staan dag en nacht voor je klaar om je vraag zo snel mogelijk te beantwoorden."
+         ],
+         "In case the button does not work, you can copy the following link to your browser:": [
+            "In het geval dat de knop niet werkt, kun je de volgende link in je browser plakken:"
+         ],
+         "Last minute the following products might be useful:": [
+            "Wellicht heb je last-minute iets aan de volgende producten:"
+         ],
+         "Let's go social": [
+            "Let's go social"
+         ],
+         "Locale": [
+            "Locale"
+         ],
+         "Looking forward to go with friends? Let them know and share the event on Facebook!": [
+            "Zin om met met vrienden te gaan? Deel dan het evenement op Facebook!"
+         ],
+         "Mobile ticket": [
+            "Mobiele ticket"
+         ],
+         "More information on the protection of private information can be found in our %1$sPrivacy Statement%2$s": [
+            "Meer informatie omtrent de bescherming van persoonsgegevens vind je op %1$sPrivacy Statement%2$s"
+         ],
+         "Name": [
+            "Naam"
+         ],
+         "New": [
+            "Nieuw"
+         ],
+         "New password": [
+            "Nieuw wachtwoord"
+         ],
+         "Next": [
+            "Verder"
+         ],
+         "No name or email address was supplied. Paying is not yet possible.": [
+            "Je hebt nog geen naam of E-mailadres ingevoerd. Betalen is dus ook nog niet mogelijk."
+         ],
+         "No products were selected. Paying is not yet possible.": [
+            "Je hebt nog geen producten geselecteerd. Betalen is dus ook nog niet mogelijk."
+         ],
+         "ORDER ADDITIONAL PRODUCTS": [
+            "BESTEL EXTRA PRODUCTEN"
+         ],
+         "On this sale the %1$sTerms and conditions%2$s of inventid are applicable": [
+            "Op deze verkoop zijn de %1$sAlgemene Voorwaarden%2$s van inventid van toepassing"
+         ],
+         "One-time key": [
+            "One-time key"
+         ],
+         "Opens at": [
+            "Opent om"
+         ],
+         "Order": [
+            "Order"
+         ],
+         "Organization": [
+            "Organisatie"
+         ],
+         "Others also bought": [
+            "Anderen kochten ook"
+         ],
+         "PDF": [
+            "PDF"
+         ],
+         "Password": [
+            "Wachtwoord"
+         ],
+         "Pay using %1$s": [
+            "Betaal direct met %1$s"
+         ],
+         "PaypalBuckarooPaymentMethod": [
+            "PayPal"
+         ],
+         "PaypalMolliePaymentMethod": [
+            "PayPal"
+         ],
+         "Pick your bank": [
+            "Kies je bank"
+         ],
+         "Please note, this is a demo shop!": [
+            "Let op: dit is een demo webshop!"
+         ],
+         "Price": [
+            "Prijs"
+         ],
+         "Product": [
+            "Product"
+         ],
+         "Product name": [
+            "Product naam"
+         ],
+         "Products": [
+            "Producten"
+         ],
+         "Quantity": [
+            "Aantal"
+         ],
+         "Quick reminder for %1$s": [
+            "Handige herinnering voor %1$s"
+         ],
+         "Reminder": [
+            "Reminder"
+         ],
+         "Repeat new password": [
+            "Herhaal nieuwe wachtwoord"
+         ],
+         "Revenue": [
+            "Omzet"
+         ],
+         "Sales": [
+            "Verkopen"
+         ],
+         "Sales channel": [
+            "Verkoopkanaal"
+         ],
+         "Sales channels": [
+            "Verkoopkanalen"
+         ],
+         "Save": [
+            "Opslaan"
+         ],
+         "Select one": [
+            "Selecteer"
+         ],
+         "Set password": [
+            "Wachtwoord instellen"
+         ],
+         "Share on Facebook": [
+            "Deel op Facebook"
+         ],
+         "Shop": [
+            "Verkoopkanaal"
+         ],
+         "Shop URL": [
+            "Shop URL"
+         ],
+         "Shop link": [
+            "Shop link"
+         ],
+         "Shop name": [
+            "Shop naam"
+         ],
+         "So, if you got a question (or if you are just curious of a supporter, just send an email to %1$s. Also tell us your order number, the name of the event, and if useful, a screenshot of your payment": [
+            "Dus, indien je een vraag of probleem hebt, kun je gewoon een mail sturen naar %1$s. Vermeld in ieder geval even je ordernummer, de naam van het evenement en (indien toepasselijk) een screenshot van de betaling."
+         ],
+         "SofortbankingMolliePaymentMethod": [
+            "Sofort banking"
+         ],
+         "Sold out!": [
+            "Uitverkocht!"
+         ],
+         "Something unclear or there seems to be an error? Contact our support desk directly through %1$s and don't forget to tell us your order number (#%2$s).": [
+            "Is er iets onduidelijk of lijkt er iets misgegaan? Neem direct contact op met de helden van onze supportafdeling via %1$s. Vermeld in je E-mail ook meteen je ordernummer (#%2$s)."
+         ],
+         "Status": [
+            "Status"
+         ],
+         "Support": [
+            "Support"
+         ],
+         "Terms and conditions:": [
+            "Algemene voorwaarden"
+         ],
+         "The status of your order ('#%1$s') is %2$s.": [
+            "De status van je order ('#%1$s') is %2$s."
+         ],
+         "The status of your payment is:": [
+            "De eindstatus van je betaling is:"
+         ],
+         "These products can be bought from the same page as were you can download your tickets ( https://%1$s/u/%2$s ).": [
+            "Je kunt deze producten kopen vanaf dezelfde pagina als waar je tickets staan ( https://%1$s/u/%2$s )."
+         ],
+         "This order contains the following products:": [
+            "Deze order bevat de volgende producten:"
+         ],
+         "This personal page allows you to easily download your tickets, view your data, and get insight in yuor order history. If required, you can always contact our support desk.": [
+            "Via deze persoonlijke pagina kunt je eenvoudig je E-tickets downloaden, je data inzien en je ordergeschiedenis raadplegen. Indien nodig kunt je ook direct contact opnemen met onze klantenservice."
+         ],
+         "This sales channel requires authentication": [
+            "Dit verkoopkanaal vereist authenticatie"
+         ],
+         "Ticketshop by inventid": [
+            "Ticketshop by inventid"
+         ],
+         "Today is the day!": [
+            "Het is eindelijk zover!"
+         ],
+         "Today it's time for %1$s!": [
+            "Vandaag is het tijd voor %1$s!"
+         ],
+         "Total": [
+            "Totaal"
+         ],
+         "Valid from": [
+            "Geldig vanaf"
+         ],
+         "Valid until": [
+            "Geldig tot"
+         ],
+         "Want to order additional products?": [
+            "Extra producten nodig?"
+         ],
+         "We have sent your tickets to": [
+            "Je tickets zijn gestuurd naar"
+         ],
+         "WiretransferPaymentMethod": [
+            "Overboeking"
+         ],
+         "With this email we want to help you easily find your etickets, which you can download from https://%1$s/u/%2$s": [
+            "Deze email zorgt ervoor dat je snel je tickets kunt terugvinden; deze kun je downloaden vanaf https://%1$s/u/%2$s"
+         ],
+         "YOUR INVENTID": [
+            "JOUW INVENTID"
+         ],
+         "You have started the following orders with us.": [
+            "U heeft de volgende orders bij ons gestart."
+         ],
+         "Your E-mail address": [
+            "Je emailadres"
+         ],
+         "Your etickets can be downloaded from https://%1$s/downloads/u/%2$s": [
+            "Je etickets kun je downloaden vanaf https://%1$s/downloads/u/%2$s"
+         ],
+         "Your etickets for %1$s - inventid": [
+            "Jouw etickets voor %1$s - inventid"
+         ],
+         "Your name": [
+            "Je naam"
+         ],
+         "Your personal data": [
+            "Je gegevens"
+         ],
+         "Your personal page": [
+            "Jouw persoonlijke pagina"
+         ],
+         "Your purchase for %1$s was processed successfully.": [
+            "Je aankoop voor %1$s is succesvol afgerond."
+         ],
+         "Your tickets are ready for download on your personal page.": [
+            "Je kunt je etickets downloaden vanaf je persoonlijke pagina."
+         ],
+         "active": [
+            "actief"
+         ],
+         "cancelled": [
+            "geannuleerd"
+         ],
+         "completed": [
+            "voltooid"
+         ],
+         "excluding fees": [
+            "exclusief transactiekosten"
+         ],
+         "expired": [
+            "verlopen"
+         ],
+         "for %1$s": [
+            "voor %1$s"
+         ],
+         "inactive": [
+            "inactief"
+         ],
+         "inventid hopes you will enjoy %1$s!": [
+            "inventid wenst je alvast veel plezier op %1$s!"
+         ],
+         "inventid works as a third party for %1$s. inventid focuses on providing entrance tickets for (closed) events. For more information:": [
+            "inventid fungeert als derde partij namens %1$s. inventid richt zich op het verstrekken van toegangsbewijzen voor (besloten) evenementen. Voor meer informatie:"
+         ],
+         "open": [
+            "open"
+         ],
+         "or": [
+            "of"
+         ],
+         "refunded": [
+            "teruggeboekt"
+         ],
+         "sales channel": [
+            "verkoopkanaal"
+         ],
+         "success": [
+            "succesvol"
+         ]
+      }
+   }
+}

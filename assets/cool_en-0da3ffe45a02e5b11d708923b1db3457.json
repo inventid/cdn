@@ -1,0 +1,332 @@
+{
+   "domain": "messages",
+   "locale_data": {
+      "messages": {
+         "": {
+            "domain": "messages",
+            "plural_forms": "nplurals=2; plural=(n != 1);",
+            "lang": "en"
+         },
+         "Additional information": [
+            null,
+            "Additional information"
+         ],
+         "Administration fee": [
+            null,
+            "Administration fee"
+         ],
+         "Back": [
+            null,
+            "Back"
+         ],
+         "BancontactmrcashBuckarooPaymentMethod": [
+            null,
+            "Bancontact Mr Cash"
+         ],
+         "BancontactmrcashMolliePaymentMethod": [
+            null,
+            "Bancontact Mr Cash"
+         ],
+         "Below you will find a summary of your order.": [
+            null,
+            "Below you will find a summary of your order."
+         ],
+         "BitcoinMolliePaymentMethod": [
+            null,
+            "Bitcoin"
+         ],
+         "Change password": [
+            null,
+            "Change password"
+         ],
+         "Checkout": [
+            null,
+            "Checkout"
+         ],
+         "ClientInventidPaymentMethod": [
+            null,
+            "Internal payment"
+         ],
+         "Connect with Facebook": [
+            null,
+            "Connect with Facebook"
+         ],
+         "CreditcardMolliePaymentMethod": [
+            null,
+            "Creditcard"
+         ],
+         "Current password": [
+            null,
+            "Current password"
+         ],
+         "Currently, we have the following information about you on file.": [
+            null,
+            "Currently, we have the following information about in our system."
+         ],
+         "Date": [
+            null,
+            "Date"
+         ],
+         "DemoInventidPaymentMethod": [
+            null,
+            "Demo"
+         ],
+         "Earlier you have bought products using the following shops.": [
+            null,
+            "Earlier you have bought products using the following shops."
+         ],
+         "Etickets are ready for download for the following products.": [
+            null,
+            "Etickets are ready for download for the following products."
+         ],
+         "Event": [
+            null,
+            "Event"
+         ],
+         "Hi %1$s,": [
+            null,
+            "Hi %1$s,"
+         ],
+         "IdealRaboPaymentMethod": [
+            null,
+            "iDeal"
+         ],
+         "In case (some of this) information is incorrect, you may contact our support desk to change it.": [
+            null,
+            "In case (some of this) information is incorrect, you may contact our support desk to change it."
+         ],
+         "In case something is not entirely clear, please do contact our support desk. These hipster boys and smooth girls are working around the clock to answer your question as soon as possible": [
+            null,
+            "In case something is not entirely clear, please do contact our support desk. These hipster boys and smooth girls are working around the clock to answer your question as soon as possible."
+         ],
+         "Let's go social": [
+            null,
+            "Let's go social"
+         ],
+         "Looking forward to go with friends? Let them know and share the event on Facebook!": [
+            null,
+            "Looking forward to go with friends? Let them know and share the event on Facebook!"
+         ],
+         "Mobile ticket": [
+            null,
+            "Mobile ticket"
+         ],
+         "Name": [
+            null,
+            "Name"
+         ],
+         "New password": [
+            null,
+            "New password"
+         ],
+         "Next": [
+            null,
+            "Next"
+         ],
+         "No name or email address was supplied. Paying is not yet possible.": [
+            null,
+            "No name or email address was supplied. Paying is not yet possible."
+         ],
+         "No products were selected. Paying is not yet possible.": [
+            null,
+            "No products were selected. Paying is not yet possible."
+         ],
+         "On this sale the %1$sTerms and conditions%2$s of inventid are applicable": [
+            null,
+            "On this sale the %1$sTerms and conditions%2$s of inventid are applicable."
+         ],
+         "Order": [
+            null,
+            "Order"
+         ],
+         "Others also bought": [
+            null,
+            "Others also bought"
+         ],
+         "PDF": [
+            null,
+            ""
+         ],
+         "Password": [
+            null,
+            "Password"
+         ],
+         "Pay using %1$s": [
+            null,
+            "Pay directly using %1$s"
+         ],
+         "PaypalBuckarooPaymentMethod": [
+            null,
+            "PayPal"
+         ],
+         "PaypalMolliePaymentMethod": [
+            null,
+            "Paypal"
+         ],
+         "Pick your bank": [
+            null,
+            "Pick your bank"
+         ],
+         "Please note, this is a demo shop!": [
+            null,
+            "Please note, this is a demo shop!"
+         ],
+         "Price": [
+            null,
+            "Price"
+         ],
+         "Product": [
+            null,
+            "Product"
+         ],
+         "Quantity": [
+            null,
+            "Quantity"
+         ],
+         "Repeat new password": [
+            null,
+            "Repeat new password"
+         ],
+         "Sales channel": [
+            null,
+            "Sales channel"
+         ],
+         "Save": [
+            null,
+            "Save"
+         ],
+         "Select one": [
+            null,
+            "Select one"
+         ],
+         "Set password": [
+            null,
+            "Set password"
+         ],
+         "Share on Facebook": [
+            null,
+            "Share on Facebook"
+         ],
+         "Shop": [
+            null,
+            "Sales channel"
+         ],
+         "So, if you got a question (or if you are just curious of a supporter, just send an email to %1$s. Also tell us your order number, the name of the event, and if useful, a screenshot of your payment": [
+            null,
+            "So, if you got a question, just send an email to %1$s. Also tell us your order number, the name of the event, and if applicable, a screenshot of your payment."
+         ],
+         "Something unclear or there seems to be an error? Contact our support desk directly through %1$s and don't forget to tell us your order number (#%2$s).": [
+            null,
+            "Something unclear or there seems to be an error? Please contact our support desk directly through %1$s. In your communication, please also mention your order number (#%2$s)."
+         ],
+         "Status": [
+            null,
+            "Status"
+         ],
+         "Support": [
+            null,
+            "Support"
+         ],
+         "Terms and conditions:": [
+            null,
+            "Terms and conditions:"
+         ],
+         "The status of your payment is:": [
+            null,
+            "The status of your payment is:"
+         ],
+         "This personal page allows you to easily download your tickets, view your data, and get insight in yuor order history. If required, you can always contact our support desk.": [
+            null,
+            "This personal page allows you to easily download your tickets, view your data, and get insight in your order history. If required, you can always contact our support desk."
+         ],
+         "This sales channel requires authentication": [
+            null,
+            "This sales channel requires authentication"
+         ],
+         "Ticketshop by inventid": [
+            null,
+            "Ticketshop by inventid"
+         ],
+         "Token": [
+            null,
+            "Token"
+         ],
+         "Total": [
+            null,
+            "Total"
+         ],
+         "Total' | i18n < $ }} <small>({{ 'excluding fees": [
+            null,
+            ""
+         ],
+         "We have sent your tickets to": [
+            null,
+            "We have sent your tickets to"
+         ],
+         "WiretransferPaymentMethod": [
+            null,
+            "Wire transfer"
+         ],
+         "You have started the following orders with us.": [
+            null,
+            "You have started the following orders with us."
+         ],
+         "Your E-mail address": [
+            null,
+            "Your E-mail address"
+         ],
+         "Your most recent payment was %1$s": [
+            null,
+            "The status of your payment is %1$s."
+         ],
+         "Your name": [
+            null,
+            "Your name"
+         ],
+         "Your personal data": [
+            null,
+            "Your personal data"
+         ],
+         "Your personal page": [
+            null,
+            "Your personal page"
+         ],
+         "cancelled": [
+            null,
+            "cancelled"
+         ],
+         "completed": [
+            null,
+            "completed"
+         ],
+         "excluding fees": [
+            null,
+            "Excluding fees"
+         ],
+         "expired": [
+            null,
+            "expired"
+         ],
+         "open": [
+            null,
+            "open"
+         ],
+         "or": [
+            null,
+            "or"
+         ],
+         "refunded": [
+            null,
+            "refunded"
+         ],
+         "sales channel": [
+            null,
+            "sales channel"
+         ],
+         "success": [
+            null,
+            "successful"
+         ]
+      }
+   }
+}

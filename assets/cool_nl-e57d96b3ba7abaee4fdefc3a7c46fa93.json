@@ -1,0 +1,312 @@
+{
+   "domain": "messages",
+   "locale_data": {
+      "messages": {
+         "": {
+            "domain": "messages",
+            "plural_forms": "nplurals=2; plural=(n != 1);",
+            "lang": "nl"
+         },
+         "success": [
+            null,
+            "succesvol"
+         ],
+         "completed": [
+            null,
+            "voltooid"
+         ],
+         "expired": [
+            null,
+            "verlopen"
+         ],
+         "cancelled": [
+            null,
+            "geannuleerd"
+         ],
+         "open": [
+            null,
+            "open"
+         ],
+         "refunded": [
+            null,
+            "teruggeboekt"
+         ],
+         "IdealRaboPaymentMethod": [
+            null,
+            "iDeal"
+         ],
+         "PaypalBuckarooPaymentMethod": [
+            null,
+            "PayPal"
+         ],
+         "BancontactmrcashBuckarooPaymentMethod": [
+            null,
+            "Bancontact Mr Cash"
+         ],
+         "WiretransferPaymentMethod": [
+            null,
+            "Overboeking"
+         ],
+         "CreditcardMolliePaymentMethod": [
+            null,
+            "Creditcard"
+         ],
+         "BitcoinMolliePaymentMethod": [
+            null,
+            "Bitcoin"
+         ],
+         "DemoInventidPaymentMethod": [
+            null,
+            "Demo"
+         ],
+         "BancontactmrcashMolliePaymentMethod": [
+            null,
+            "Bancontact Mr Cash"
+         ],
+         "PaypalMolliePaymentMethod": [
+            null,
+            "PayPal"
+         ],
+         "ClientInventidPaymentMethod": [
+            null,
+            "Interne betaling"
+         ],
+         "Your personal page": [
+            null,
+            "Jouw persoonlijke pagina"
+         ],
+         "Ticketshop by inventid": [
+            null,
+            "Ticketshop by inventid"
+         ],
+         "Share on Facebook": [
+            null,
+            "Deel op Feestboek"
+         ],
+         "Etickets are ready for download for the following products.": [
+            null,
+            "Voor de volgende producten kunt u uw E-tickets downloaden."
+         ],
+         "Name": [
+            null,
+            "Naam"
+         ],
+         "Date": [
+            null,
+            "Datum"
+         ],
+         "You have started the following orders with us.": [
+            null,
+            "U heeft de volgende orders bij ons gestart."
+         ],
+         "Event": [
+            null,
+            "Evenement"
+         ],
+         "Shop": [
+            null,
+            "Verkoopkanaal"
+         ],
+         "Order number": [
+            null,
+            "Ordernummer"
+         ],
+         "Status": [
+            null,
+            "Status"
+         ],
+         "Earlier you have bought products using the following shops.": [
+            null,
+            "In het verleden heeft u via de volgende verkoopkanalen producten aangeschaft."
+         ],
+         "Let's go social": [
+            null,
+            "Let's go social"
+         ],
+         "Looking forward to go with friends? Let them know and share the event on Facebook!": [
+            null,
+            "Zin om met met vrienden te gaan? Deel dan het evenement op Facebook!"
+         ],
+         "Support": [
+            null,
+            "Support"
+         ],
+         "In case something is not entirely clear, please do contact our support desk. These hipster boys and smooth girls are working around the clock to answer your question as soon as possible": [
+            null,
+            "Mocht er iets niet geheel duidelijk zijn, neem dan vooral contact op met onze helpdesk! Deze attente jongens en vlotte meiden staan dag en nacht voor je klaar om je vraag zo snel mogelijk te beantwoorden."
+         ],
+         "So, if you got a question (or if you are just curious of a supporter, just send an email to %1$s. Also tell us your order number, the name of the event, and if useful, a screenshot of your payment": [
+            null,
+            "Dus, indien je een vraag of probleem hebt (of je gewoon benieuwd ben naar een supporter), kun je gewoon een mail sturen naar %1$s. Vermeld in ieder geval even je ordernummer, de naam van het evenement en (indien toepasselijk) een screenshot van de betaling."
+         ],
+         "Your most recent payment was %1$s": [
+            null,
+            "De eindstatus van je betaling is %1$s."
+         ],
+         "Hi %1$s,": [
+            null,
+            "Beste %1$s,"
+         ],
+         "Currently, we have the following information about you on file.": [
+            null,
+            "Op dit moment staat de volgende informatie van je bij ons in het systeem."
+         ],
+         "In case (some of this) information is incorrect, you may contact our support desk to change it.": [
+            null,
+            "In het geval dat hiervan iets niet correct is, neem dan contact op met onze support."
+         ],
+         "Your name": [
+            null,
+            "Je naam"
+         ],
+         "Your E-mail address": [
+            null,
+            "Je E-mailadres"
+         ],
+         "Change password": [
+            null,
+            "Wijzig wachtword"
+         ],
+         "Current password": [
+            null,
+            "Huidig wachtwoord"
+         ],
+         "New password": [
+            null,
+            "Nieuw wachtwoord"
+         ],
+         "Repeat new password": [
+            null,
+            "Herhaal nieuwe wachtwoord"
+         ],
+         "Change": [
+            null,
+            "Wijzig"
+         ],
+         "This personal page allows you to easily download your tickets, view your data, and get insight in yuor order history. If required, you can always contact our support desk.": [
+            null,
+            "Via deze persoonlijke pagina kunt je eenvoudig je E-tickets downloaden, je data inzien en je ordergeschiedenis raadplegen. Indien nodig kunt je ook direct contact opnemen met onze klantenservice."
+         ],
+         "sales channel": [
+            null,
+            "verkoopkanaal"
+         ],
+         "Back": [
+            null,
+            "Terug"
+         ],
+         "Next": [
+            null,
+            "Verder"
+         ],
+         "Pick your bank": [
+            null,
+            "Kies je bank"
+         ],
+         "Please wait while we prepare your payment": [
+            null,
+            "Even wachten, we maken nu je betaling aan"
+         ],
+         "This sales channel requires authentication": [
+            null,
+            "Dit verkoopkanaal vereist authenticatie"
+         ],
+         "Password": [
+            null,
+            "Wachtwoord"
+         ],
+         "Token": [
+            null,
+            "Token"
+         ],
+         "Pay": [
+            null,
+            "Betaal"
+         ],
+         "Checkout": [
+            null,
+            "Kassa"
+         ],
+         "Administration fee": [
+            null,
+            "Administratiekosten"
+         ],
+         "Subtotal": [
+            null,
+            "Subtotaal"
+         ],
+         "Transaction costs": [
+            null,
+            "Transactiekosten"
+         ],
+         "Others also bought": [
+            null,
+            "Anderen kochten ook"
+         ],
+         "Total": [
+            null,
+            "Totaal"
+         ],
+         "No name or email address was supplied. Paying is not yet possible.": [
+            null,
+            "Je hebt nog geen naam of E-mailadres ingevoerd. Betalen is dus ook nog niet mogelijk."
+         ],
+         "No products were selected. Paying is not yet possible.": [
+            null,
+            "Je hebt nog geen producten geselecteerd. Betalen is dus ook nog niet mogelijk."
+         ],
+         "Pay directly using %1$s": [
+            null,
+            "Betaal direct met %1$s"
+         ],
+         "Product": [
+            null,
+            "Product"
+         ],
+         "Price": [
+            null,
+            "Prijs"
+         ],
+         "Quantity": [
+            null,
+            "Aantal"
+         ],
+         "Your personal data": [
+            null,
+            "Je gegevens"
+         ],
+         "Connect with Facebook": [
+            null,
+            "Verbind met Facebook"
+         ],
+         "or": [
+            null,
+            "of"
+         ],
+         "Terms and conditions:": [
+            null,
+            "Algemene voorwaarden"
+         ],
+         "On this sale the %1$sTerms and conditions%2$s of inventid are applicable": [
+            null,
+            "Op deze verkoop zijn de %1$sAlgemene Voorwaarden%2$s van inventid van toepassing"
+         ],
+         "The status of your payment is %1$s": [
+            null,
+            "De eindstatus van je betaling is %1$s"
+         ],
+         "We have sent your tickets to %1$s.": [
+            null,
+            "Je tickets zijn gestuurd naar %1$s."
+         ],
+         "Below you will find a summary of your order.": [
+            null,
+            "Hieronder staat een overzicht van je bestelling."
+         ],
+         "Something unclear or there seems to be an error? Contact our support desk directly through %1$s and don't forget to tell us your order number (#%2$s).": [
+            null,
+            "Is er iets onduidelijk of lijkt er iets misgegaan? Neem direct contact op met de helden van onze supportafdeling via %1$s. Vermeld in je E-mail ook meteen je ordernummer (#%2$s)."
+         ]
+      }
+   }
+}

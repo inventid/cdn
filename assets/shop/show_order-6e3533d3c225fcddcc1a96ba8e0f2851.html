@@ -1,0 +1,86 @@
+<div>
+  <div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-12">
+        Kassa
+      </div>
+    </div>
+
+    <div class="panel-body">
+      <div class="row list-item" rv-each-entry="quantities">
+        <div class="visible-xs-block col-xs-1 text-right">
+          {{ entry.quantity }}x
+        </div>
+        <div class="col-xs-6 col-sm-8">
+          {{ entry.shopProduct:product:name }}
+        </div>
+        <div class="hidden-xs col-sm-2 text-right">
+          {{ entry.quantity }} x {{ entry.shopProduct:bruto | currency }}
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right">
+          {{ entry.bruto | currency }}
+        </div>
+      </div>
+      <div class="row list-item">
+        <div class="col-xs-8 col-sm-10">
+          Administratiekosten
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right">
+          {{ order:fee | currency }}
+        </div>
+      </div>
+      <div class="row list-item">
+        <div class="col-xs-8 col-sm-10 bold">
+          Subtotaal
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right bold">
+          {{ bruto | currency }}
+        </div>
+      </div>
+      <div class="row list-item">
+        <div class="col-xs-8 col-sm-10">
+          Transactiekosten
+          <span class="hidden-xs">{{ shop:preferred_payment_method:name | payment_method }}</span>
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right">
+          {{ fee | currency }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" rv-show="shop:checkout_category:id">
+    <div class="panel-heading row">
+      <div class="col-sm-12">Anderen kochten ook</div>
+    </div>
+
+    <div class="panel-body" rv-view="checkoutProductsView">
+      <!-- Here be the listing of products in the shop -->
+    </div>
+  </div>
+
+  <div class="panel-body" style="padding-top: 0px;">
+    <div class="row list-item">
+      <div class="col-xs-8 col-sm-10 bold">
+        Totaal
+      </div>
+      <div class="col-xs-4 col-sm-2 text-right bold">
+        {{ netto | currency }}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 error text-center"
+       rv-show="order:user.allowedToPay | negate < order:user:name order:user:email_address">
+    <i class="fa fa-warning"></i>
+    Je hebt nog geen naam of emailadres ingevuld in de vorige stap. Betalen is nog niet mogelijk.
+  </div>
+  <div class="clearfix">
+      <span class="btn btn-primary pay-preferred pull-right"
+            rv-class-disabled="order:user.allowedToPay | negate < order:user:name order:user:email_address">
+          <i class="fa fa-arrow-circle-right"></i>
+           Betaal direct met {{ shop:preferred_payment_method:name | payment_method }}
+        </span>
+  </div>
+
+</div>

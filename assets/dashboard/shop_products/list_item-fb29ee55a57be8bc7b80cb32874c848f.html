@@ -1,0 +1,34 @@
+<div class="row list-item">
+  <div class="col-xs-4">
+    {{ model:product:name }}
+  </div>
+
+  <div class="col-xs-3 no-cut">
+    <div class="row">
+      <div class="col-xs-1 no-cut">&euro;</div>
+      <div class="col-xs-10">
+        <span class="form-control-static" rv-show="editable | negate">{{ model:price_float | number 1 2 < model:price }}</span>
+        <input type="text" class="form-control" rv-show="editable" placeholder="0,00" pattern="^[0-9]+[.,][0-9]*$" rv-value="model:price_float | number 1 2 < model:price" />
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-3 no-cut">
+    <span class="form-control-static" rv-show="editable | negate">{{ model:max_quantity | number }}</span>
+    <input type="number" class="form-control" rv-show="editable" placeholder="0" rv-value="model:max_quantity | number 1 0" />
+  </div>
+
+  <div class="col-xs-2 no-cut text-right">
+    <span class="btn btn-round edit-shop-product" rv-show="editable | negate">
+      <i class="fa fa-edit"></i>
+    </span>
+
+    <span class="btn save-shop-product" rv-show="editable">
+      <i class="fa fa-check"></i>
+    </span>
+
+    <span class="btn destroy-shop-product">
+      <i class="fa fa-trash"></i>
+    </span>
+  </div>
+</div>

@@ -1,0 +1,212 @@
+{
+   "domain": "messages",
+   "locale_data": {
+      "messages": {
+         "": {
+            "domain": "messages",
+            "plural_forms": "nplurals=2; plural=(n != 1);",
+            "lang": "en"
+         },
+         "success": [
+            null,
+            "successful"
+         ],
+         "completed": [
+            null,
+            "completed"
+         ],
+         "expired": [
+            null,
+            "expired"
+         ],
+         "cancelled": [
+            null,
+            "cancelled"
+         ],
+         "open": [
+            null,
+            "open"
+         ],
+         "refunded": [
+            null,
+            "refunded"
+         ],
+         "IdealRaboPaymentMethod": [
+            null,
+            "iDeal"
+         ],
+         "PaypalBuckarooPaymentMethod": [
+            null,
+            "PayPal"
+         ],
+         "BancontactmrcashBuckarooPaymentMethod": [
+            null,
+            "Bancontact Mr Cash"
+         ],
+         "WiretransferPaymentMethod": [
+            null,
+            "Wire transfer"
+         ],
+         "CreditcardMolliePaymentMethod": [
+            null,
+            "Creditcard"
+         ],
+         "BitcoinMolliePaymentMethod": [
+            null,
+            "Bitcoin"
+         ],
+         "DemoInventidPaymentMethod": [
+            null,
+            "Demo"
+         ],
+         "BancontactmrcashMolliePaymentMethod": [
+            null,
+            "Bancontact Mr Cash"
+         ],
+         "PaypalMolliePaymentMethod": [
+            null,
+            "Paypal"
+         ],
+         "ClientInventidPaymentMethod": [
+            null,
+            "Internal payment"
+         ],
+         "Your personal page": [
+            null,
+            "Your personal page"
+         ],
+         "sales channel": [
+            null,
+            "sales channel"
+         ],
+         "Back": [
+            null,
+            "Back"
+         ],
+         "Ticketshop by inventid": [
+            null,
+            "Ticketshop by inventid"
+         ],
+         "Next": [
+            null,
+            "Next"
+         ],
+         "Pick your bank": [
+            null,
+            "Pick your bank"
+         ],
+         "This sales channel requires authentication": [
+            null,
+            "This sales channel requires authentication"
+         ],
+         "Password": [
+            null,
+            "Password"
+         ],
+         "Token": [
+            null,
+            "Token"
+         ],
+         "Pay": [
+            null,
+            "Pay"
+         ],
+         "Checkout": [
+            null,
+            "Checkout"
+         ],
+         "Administration fee": [
+            null,
+            "Administration fee"
+         ],
+         "Subtotal": [
+            null,
+            "Subtotal"
+         ],
+         "Transaction costs": [
+            null,
+            "Transaction costs"
+         ],
+         "Others also bought": [
+            null,
+            "Others also bought"
+         ],
+         "Total": [
+            null,
+            "Total"
+         ],
+         "No name or email address was supplied. Paying is not yet possible.": [
+            null,
+            "No name or email address was supplied. Paying is not yet possible."
+         ],
+         "No products were selected. Paying is not yet possible.": [
+            null,
+            "No products were selected. Paying is not yet possible."
+         ],
+         "Pay directly using %1$s": [
+            null,
+            "Pay directly using %1$s"
+         ],
+         "Product": [
+            null,
+            "Product"
+         ],
+         "Price": [
+            null,
+            "Price"
+         ],
+         "Quantity": [
+            null,
+            "Quantity"
+         ],
+         "Your personal data": [
+            null,
+            "Your personal data"
+         ],
+         "Connect with Facebook": [
+            null,
+            "Connect with Facebook"
+         ],
+         "or": [
+            null,
+            "or"
+         ],
+         "Your name": [
+            null,
+            "Your name"
+         ],
+         "Your E-mail address": [
+            null,
+            "Your E-mail address"
+         ],
+         "Terms and conditions:": [
+            null,
+            "Terms and conditions:"
+         ],
+         "On this sale the %1$sTerms and conditions%2$s of inventid are applicable": [
+            null,
+            "On this sale the %1$sTerms and conditions%2$s of inventid are applicable."
+         ],
+         "Hi %1$s,": [
+            null,
+            "Dear %1$s,"
+         ],
+         "The status of your payment is %1$s": [
+            null,
+            "The status of your payment is %1$s"
+         ],
+         "We have sent your tickets to %1$s.": [
+            null,
+            "We have sent your tickets to %1$s."
+         ],
+         "Below you will find a summary of your order.": [
+            null,
+            "Below you will find a summary of your order."
+         ],
+         "Something unclear or there seems to be an error? Contact our support desk directly through %1$s and don't forget to tell us your order number (#%2$s).": [
+            null,
+            "Something unclear or there seems to be an error? Please contact our support desk directly through %1$s. In your communication, please also mention your order number (#%2$s)."
+         ]
+      }
+   }
+}

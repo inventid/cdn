@@ -1,0 +1,8 @@
+<div class="clickable row list-item">
+  <div class="col-xs-8">
+    {{ model:name }}
+  </div>
+  <div class="col-xs-4">
+    {{ model:valid_at | time model:event:timezone }}
+  </div>
+</div>

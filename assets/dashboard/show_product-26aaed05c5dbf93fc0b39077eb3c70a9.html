@@ -1,0 +1,104 @@
+<div>
+  <div class="panel panel-primary">
+
+    <div class="panel-heading">
+      {{ 'Details' | i18n < $ }}
+
+      <div class="btn panel-heading-btn pull-right edit-product" rv-if="editable | negate">
+        {{ 'Edit' | i18n < $ }}
+        <i class="fa fa-pencil"></i>
+      </div>
+
+      <div class="btn panel-heading-btn pull-right save-product" rv-if="editable">
+        {{ 'Save' | i18n < $ }}
+        <i class="fa fa-check"></i>
+      </div>
+    </div>
+
+    <div class="panel-body">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="col-xs-3 control-label" for="product-name">{{ 'Product name' | i18n < $ }}</label>
+          <div class="col-xs-9">
+            <p class="form-control-static" rv-show="editable | negate">{{ product:name }}</p>
+            <input class="form-control" rv-show="editable" id="product-name" type="text" rv-value="product:name" rv-placeholder="'Product name' | i18n < $" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-xs-3 control-label">{{ 'Valid from' | i18n < $ }}</label>
+          <div class="date" rv-class-col-xs-9="product:valid_from | negate" rv-class-col-xs-8="product:valid_from">
+            <p class="form-control-static" rv-show="editable | negate">{{ product:valid_from | time product:event:timezone }}</p>
+            <input type="text" class="form-control" data-attribute="valid_from" rv-show="editable" rv-value="product:valid_from | time product:event:timezone" />
+          </div>
+          <div class="col-xs-1" rv-show="product:valid_from | and editable < editable">
+            <span class="btn btn-round clear-date" data-attribute="valid_from">
+              <i class="fa fa-trash"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-xs-3 control-label">{{ 'Valid until' | i18n < $ }}</label>
+          <div class="date" rv-class-col-xs-9="product:valid_until | negate" rv-class-col-xs-8="product:valid_until">
+            <p class="form-control-static" rv-show="editable | negate">{{ product:valid_until | time product:event:timezone }}</p>
+            <input type="text" class="form-control" data-attribute="valid_until" rv-show="editable" rv-value="product:valid_until | time product:event:timezone" />
+          </div>
+          <div class="col-xs-1" rv-show="product:valid_until | and editable < editable">
+            <span class="btn btn-round clear-date" data-attribute="valid_until">
+              <i class="fa fa-trash"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-xs-3 control-label">{{ 'Doors close at' | i18n < $ }}</label>
+          <div class="date" rv-class-col-xs-9="product:doors_close_at | negate" rv-class-col-xs-8="product:doors_close_at">
+            <p class="form-control-static" rv-show="editable | negate">{{ product:doors_close_at | time product:event:timezone }}</p>
+            <input type="text" class="form-control" data-attribute="doors_close_at" rv-show="editable" rv-value="product:doors_close_at | time product:event:timezone" />
+          </div>
+          <div class="col-xs-1" rv-show="product:doors_close_at | and editable < editable">
+            <span class="btn btn-round clear-date" data-attribute="doors_close_at">
+              <i class="fa fa-trash"></i>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="panel panel-primary" rv-show="product:id">
+    <div class="panel-heading">
+      {{ 'Sales channels' | i18n < $ }}
+
+      <div class="btn-group pull-right">
+        <div class="btn panel-heading-btn" data-toggle="dropdown" aria-expanded="false">
+          {{ 'Add' | i18n < $ }}
+          <i class="fa fa-plus-circle"></i>
+        </div>
+
+        <div class="dropdown-menu dropdown-menu-right" role="menu">
+          <div rv-each-shop="shops.models" rv-show="shop | call shopFilter < usedShops.length" class="list-item clickable create-shop-product" rv-data-shop-id="shop:id">
+            <div class="col-xs-12">{{ shop:name }}</div>
+          </div>
+          <div class="list-item clickable create-shop">
+            <div class="col-xs-12">
+              <i class="fa fa-plus"></i>
+              {{ 'Create new' | i18n < $ }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel-body list">
+      <div rv-view="productShopsView">
+        <!-- Here be the different shops of the event with the options etc -->
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

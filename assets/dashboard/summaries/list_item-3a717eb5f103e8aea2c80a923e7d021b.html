@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+  <div class="panel-heading clickable toggle">
+    Overzicht voor {{ model.id }}
+  </div>
+  <div class="panel-body" rv-show="visible">
+    <div class="row list-item">
+      <div class="col-xs-6 col-sm-3">
+        Verkopen
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        {{ model:sales }}
+      </div>
+    </div>
+    <div class="row list-item">
+      <div class="col-xs-6 col-sm-3">
+        Interne omzet
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        {{ model:our_revenue | currency }}
+      </div>
+    </div>
+    <div class="row list-item">
+      <div class="col-xs-6 col-sm-3">
+        Totaalomzet
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        {{ model:total_revenue | currency }}
+      </div>
+    </div>
+  </div>
+</div>

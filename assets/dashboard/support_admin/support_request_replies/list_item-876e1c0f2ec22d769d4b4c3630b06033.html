@@ -1,0 +1,15 @@
+<div class="panel">
+  <div class="panel-heading row" rv-class-external="isExternal" rv-class-internal="isExternal | negate">
+    <div class="col-xs-12">
+      Door: {{model:user:name }}
+      <span rv-show="model:email_address">({{ model:email_address }})</span>
+      [<strong>{{ model:communication_type }}</strong>]
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <!-- Do not autoformat the next line, since that will cause useless newlines in the support admin -->
+      <div class="col-xs-12" style="white-space: pre-wrap;" rv-text="model:response | newlines"></div>
+    </div>
+  </div>
+</div>

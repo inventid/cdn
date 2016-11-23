@@ -1,0 +1,20 @@
+<div class="row list-item">
+  <div class="hidden-xs col-sm-6">{{ model:payment_method:name | i18n < $ }}</div>
+  <div class="hidden-xs col-sm-2 text-right italic">+ {{ fee | currency }}</div>
+  <div class="hidden-xs col-sm-2 text-right">{{ netto | currency }}</div>
+  <div class="hidden-xs col-sm-2 text-right">
+    <button class="btn btn-primary pay"
+            rv-disabled="order:user.allowedToPay | negate < order:user:name order:user:email_address">
+      <i class="fa fa-arrow-circle-right"></i>
+      {{ 'Pay' | i18n < $ }}
+    </button>
+  </div>
+  <div class="visible-xs-block col-xs-7">{{ model:payment_method:name | i18n < $ }}</div>
+  <div class="visible-xs-block col-xs-5">
+    <button class="btn btn-primary pay"
+            rv-disabled="order:user.allowedToPay | negate < order:user:name order:user:email_address">
+      <i class="fa fa-arrow-circle-right"></i>
+      {{ netto | currency }}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div>
+
+  <p>{{ 'The current status of order %1$s is %2$s | i18n order:id order:status < $ }}</p>
+
+  <div>
+    <div class="row" rv-each-entry="payments">
+      <div class="col-sm-2">{{entry:id}}</div>
+      <div class="col-sm-2">{{entry:method}}</div>
+      <div class="col-sm-2">{{entry:status}}</div>
+    </div>
+  </div>
+</div>

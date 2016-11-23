@@ -1,0 +1,48 @@
+<div>
+
+  <p rv-show="paymentStatus" class="success col-sm-12">{{ 'Your most recent payment was %1$s' | i18n paymentStatus < $ }}</p>
+
+  <p class="bold">{{ 'Hi %1$s,' | i18n user:name < $ }}</p>
+
+  <p>{{ 'Currently, we have the following information about you on file.' | i18n < $ }}<br>
+    {{ 'In case (some of this) information is incorrect, you may contact our support desk to change it.' | i18n < $ }}</p>
+
+  <div class="row">
+    <div class="col-xs-3">{{ 'Your name' | i18n < $ }}</div>
+    <div class="col-xs-3">{{ user:name }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">{{ 'Your E-mail address' | i18n < $ }}</div>
+    <div class="col-xs-3">{{ user:email_address }}</div>
+  </div>
+
+  <div>
+    <p class="toggle-password-box clickable" style="text-decoration: underline;">{{ 'Change password' | i18n < $ }}</p>
+
+    <div rv-show="passwordEdit" style="margin-bottom: 25px;">
+      <form>
+        <div class="row form-group" rv-show="user:has_password">
+          <div class="col-xs-5">
+            <input type="password" class="form-control" rv-value="user:old_password" rv-placeholder="'Current password' | i18n < $"/>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-5">
+            <input type="password" class="form-control" rv-value="user:password" rv-placeholder="'New password' | i18n < $"/>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-5">
+            <input type="password" class="form-control" rv-value="user:password_confirmation" rv-placeholder="'Repeat new password' | i18n < $"/></div>
+        </div>
+        <div class="row form-group">
+          <div class="col-xs-5">
+            <button class="full-width btn save-user">{{ 'Change' | i18n < $ }}</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <p>{{ 'This personal page allows you to easily download your tickets, view your data, and get insight in yuor order history. If required, you can always contact our support desk.' | i18n < $ }}</p>
+</div>

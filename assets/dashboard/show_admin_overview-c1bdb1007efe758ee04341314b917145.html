@@ -1,0 +1,58 @@
+<div>
+  <div class="panel panel-primary">
+    <div class="panel-heading clickable github">
+      <i class="fa fa-github fa-lg"></i>
+      Github issues
+      <i class="fa fa-external-link"></i>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="panel panel-primary no-margin-top">
+        <div class="panel-heading clickable support">
+          <i class="fa fa-medkit fa-lg"></i>
+          Open SupportRequests: {{ support_requests | countCollectionWithCondition 'status' 'open' }}
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal" role="form">
+
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input type="text" placeholder="Ordernummer" class="form-control order-number-actions">
+              </div>
+              <div class="col-xs-12 pull-down">
+                <button class="btn order-actions">Orderacties</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6">
+      <div class="panel panel-primary no-margin-top">
+        <div class="panel-heading clickable toggle">
+          Salesoverzicht
+        </div>
+        <div class="panel-body list">
+          <div rv-each-event="user:events">
+            <div class="row list-item" rv-if="event.hasCurrentSales < event:summaries">
+              <div class="col-xs-8">
+                {{ event:name }}
+              </div>
+              <div class="col-xs-2" rv-each-summary="event:summaries">
+                {{ summary:sales }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div rv-view="summariesView">
+    <!-- Here are the respective summaries -->
+  </div>
+</div>

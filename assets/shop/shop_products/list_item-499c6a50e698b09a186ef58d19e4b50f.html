@@ -1,0 +1,14 @@
+<div class="row list-item">
+  <div class="col-xs-4 col-sm-8">
+    {{ model:product:name }}
+  </div>
+  <div class="col-xs-4 col-sm-2 quantity text-right no-cut" rv-show="model:available">
+    <input class="form-control text-right" type="number" pattern="[0-9]*" min="0" rv-value="quantity | number | or 0" novalidate/>
+  </div>
+  <div class="col-xs-4 col-sm-2 quantity text-right no-cut list-item-fade" rv-show="model:available | negate">
+    <span class="bold">{{ 'Sold out!' | i18n < $ }}</span>
+  </div>
+  <div class="col-xs-4 col-sm-2 text-right no-cut">
+    {{ model:bruto | currency }}
+  </div>
+</div>

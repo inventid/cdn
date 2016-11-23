@@ -1,0 +1,11 @@
+<div class="row form-group list-item">
+  <div class="col-xs-4">
+    <input type="checkbox" rv-checked="selected" /> {{ model:name }}
+  </div>
+  <div class="col-xs-4" rv-show="selected">
+    <input type="text" rv-value="model:price" class="form-control" placeholder="Prijs in centen"/>
+  </div>
+  <div class="col-xs-4" rv-show="selected">
+    <input type="text" rv-value="model:max_quantity" class="form-control" placeholder="Aantal kaarten"/>
+  </div>
+</div>

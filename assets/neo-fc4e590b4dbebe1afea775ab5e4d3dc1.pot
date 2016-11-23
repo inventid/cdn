@@ -1,0 +1,335 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2015-02-05 10:58:+0000\n"
+"Project-Id-Version: inventid neo\n"
+"Language-Team: tech <tech@inventid.nl>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-03-31 12:27+0000"
+
+#: 
+msgid "Additional information"
+msgstr ""
+
+#: 
+msgid "Administration fee"
+msgstr ""
+
+#: 
+msgid "Back"
+msgstr ""
+
+#: 
+msgid "BancontactmrcashBuckarooPaymentMethod"
+msgstr ""
+
+#: 
+msgid "BancontactmrcashMolliePaymentMethod"
+msgstr ""
+
+#: 
+msgid "Below you will find a summary of your order."
+msgstr ""
+
+#: 
+msgid "BitcoinMolliePaymentMethod"
+msgstr ""
+
+#: 
+msgid "Change password"
+msgstr ""
+
+#: 
+msgid "Checkout"
+msgstr ""
+
+#: 
+msgid "ClientInventidPaymentMethod"
+msgstr ""
+
+#: 
+msgid "Connect with Facebook"
+msgstr ""
+
+#: 
+msgid "CreditcardMolliePaymentMethod"
+msgstr ""
+
+#: 
+msgid "Current password"
+msgstr ""
+
+#: 
+msgid "Currently, we have the following information about you on file."
+msgstr ""
+
+#: 
+msgid "Date"
+msgstr ""
+
+#: 
+msgid "DemoInventidPaymentMethod"
+msgstr ""
+
+#: 
+msgid "Earlier you have bought products using the following shops."
+msgstr ""
+
+#: 
+msgid "Etickets are ready for download for the following products."
+msgstr ""
+
+#: 
+msgid "Event"
+msgstr ""
+
+#: 
+msgid "Hi %1$s,"
+msgstr ""
+
+#: 
+msgid "IdealRaboPaymentMethod"
+msgstr ""
+
+#: 
+msgid "In case (some of this) information is incorrect, you may contact our support desk to change it."
+msgstr ""
+
+#: 
+msgid "In case something is not entirely clear, please do contact our support desk. These hipster boys and smooth girls are working around the clock to answer your question as soon as possible"
+msgstr ""
+
+#: 
+msgid "Let's go social"
+msgstr ""
+
+#: 
+msgid "Looking forward to go with friends? Let them know and share the event on Facebook!"
+msgstr ""
+
+#: 
+msgid "Mobile ticket"
+msgstr ""
+
+#: 
+msgid "Name"
+msgstr ""
+
+#: 
+msgid "New password"
+msgstr ""
+
+#: 
+msgid "Next"
+msgstr ""
+
+#: 
+msgid "No name or email address was supplied. Paying is not yet possible."
+msgstr ""
+
+#: 
+msgid "No products were selected. Paying is not yet possible."
+msgstr ""
+
+#: 
+msgid "On this sale the %1$sTerms and conditions%2$s of inventid are applicable"
+msgstr ""
+
+#: 
+msgid "One-time key"
+msgstr ""
+
+#: 
+msgid "Order"
+msgstr ""
+
+#: 
+msgid "Others also bought"
+msgstr ""
+
+#: 
+msgid "PDF"
+msgstr ""
+
+#: 
+msgid "Password"
+msgstr ""
+
+#: 
+msgid "Pay using %1$s"
+msgstr ""
+
+#: 
+msgid "PaypalBuckarooPaymentMethod"
+msgstr ""
+
+#: 
+msgid "PaypalMolliePaymentMethod"
+msgstr ""
+
+#: 
+msgid "Pick your bank"
+msgstr ""
+
+#: 
+msgid "Please note, this is a demo shop!"
+msgstr ""
+
+#: 
+msgid "Price"
+msgstr ""
+
+#: 
+msgid "Product"
+msgstr ""
+
+#: 
+msgid "Quantity"
+msgstr ""
+
+#: 
+msgid "Repeat new password"
+msgstr ""
+
+#: 
+msgid "Sales channel"
+msgstr ""
+
+#: 
+msgid "Save"
+msgstr ""
+
+#: 
+msgid "Select one"
+msgstr ""
+
+#: 
+msgid "Set password"
+msgstr ""
+
+#: 
+msgid "Share on Facebook"
+msgstr ""
+
+#: 
+msgid "Shop"
+msgstr ""
+
+#: 
+msgid "So, if you got a question (or if you are just curious of a supporter, just send an email to %1$s. Also tell us your order number, the name of the event, and if useful, a screenshot of your payment"
+msgstr ""
+
+#: 
+msgid "Sold out!"
+msgstr ""
+
+#: 
+msgid "Something unclear or there seems to be an error? Contact our support desk directly through %1$s and don't forget to tell us your order number (#%2$s)."
+msgstr ""
+
+#: 
+msgid "Status"
+msgstr ""
+
+#: 
+msgid "Support"
+msgstr ""
+
+#: 
+msgid "Terms and conditions:"
+msgstr ""
+
+#: 
+msgid "The status of your payment is:"
+msgstr ""
+
+#: 
+msgid "This personal page allows you to easily download your tickets, view your data, and get insight in yuor order history. If required, you can always contact our support desk."
+msgstr ""
+
+#: 
+msgid "This sales channel requires authentication"
+msgstr ""
+
+#: 
+msgid "Ticketshop by inventid"
+msgstr ""
+
+#: 
+msgid "Total"
+msgstr ""
+
+#: 
+msgid "Total' | i18n < $ }} <small>({{ 'excluding fees"
+msgstr ""
+
+#: 
+msgid "We have sent your tickets to"
+msgstr ""
+
+#: 
+msgid "WiretransferPaymentMethod"
+msgstr ""
+
+#: 
+msgid "You have started the following orders with us."
+msgstr ""
+
+#: 
+msgid "Your E-mail address"
+msgstr ""
+
+#: 
+msgid "Your most recent payment was %1$s"
+msgstr ""
+
+#: 
+msgid "Your name"
+msgstr ""
+
+#: 
+msgid "Your personal data"
+msgstr ""
+
+#: 
+msgid "Your personal page"
+msgstr ""
+
+#: 
+msgid "cancelled"
+msgstr ""
+
+#: 
+msgid "completed"
+msgstr ""
+
+#: 
+msgid "excluding fees"
+msgstr ""
+
+#: 
+msgid "expired"
+msgstr ""
+
+#: 
+msgid "open"
+msgstr ""
+
+#: 
+msgid "or"
+msgstr ""
+
+#: 
+msgid "refunded"
+msgstr ""
+
+#: 
+msgid "sales channel"
+msgstr ""
+
+#: 
+msgid "success"
+msgstr ""
+

@@ -1,0 +1,69 @@
+<div>
+  <nav class="navbar navbar-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="company" href="#">invent<span>id</span> <img alt="" height="34px" src="//cdn.inventid.nl/assets/logo_white-117dc7e352ee4864b438caa766cda4a2.png" />
+          <small class="hidden-xs">{{ 'Your personal page' | i18n < $ }}</small>
+          <small class="visible-xs-inline-block">{{ user:name }}</small>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="header row">
+      <nav class="shop-nav left col-sm-5 col-xs-12">
+        <div class="show-user nav-container">
+          <span class="fa-stack fa-lg previous nav-element active">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-downloads nav-container">
+          <span class="fa-stack fa-lg nav-element">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-cloud-download fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-orders nav-container">
+          <span class="fa-stack fa-lg previous nav-element">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-eur fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-shops nav-container">
+          <span class="fa-stack fa-lg previous nav-element">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="show-support nav-container" style="margin-left: 25px;">
+          <span class="fa-stack fa-lg previous nav-element">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+      </nav>
+
+      <div class="right hidden-xs col-sm-7 text-right">
+        <h1>{{ user:name }}</h1>
+      </div>
+    </div>
+
+
+    <div rv-view="view"></div>
+
+
+
+    <nav class="navbar navbar-bottom row">
+
+      <div class="col-xs-4 col-xs-offset-4 text-center credits">
+        {{ 'Ticketshop by inventid' | i18n < $ }}
+        <img alt="Ticketshop by inventid" height="32px" src="//cdn.inventid.nl/assets/logo_without_name-ced1e4957e28d5df477b338237e15386.png" />
+      </div>
+
+    </nav>
+
+  </div>
+</div>

@@ -1,0 +1,338 @@
+<div>
+  <div class="panel panel-primary" rv-show="#session:user:admin | negate">
+
+    <div class="panel-heading row bold clickable toggle-options">
+      <div class="col-xs-12">
+        <i class="fa fa-cogs"></i>
+        {{ 'Event options' | i18n < $ }}
+
+        <div class="pull-right">
+          <i class="fa fa-plus-square" rv-show="showOptions | negate"></i>
+          <i class="fa fa-minus-square" rv-show="showOptions"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-body list" rv-show="showOptions">
+      <div class="list-item row">
+        <div class="col-xs-8">
+          Wijzig instellingen zoals locatie en de naam
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary edit-event">
+            <i class="fa fa-cog"></i>
+            <span>Evenementinstellingen</span>
+          </div>
+        </div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-8">
+          CSV export van kaartkopers aanvragen
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary csv">
+            <i class="fa fa-database"></i>
+            <span>Genereer CSV export</span>
+          </div>
+        </div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-8">
+          Een voorbeeld eticket aanvragen
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary example-ticket">
+            <i class="fa fa-print"></i>
+            <span>Genereer eticket</span>
+          </div>
+        </div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-8">
+          Een mailing versturen
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary mailing">
+            <i class="fa fa-envelope-o"></i>
+            <span>Mailing versturen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-primary" rv-show="#session:user:admin">
+
+    <div class="panel-heading row bold internal clickable toggle-options">
+      <div class="col-xs-12">
+        <i class="fa fa-cogs"></i>
+        {{ 'Event options' | i18n < $ }}
+
+        <div class="pull-right">
+          <i class="fa fa-plus-square" rv-show="showOptions | negate"></i>
+          <i class="fa fa-minus-square" rv-show="showOptions"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-body list" rv-show="showOptions">
+      <div class="list-item row">
+        <div class="col-xs-8">
+          Wijzig organisatie-instellingen
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary edit-organization">
+            <i class="fa fa-cog"></i>
+            <span>Organisatieinstellingen</span>
+          </div>
+        </div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-8">
+          Wijzig instellingen zoals locatie en de naam
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary edit-event">
+            <i class="fa fa-cog"></i>
+            <span>Evenementinstellingen</span>
+          </div>
+        </div>
+      </div>
+      <div class="list-item row" style="height: 80px; line-height: 35px;">
+        <div class="col-xs-8 no-cut">
+          De eticketafbeelding dient 1400px breed en 800px hoog te zijn. Het formaat is JPEG.
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary btn-file-upload">
+            <i class="fa fa-plus"></i>
+            <span>Select eticket image</span>
+            <input type="file" name="image" class="ticket-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="list-item row">
+        <div class="col-xs-8">
+          CSV export aanvragen
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary csv">
+            <i class="fa fa-database"></i>
+            <span>Genereer CSV export</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-item row">
+        <div class="col-xs-8">
+          Gearchiveerde evenementen zijn niet meer zichtbaar voor klanten.
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary archive" rv-class-disabled="event:archived">
+            <i class="fa fa-trash"></i>
+            <span>Archiveer evenement</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-item row">
+        <div class="col-xs-8">
+          Welke producten zijn wanneer gebruikt?
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary checkin-count">
+            <i class="fa fa-database"></i>
+            <span>Overzicht productgebruik</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-item row">
+        <div class="col-xs-8">
+          Een voorbeeld eticket aanvragen
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary example-ticket">
+            <i class="fa fa-print"></i>
+            <span>Genereer eticket</span>
+          </div>
+        </div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-8">
+          Een mailing versturen
+        </div>
+        <div class="col-xs-4 no-cut">
+          <div class="btn btn-primary mailing">
+            <i class="fa fa-envelope-o"></i>
+            <span>Mailing versturen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-primary" rv-show="#session:user:admin">
+
+    <div class="panel-heading row bold internal clickable toggle-finance">
+      <div class="col-xs-12">
+        <i class="fa fa-eur"></i>
+        {{ 'Financial Overview' | i18n < $ }}
+
+        <div class="pull-right">
+          <i class="fa fa-plus-square" rv-show="showFinance | negate"></i>
+          <i class="fa fa-minus-square" rv-show="showFinance"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-body list" rv-show="showFinance">
+      <div class="list-item row bold">
+        <div class="col-xs-6">Baten</div>
+        <div class="col-xs-6">Lasten</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-3">Omzet evenement</div>
+        <div class="col-xs-3">{{ finances:event_revenue | currency }}</div>
+        <div class="col-xs-3">BTW transactiekosten</div>
+        <div class="col-xs-3">{{ finances:payment_fee_vat | currency }}</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-3">Omzet inventid</div>
+        <div class="col-xs-3">{{ finances:product_fee_revenue | plus
+          finances:order_fee_revenue | currency }}
+        </div>
+        <div class="col-xs-3">BTW product fee</div>
+        <div class="col-xs-3">{{ finances:product_fee_vat | currency }}</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-3">Transactiekosten</div>
+        <div class="col-xs-3">{{ finances:payment_fees | currency }}</div>
+        <div class="col-xs-3">BTW order fee</div>
+        <div class="col-xs-3">{{ finances:order_fee_vat | currency }}</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-3">Totaal inventid</div>
+        <div class="col-xs-3">{{ finances:product_fee_revenue | plus
+          finances:order_fee_revenue | plus finances:payment_fees | currency }}
+        </div>
+        <div class="col-xs-3">BTW fees</div>
+        <div class="col-xs-3">{{ finances:product_fee_vat | plus
+          finances:order_fee_vat | currency }}
+        </div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-3 col-xs-offset-6">Totaal BTW</div>
+        <div class="col-xs-3">{{ finances:order_fee_vat | plus
+          finances:product_fee_vat | plus finances:payment_fee_vat | currency }}
+        </div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-3 col-xs-offset-6">Transactiekosten excl btw</div>
+        <div class="col-xs-3">{{ finances:payment_fees | divide 1.21 | currency }}</div>
+      </div>
+      <div class="list-item row">
+        <div class="col-xs-3 col-xs-offset-6">Omzet evenement</div>
+        <div class="col-xs-3">{{ finances:event_revenue | currency }}</div>
+      </div>
+      <div class="list-item row bold">
+        <div class="col-xs-3">Totaal baten</div>
+        <div class="col-xs-3">{{ finances:product_fee_revenue | plus
+          finances:order_fee_revenue | plus finances:payment_fees | plus
+          finances:event_revenue | currency }}
+        </div>
+        <div class="col-xs-3">Totaal lasten</div>
+        <div class="col-xs-3">{{ finances:order_fee_vat | plus
+          finances:product_fee_vat | plus finances:payment_fees | plus
+          finances:event_revenue | currency }}
+        </div>
+      </div>
+
+      <div class="list-item row bold">
+        <div class="col-xs-3">Netto winst</div>
+        <div class="col-xs-3">{{ finances:product_fee_revenue | plus
+          finances:order_fee_revenue | minus finances:order_fee_vat | minus
+          finances:product_fee_vat | currency }}
+        </div>
+      </div>
+
+      <div class="list-item row" rv-each-payment_method="finances:payment_methods">
+        <div class="col-xs-6">{{ payment_method.payment_method }}</div>
+        <div class="col-xs-2">{{ payment_method.bruto | currency }}</div>
+        <div class="col-xs-2 italic">Cost</div>
+        <div class="col-xs-2 italic">{{ payment_method.costs | currency }}</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      {{ 'Products' | i18n < $ }}
+
+      <div class="btn panel-heading-btn pull-right create-product">
+        {{ 'New' | i18n < $ }}
+        <i class="fa fa-plus-circle"></i>
+      </div>
+    </div>
+
+    <div class="panel-body list">
+
+      <div class="row list-item list-item-heading">
+        <div class="col-xs-4">{{ 'Product' | i18n < $ }}</div>
+        <div class="col-xs-4">{{ 'Sales' | i18n < $ }}</div>
+        <div class="col-xs-4">{{ 'Revenue' | i18n < $ }}</div>
+      </div>
+
+      <div rv-view="productsView">
+        <!-- Here be the listing of products in the shop -->
+      </div>
+
+      <div class="list-item list-item-summary row">
+        <div class="col-xs-4">{{ 'Total' | i18n < $ }}</div>
+        <div class="col-xs-4">{{ event.total.sold_quantity }}</div>
+        <div class="col-xs-4">{{ event.total.revenue | currency }}</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      {{ 'Sales channels' | i18n < $ }}
+
+      <div class="btn panel-heading-btn pull-right">
+        {{ 'New' | i18n < $ }}
+        <i class="fa fa-plus-circle create-shop"></i>
+      </div>
+    </div>
+
+    <div class="panel-body list">
+      <div class="row list-item list-item-heading">
+        <div class="col-xs-8 bold">{{ 'Sales channel' | i18n < $ }}</div>
+        <div class="col-xs-4 bold">{{ 'Status' | i18n < $ }}</div>
+      </div>
+
+      <div rv-view="shopsView">
+        <!-- Here be the listing of products in the shop -->
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading row clickable toggle-users">
+      <div class="col-xs-4 bold">Kaartkopers</div>
+      <div class="col-xs-6 bold" rv-show="#session:user:admin">E-mailadres</div>
+      <div class="col-xs-2" rv-class-col-xs-offset-6="#session:user:admin | negate">
+        <div class="pull-right">
+          <i class="fa fa-plus-square" rv-show="showUsers | negate"></i>
+          <i class="fa fa-minus-square" rv-show="showUsers"></i>
+        </div>
+      </div>
+    </div>
+    <div class="panel-body list" rv-view="usersView" rv-if="showUsers">
+      <!-- Here be the listing of user in the event -->
+    </div>
+  </div>
+
+</div>

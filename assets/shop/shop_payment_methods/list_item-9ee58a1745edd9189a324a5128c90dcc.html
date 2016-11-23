@@ -1,0 +1,17 @@
+<div class="row list-item">
+  <div class="hidden-xs col-sm-6">{{ model:payment_method:name }}</div>
+  <div class="hidden-xs col-sm-2 text-right italic">+ {{ fee | currency }}</div>
+  <div class="hidden-xs col-sm-2 text-right">{{ netto | currency }}</div>
+  <div class="hidden-xs col-sm-2 text-right">
+    <button class="btn btn-primary" rv-on-click="model.pay">
+      <i class="fa fa-arrow-circle-right"></i>
+      Betaal
+    </button>
+  </div>
+  <div class="col-xs-12 visible-xs-block">
+    <button class="btn btn-primary" rv-on-click="model.pay">
+      <i class="fa fa-arrow-circle-right"></i>
+      Betaal {{ netto | currency}} met {{ model:payment_method:name }}
+    </button>
+  </div>
+</div>

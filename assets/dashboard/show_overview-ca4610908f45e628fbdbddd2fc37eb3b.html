@@ -1,0 +1,48 @@
+<div>
+  <div class="panel panel-primary" rv-each-event="user:events">
+    <div class="panel-heading">
+      {{ event:name }}
+    </div>
+    <div class="panel-body">
+      <div class="row list-item">
+        <div class="col-xs-4 bold">Product</div>
+        <div class="col-xs-4 bold">Verkopen</div>
+        <div class="col-xs-3 bold">Omzet</div>
+      </div>
+      <div class="row list-item" rv-each-product="event:products">
+        <div class="col-xs-4">{{ product:name }}</div>
+        <div class="col-xs-4">
+          {{ product:sold }}<span rv-if="product.hasLimitedQuantity"> / {{ product:max_quantity }}</span>
+        </div>
+        <div class="col-xs-3">{{ product:revenue | currency }}</div>
+        <div class="col-xs-1"><i class="fa fa-pencil-square-o"></i></div>
+      </div>
+      <div class="row list-item">
+        <div class="col-xs-4">Totaal</div>
+        <div class="col-xs-4">{{ event.total.sold }}</div>
+        <div class="col-xs-3">{{ event.total:.revenue | currency }}</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div rv-show="user.admin | negate">
+    <div class="panel panel-primary" rv-each-organization="user:organizations">
+      <div class="panel-heading">
+        Sales manager voor {{ organization:name }}
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-11">
+            <div class="list-item">
+              <div class="col-xs-4">{{ organization:sales_manager.name }}</div>
+              <div class="col-xs-5">{{ organization:sales_manager.email_address }}</div>
+              <div class="col-xs-3">{{ organization:sales_manager.phone_number }}</div>
+            </div>
+          </div>
+          <div class="col-xs-1"><i class="fa fa-info" style="font-size: 35px;"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

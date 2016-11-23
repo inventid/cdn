@@ -1,0 +1,72 @@
+<div>
+  <div rv-show="step1">
+    <p>Voor welk evenement wil je de incheck starten?</p>
+
+    <div class="col-xs-12 form-group">
+      <select class="form-control event-selector">
+        <option disabled="disabled" value="picker">Kies een event...</option>
+        <option rv-each-event="user:events" rv-value="event:id">{{ event:name }}</option>
+      </select>
+    </div>
+    <div class="row form-group">
+      <div class="col-xs-12">
+        <button class="btn-primary pull-right open-incheck" type="button">Start incheck</button>
+      </div>
+    </div>
+  </div>
+
+  <div rv-show="step2">
+
+    <div class="panel">
+      <div class="panel-body" rv-view="productSelection">
+        <!-- here be the products which are valid for the incheck -->
+      </div>
+    </div>
+    <div class="row form-group">
+      <div class="col-xs-10">
+        <input class="form-control" id="incheck-code-input"/>
+      </div>
+      <div class="col-xs-2">
+        <button class="form-control btn btn-primary submit">Check</button>
+      </div>
+    </div>
+
+    <div class="row" rv-show="hasLostFocus">
+      <div class="col-xs-12 error text-center">
+        <i class="fa fa-warning"></i>
+        De tekstcursor dient in het invoerveld geplaatst te zijn!
+      </div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading row"
+           rv-class-incheck-ok="isValid"
+           rv-class-incheck-fail="isValid | negate"
+           rv-class-incheck-unknown="hasStarted | negate">
+        <div class="col-xs-12 text-center">{{ detailedText }}</div>
+      </div>
+
+      <div class="panel-body">
+        <div class="row list-item">
+          <div class="col-xs-4 bold">Naam</div>
+          <div class="col-xs-8">{{ currentOrderProductIdentifier:order_product:order:user:name }}</div>
+        </div>
+
+        <div class="row list-item">
+          <div class="col-xs-4 bold">Product</div>
+          <div class="col-xs-8">{{ currentOrderProductIdentifier:order_product:shop_product:product:name }}</div>
+        </div>
+      </div>
+
+      <div class="panel-heading row"
+           rv-class-incheck-ok="isValid"
+           rv-class-incheck-fail="isValid | negate"
+           rv-class-incheck-unknown="hasStarted | negate">
+        <div class="col-xs-12 text-center">{{ detailedText }}</div>
+      </div>
+    </div>
+  </div>
+
+  <audio src="//cdn.inventid.nl/sounds/ok.mp3" id="sound-ok" preload="auto"></audio>
+  <audio src="//cdn.inventid.nl/sounds/error.mp3" id="sound-error" preload="auto"></audio>
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <div class="row list-item list-item-heading">
+    <div class="col-xs-4">{{ 'Sales channel' | i18n < $ }}</div>
+    <!-- Doesnt look to pretty with the two rivets classes, but otherwise it doesnt work -->
+    <div rv-class-col-xs-3="#session:user:admin | negate" rv-class-col-xs-2="#session:user:admin">{{ 'Price' | i18n < $ }}</div>
+    <div class="col-xs-2" rv-show="#session:user:admin">{{ 'Fee' | i18n < $ }}</div>
+    <div rv-class-col-xs-5="#session:user:admin | negate" rv-class-col-xs-4="#session:user:admin">{{ 'Amount' | i18n < $ }}</div>
+  </div>
+
+  <div class="children" rv-views="children">
+    <!-- Here be the every separate shops -->
+  </div>
+</div>

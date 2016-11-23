@@ -1,0 +1,96 @@
+<div>
+  <form class="form-horizontal" role="form">
+    <div class="panel panel-primary">
+
+      <div class="panel-heading row">
+        <div class="col-xs-12">Product toevoegen</div>
+      </div>
+
+      <div class="panel-body">
+        <div rv-show="step1">
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <select class="form-control event-selector">
+                <option disabled="disabled" value="picker">Kies een evenement...</option>
+                <option rv-each-event="user:events" rv-value="event:id">
+                  {{ event:organization:name }} - {{ event:name }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <button class="btn-primary pull-right to-step-two" type="button">Naar stap 2</button>
+            </div>
+          </div>
+        </div>
+
+        <div rv-show="step2">
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control" type="text" rv-value="product:name" placeholder="Productnaam">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control valid_from" type="text" rv-value="product:valid_from" placeholder="Geldig vanaf">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control valid_until" type="text" rv-value="product:valid_until" placeholder="Geldig tot">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <input class="form-control doors_close_at" type="text" rv-value="product:doors_close_at" placeholder="Sluiting deuren">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <button class="btn-primary pull-right to-step-three" type="button">Volgende stap</button>
+            </div>
+          </div>
+        </div>
+
+        <div rv-show="step3">
+          Binnen welke shops dient dit product actief te zijn?
+          <div rv-view="productShopsView">
+            <!-- Here be the different shops of the event with the options etc -->
+          </div>
+
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <button class="btn-primary pull-right to-step-four" type="button">Volgende stap</button>
+            </div>
+          </div>
+        </div>
+
+        <div rv-show="step4">
+          <div class="row form-group">
+            <div class="col-xs-3">Productnaam</div>
+            <div class="col-xs-9">{{ product:name }}</div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-3">Geldig vanaf</div>
+            <div class="col-xs-9">{{ product:valid_from }}</div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-3">Geldig tot</div>
+            <div class="col-xs-9">{{ product:valid_until }}</div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-3">Sluiting deuren</div>
+            <div class="col-xs-9">{{ product:doors_close_at }}</div>
+          </div>
+          <div class="row form-group">
+            <div class="col-xs-12">
+              <button class="btn-primary pull-right" rv-on-click="save" type="button">Opslaan</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>
