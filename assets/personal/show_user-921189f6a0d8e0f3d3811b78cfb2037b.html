@@ -1,0 +1,97 @@
+<div>
+
+  <p class="bold">{{ 'Hi %1$s,' | i18n user:name < $ }}</p>
+
+  <p>{{ 'Currently, we have the following information about you on file.' | i18n < $ }}<br>
+    {{ 'In case (some of this) information is incorrect, you may contact our support desk to change it.' | i18n < $ }}</p>
+
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-primary">
+
+        <div class="panel-heading row">
+          <div class="col-xs-12">{{ 'Your personal data' | i18n < $ }}</div>
+        </div>
+
+        <div class="panel-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-xs-3 control-label" for="shop-name">{{ 'Name' | i18n < $ }}</label>
+
+              <div class="col-xs-9">
+                <p class="form-control-static">{{ user:name }}</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-xs-3 control-label" for="shop-name">{{ 'Email address' | i18n < $ }}</label>
+
+              <div class="col-xs-9">
+                <p class="form-control-static">{{ user:email_address }}</p>
+              </div>
+            </div>
+          </form>
+
+          <div rv-show="shopsWithCustomfields | length | gt 0">
+            <div class="row">
+              <div class="col-xs-12">
+                {{ 'The following events have requested additional information. This information is visible by the organization of the event.' | i18n < $ }}
+              </div>
+            </div>
+            <div class="row clickable shop-with-customfield" rv-shop-id="shop:id" rv-each-shop="shopsWithCustomfields">
+              <div class="col-xs-12 text-underline">- {{ shop:event:name }}</div>
+            </div>
+          </div>
+
+          <div class="toggle-password-box text-center pull-down">
+            <span class="btn" rv-show="user:has_password">{{ 'Change password' | i18n < $ }}</span>
+            <span class="btn" rv-class-btn-primary="passwordEdit | negate" rv-hide="user:has_password">{{ 'Set password' | i18n < $ }}</span>
+          </div>
+
+          <form rv-show="passwordEdit">
+            <div class="form-group" rv-show="user:has_password">
+              <input type="password" class="form-control" rv-value="user:old_password" rv-placeholder="'Current password' | i18n < $" />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" rv-value="user:password" rv-placeholder="'New password' | i18n < $" />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" rv-value="user:password_confirmation" rv-placeholder="'Repeat new password' | i18n < $" />
+            </div>
+            <div class="form-group">
+              <button class="full-width btn btn-primary save-user">{{ 'Save' | i18n < $ }}</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-primary">
+
+        <div class="panel-heading row">
+          <div class="col-xs-12">{{ 'Your picture' | i18n < $ }}</div>
+        </div>
+
+        <div class="panel-body">
+          <img rv-if="user:picture_url" rv-src="user:picture_url" class="full-width" />
+
+          <hr rv-show="user:picture_url" />
+
+          <form>
+            <div class="form-control btn btn-primary btn-file-upload">
+              <i class="fa fa-picture-o"></i>
+              <span rv-show="user:picture_url | negate">{{ 'Set picture' | i18n < $ }}</span>
+              <span rv-show="user:picture_url">{{ 'Change picture' | i18n < $ }}</span>
+              <input type="file" name="image" class="user-picture" />
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>{{ 'This personal page allows you to easily download your tickets, view your data, and get insight in yuor order history. If required, you can always contact our support desk.' | i18n < $ }}</p>
+</div>

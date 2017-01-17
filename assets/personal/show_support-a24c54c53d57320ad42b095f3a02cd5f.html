@@ -1,0 +1,14 @@
+<div>
+  <div class="panel panel-primary">
+    <div class="panel-heading row">
+      <div class="col-xs-12">{{ 'Support' | i18n < $ }}</div>
+    </div>
+  </div>
+
+  <p>
+    {{ 'In case something is not entirely clear, please do contact our support desk. These hipster boys and smooth girls are working around the clock to answer your question as soon as possible' | i18n < $ }}
+  </p>
+
+  <p rv-html="'So, if you got a question (or if you are just curious of a supporter, just send an email to %1$s. Also tell us your order number, the name of the event, and if useful, a screenshot of your payment' | i18n '&lt;a href=&quot;mailto:support@inventid.nl&quot;&gt;support@inventid.nl&lt;/a&gt;' < $"></p>
+
+</div>

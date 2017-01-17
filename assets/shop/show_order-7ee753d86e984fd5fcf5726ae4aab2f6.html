@@ -1,0 +1,174 @@
+<div>
+
+  <div rv-show="shop:checkout_category:id">
+    <div class="panel">
+      <div class="panel-heading row">
+        <div class="col-sm-12">{{ 'Others also bought' | i18n < $ }}</div>
+      </div>
+
+      <div class="panel-body list" rv-view="checkoutProductsView">
+        <!-- Here be the listing of products in the shop -->
+      </div>
+    </div>
+
+    <hr />
+  </div>
+
+  <div class="panel panel-primary" rv-show="order">
+    <div class="panel-heading row">
+      <div class="col-xs-12">
+        {{ 'Checkout' | i18n < $ }}
+      </div>
+    </div>
+
+    <div class="panel-body list">
+      <div class="row list-item" rv-each-entry="quantities">
+        <div class="visible-xs-block col-xs-2 text-right no-cut">
+          {{ entry.quantity }}x
+        </div>
+        <div class="col-xs-6 col-sm-8">
+          {{ entry.shopProduct:product:name }}
+        </div>
+        <div class="hidden-xs col-sm-2 text-right no-cut">
+          {{ entry.quantity }} x {{ entry.shopProduct:bruto | currency }}
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right no-cut">
+          {{ entry.bruto | currency }}
+        </div>
+      </div>
+      <div class="row list-item list-item-summary">
+        <div class="col-xs-8 col-sm-10 bold">
+          {{ 'Total' | i18n < $ }}
+          <small>({{ 'excluding fees' | i18n < $ }})</small>
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right no-cut">
+          {{ order.subtotal | currency < order:id order:shop_product_quantities }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-primary" rv-if="shop:has_coupons">
+    <div class="panel-heading row">
+      <div class="col-xs-12">
+        {{ 'Coupon' | i18n < $ }}
+      </div>
+    </div>
+
+    <div class="panel-body list" rv-show="coupon.set | negate">
+      <div class="row list-item">
+        <div class="col-xs-4">
+          {{ 'Coupon code' | i18n < $ }}
+        </div>
+        <div class="col-xs-4">
+          <input type="text" class="coupon-code form-control" rv-placeholder="'coupon code' | i18n < $">
+        </div>
+        <div class="col-xs-4 text-right">
+          <button class="btn coupon-claim">{{ 'Redeem coupon' | i18n < $ }}</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-body list" rv-show="coupon.set">
+      <div class="row list-item">
+        <div class="col-xs-6 col-sm-8">
+          {{ 'Coupon discount' | i18n < $ }}
+        </div>
+        <div class="col-xs-2 italic text-right">
+          {{ order.couponPercentage | percentage }}
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right">
+          - {{ order.discount | currency < order:shop_product_quantities order.couponPercentage }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-body list">
+      <div class="row list-item" rv-if="order:fee | gt 0">
+        <div class="col-xs-8 col-sm-10">
+          {{ 'Administration fee' | i18n < $ }}
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right">
+          {{ order:fee | currency }}
+        </div>
+      </div>
+
+      <div rv-show="bruto | gt 0">
+        <div class="row list-item clickable select-payment-method"
+             rv-each-entry="order.paymentMethodFees < :id :shop_product_quantities :shop:payment_methods"
+             rv-payment-method-id="entry.method:id"
+             rv-class-list-item-fade="entry.method | neq payment:payment_method"
+             rv-class-list-item-selected="entry.method | eq payment:payment_method">
+          <div class="col-xs-2 col-sm-1 text-center">
+            <i class="fa fa-check" rv-class-hidden="entry.method | neq payment:payment_method"></i>
+          </div>
+
+          <div class="col-xs-6 col-sm-9">
+            {{ entry.method:name | i18n < $ }}
+          </div>
+          <div class="col-xs-4 col-sm-2 text-right">
+            {{ entry.fee | currency }}
+          </div>
+        </div>
+      </div>
+
+      <div class="row list-item list-item-summary" rv-show="bruto | gt 0">
+        <div class="col-xs-8 col-sm-10">
+          {{ 'Total' | i18n < $ }}
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right no-cut">
+          {{ netto | currency }}
+        </div>
+      </div>
+      <div class="row list-item list-item-summary" rv-hide="bruto | gt 0">
+        <div class="col-xs-8 col-sm-10">
+          {{ 'Total' | i18n < $ }}
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right no-cut">
+          {{ 0 | currency }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="text-center" rv-show="bruto | gt 0">
+    <span class="btn btn-primary pay" rv-class-disabled="order.satisfiedAllPaymentPreconditions | negate < order:user:name order:user:email_address order:shop_product_quantities uglyHack">
+      <i class="fa fa-arrow-circle-right"></i>
+      {{ 'Pay using %1$s' | i18n payment:payment_method:name < $ }}
+    </span>
+  </div>
+
+  <div class="text-center" rv-hide="bruto | gt 0">
+    <span class="btn btn-primary pay-free" rv-class-disabled="order.satisfiedAllPaymentPreconditions | negate < order:user:name order:user:email_address order:shop_product_quantities uglyHack">
+      <i class="fa fa-arrow-circle-right"></i>
+      {{ 'Finalize' | i18n < $ }}
+    </span>
+  </div>
+  <br />
+
+  <div class="alert alert-danger text-center" rv-show="order.answeredAllRequiredCustomFields | negate < uglyHack">
+    <i class="fa fa-warning"></i>
+    {{ 'Not all required fields were completed. Paying is not yet possible.' | i18n < $ }}
+  </div>
+
+  <div class="alert alert-danger text-center" rv-show="order:user.allowedToPay | negate < order:user:name order:user:email_address">
+    <i class="fa fa-warning"></i>
+    {{ 'No name or email address was supplied. Paying is not yet possible.' | i18n < $ }}
+  </div>
+
+  <div class="alert alert-danger text-center" rv-show="order.filledInCustomNames | negate < order:order_products">
+    <i class="fa fa-warning"></i>
+    {{ 'The event organizer requires that the names of all participants are set.' | i18n < $ }}
+  </div>
+
+  <div class="alert alert-danger text-center" rv-show="order.allowedToPay | negate < order:shop_product_quantities">
+    <i class="fa fa-warning"></i>
+    {{ 'No products were selected. Paying is not yet possible.' | i18n < $ }}
+  </div>
+
+
+</div>
