@@ -1,0 +1,34 @@
+<div>
+  <div class="panel panel-primary">
+
+    <div class="panel-heading row">
+      <div class="col-xs-4 col-sm-8">{{ 'Product' | i18n < $ }}</div>
+      <div class="col-xs-4 col-sm-2 text-right">{{ 'Quantity' | i18n < $ }}</div>
+      <div class="col-xs-4 col-sm-2 text-right">{{ 'Price' | i18n < $ }}</div>
+    </div>
+
+    <div class="panel-body list">
+      <div rv-view="shopProductsView">
+        <!-- Here be the listing of products in the shop -->
+      </div>
+      <div class="row list-item list-item-summary">
+        <div class="col-xs-8 col-sm-10">
+          {{ 'Total' | i18n < $ }}
+          <small>({{ 'excluding fees' | i18n < $ }})</small>
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right no-cut">
+          {{ order.subtotal | currency < order:id order:shop_product_quantities }}
+        </div>
+      </div>
+      <div class="row list-item list-item-summary" rv-if="order:shop:event:organization:separate_fee">
+        <div class="col-xs-8 col-sm-10">
+          {{ 'Administration fee' | i18n < $ }}
+        </div>
+        <div class="col-xs-4 col-sm-2 text-right no-cut">
+          {{ order.products_fee | currency < order:id order:shop_product_quantities }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
