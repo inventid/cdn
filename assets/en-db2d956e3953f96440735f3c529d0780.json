@@ -1,0 +1,576 @@
+{
+   "domain": "messages",
+   "locale_data": {
+      "messages": {
+         "": {
+            "domain": "messages",
+            "plural_forms": "nplurals=2; plural=(n != 1);",
+            "lang": "en"
+         },
+         "A password should contain at least 8 characters.": [
+            "A password should contain at least 8 characters."
+         ],
+         "Add": [
+            "Add"
+         ],
+         "Additional information": [
+            "Additional information"
+         ],
+         "Additional information for %1$s - inventid": [
+            "Additional information for %1$s - inventid"
+         ],
+         "Administration fee": [
+            "Administration fee"
+         ],
+         "Amount": [
+            "Amount"
+         ],
+         "Back": [
+            "Back"
+         ],
+         "BancontactmrcashBuckarooPaymentMethod": [
+            "Bancontact Mr Cash"
+         ],
+         "BancontactmrcashMolliePaymentMethod": [
+            "Bancontact Mr Cash"
+         ],
+         "BelfiusdirectnetMolliePaymentMethod": [
+            "Belfius Direct Net"
+         ],
+         "Below you will find a summary of your order.": [
+            "Below you will find a summary of your order."
+         ],
+         "BitcoinMolliePaymentMethod": [
+            "Bitcoin"
+         ],
+         "Cancel": [
+            "Cancel"
+         ],
+         "Change password": [
+            "Change password"
+         ],
+         "Change picture": [
+            "Change picture"
+         ],
+         "Checkout": [
+            "Checkout"
+         ],
+         "ClientInventidPaymentMethod": [
+            "Internal payment"
+         ],
+         "Closes at": [
+            "Closes at"
+         ],
+         "Connect with Facebook": [
+            "Connect with Facebook"
+         ],
+         "Continue": [
+            "Continue"
+         ],
+         "Coupon": [
+            "Coupon"
+         ],
+         "Coupon code": [
+            "Coupon code"
+         ],
+         "Coupon discount": [
+            "Coupon discount"
+         ],
+         "Create new product": [
+            "Create new product"
+         ],
+         "Create new shop": [
+            "Create new shop"
+         ],
+         "CreditcardMolliePaymentMethod": [
+            "Creditcard"
+         ],
+         "Current password": [
+            "Current password"
+         ],
+         "Currently, we have the following information about you on file.": [
+            "Currently, we have the following information about you in our system."
+         ],
+         "Date": [
+            "Date"
+         ],
+         "Demo shop?": [
+            "Demo shop?"
+         ],
+         "DemoInventidPaymentMethod": [
+            "Demo"
+         ],
+         "Description": [
+            "Description"
+         ],
+         "Details": [
+            "Details"
+         ],
+         "Do you want to get paid automatically as well? Please send your IBAN and BIC number to your account manager.": [
+            "Do you want to get paid automatically as well? Please send your IBAN and BIC number to your account manager."
+         ],
+         "Doors close at": [
+            "Doors close at"
+         ],
+         "Earlier you have bought products using the following shops.": [
+            "Earlier you have bought products using the following shops."
+         ],
+         "Edit": [
+            "Edit"
+         ],
+         "Email address": [
+            "Email address"
+         ],
+         "Email address and password are both required fields.": [
+            "Email address and password are both required fields."
+         ],
+         "Eticket example for %1$s": [
+            "Eticket example for %1$s"
+         ],
+         "Etickets are ready for download for the following products.": [
+            "Etickets are ready for download for the following products."
+         ],
+         "Event": [
+            "Event"
+         ],
+         "Event options": [
+            "Event options"
+         ],
+         "Events": [
+            "Events"
+         ],
+         "Expiring subscription for %1$s": [
+            "Your subscription for %1$s is about to expire"
+         ],
+         "Export for %1$s": [
+            "Export for %1$s"
+         ],
+         "Extern": [
+            "External"
+         ],
+         "Fee": [
+            "Fee"
+         ],
+         "Finalize": [
+            "Finalize"
+         ],
+         "Financial Overview": [
+            "Financial overview"
+         ],
+         "Gebruikersgegevens": [
+            "User details"
+         ],
+         "Hi %1$s,": [
+            "Hi %1$s,"
+         ],
+         "However it will open in the future. Check the organization website for dates and times.": [
+            "However it will open in the future. Check the organization website for dates and times."
+         ],
+         "IdealMolliePaymentMethod": [
+            "iDeal"
+         ],
+         "IdealRaboPaymentMethod": [
+            "iDeal"
+         ],
+         "If you believe this is an error, please contact us through support@inventid.nl": [
+            "If you believe this is an error, please contact us through support@inventid.nl"
+         ],
+         "Impersonate": [
+            "Impersonate"
+         ],
+         "In case (some of this) information is incorrect, you may contact our support desk to change it.": [
+            "In case (some of this) information is incorrect, you may contact our support desk to change it."
+         ],
+         "In case something is not entirely clear, please do contact our support desk. These hipster boys and smooth girls are working around the clock to answer your question as soon as possible": [
+            "In case something is not entirely clear, please do contact our support desk. They are working around the clock to answer your question as soon as possible."
+         ],
+         "Invoice": [
+            "Invoice"
+         ],
+         "Invoice date": [
+            "Invoice date"
+         ],
+         "Invoice for %1$s": [
+            "Invoice for %1$s"
+         ],
+         "Invoice for order #%1$s": [
+            "Invoice for order #%1$s"
+         ],
+         "Invoice number": [
+            "Invoice number"
+         ],
+         "Invoices": [
+            "Invoices"
+         ],
+         "It has already been closed.": [
+            "It has already been closed."
+         ],
+         "Item price": [
+            "Item price"
+         ],
+         "Let's go social": [
+            "Let's go social"
+         ],
+         "Locale": [
+            "Locale"
+         ],
+         "Looking forward to go with friends? Let them know and share the event on Facebook!": [
+            "Looking forward to go with friends? Let them know and share the event on Facebook!"
+         ],
+         "Mobile ticket": [
+            "Mobile ticket"
+         ],
+         "Name": [
+            "Name"
+         ],
+         "New": [
+            "New"
+         ],
+         "New password": [
+            "New password"
+         ],
+         "New profile image uploaded": [
+            "New profile image uploaded"
+         ],
+         "Next": [
+            "Next"
+         ],
+         "Next payment": [
+            "Next payment"
+         ],
+         "No name or email address was supplied. Paying is not yet possible.": [
+            "No name or email address was supplied. Paying is not yet possible."
+         ],
+         "No products were selected. Paying is not yet possible.": [
+            "No products were selected. Paying is not yet possible."
+         ],
+         "Not VAT applicable": [
+            "Not VAT applicable"
+         ],
+         "Not all required fields were completed. Paying is not yet possible.": [
+            "Not all required fields were completed. Paying is not yet possible."
+         ],
+         "On this sale the %1$sTerms and conditions%2$s of inventid are applicable. Of course we will also respect your %3$sprivacy%4$s.": [
+            "On this sale the %1$sTerms and conditions%2$s of inventid are applicable. Of course we will also respect your %3$sprivacy%4$s."
+         ],
+         "One-time key": [
+            "One-time key"
+         ],
+         "Open invoice reminder for %1$s": [
+            "Open invoice reminder for %1$s"
+         ],
+         "Opens at": [
+            "Opens at"
+         ],
+         "Order": [
+            "Order"
+         ],
+         "Order cancellation for %1$s": [
+            "Order cancellation for %1$s"
+         ],
+         "Organization": [
+            "Organization"
+         ],
+         "Organizations": [
+            "Organizations"
+         ],
+         "Others also bought": [
+            "Others also bought"
+         ],
+         "PDF": [
+            "PDF"
+         ],
+         "Participants information": [
+            "Participants information"
+         ],
+         "Password": [
+            "Password"
+         ],
+         "Password reset": [
+            "Password reset"
+         ],
+         "Pay using %1$s": [
+            "Pay directly using %1$s"
+         ],
+         "PaypalBuckarooPaymentMethod": [
+            "PayPal"
+         ],
+         "PaypalMolliePaymentMethod": [
+            "Paypal"
+         ],
+         "Pick your bank": [
+            "Pick your bank"
+         ],
+         "Please enter your current password as well.": [
+            "Please enter your current password as well."
+         ],
+         "Please note, this is a demo shop!": [
+            "Please note, this is a demo shop!"
+         ],
+         "Prelongated subscription for %1$s": [
+            "Prelongated subscription for %1$s"
+         ],
+         "Price": [
+            "Price"
+         ],
+         "Product": [
+            "Product"
+         ],
+         "Product name": [
+            "Product name"
+         ],
+         "Products": [
+            "Products"
+         ],
+         "Quantity": [
+            "Quantity"
+         ],
+         "Quick reminder for %1$s": [
+            "Quick reminder for %1$s"
+         ],
+         "Redeem coupon": [
+            "Redeem coupon"
+         ],
+         "Repeat new password": [
+            "Repeat new password"
+         ],
+         "Reset password": [
+            "Reset password"
+         ],
+         "Revenue": [
+            "Revenue"
+         ],
+         "Sales": [
+            "Sales"
+         ],
+         "Sales channel": [
+            "Sales channel"
+         ],
+         "Sales channels": [
+            "Sales channels"
+         ],
+         "Save": [
+            "Save"
+         ],
+         "Select one": [
+            "Select one"
+         ],
+         "Send": [
+            "Send"
+         ],
+         "Separate values with a newline.": [
+            "Separate values with a newline."
+         ],
+         "Services": [
+            "Services"
+         ],
+         "Set password": [
+            "Set password"
+         ],
+         "Set picture": [
+            "Set picture"
+         ],
+         "Share on Facebook": [
+            "Share on Facebook"
+         ],
+         "Share this purchase on Facebook": [
+            "Share this purchase on Facebook"
+         ],
+         "Share this purchase on Whatsapp": [
+            "Share this purchase on Whatsapp"
+         ],
+         "Shop": [
+            "Sales channel"
+         ],
+         "Shop URL": [
+            "Shop URL"
+         ],
+         "Shop link": [
+            "Shop link"
+         ],
+         "Shop name": [
+            "Shop name"
+         ],
+         "Shop unavailable": [
+            "Shop unavailable"
+         ],
+         "Shops": [
+            "Shops"
+         ],
+         "Short URL": [
+            "Short URL"
+         ],
+         "Since you clicked the secret link in our email, you can now reset your password here safely. In case you do not want to reset your password, you can just close this page.": [
+            "Since you clicked the secret link in our email, you can now reset your password here safely. In case you do not want to reset your password, you can just close this page."
+         ],
+         "So, if you got a question (or if you are just curious of a supporter, just send an email to %1$s. Also tell us your order number, the name of the event, and if useful, a screenshot of your payment": [
+            "So, if you got a question, just send an email to %1$s. Also tell us your order number, the name of the event, and if applicable, a screenshot of your payment."
+         ],
+         "SofortbankingMolliePaymentMethod": [
+            "Sofort banking"
+         ],
+         "Sold out!": [
+            "Sold out!"
+         ],
+         "Something unclear or there seems to be an error? Contact our support desk directly through %1$s and don't forget to tell us your order number (#%2$s).": [
+            "Something unclear or there seems to be an error? Please contact our support desk directly through %1$s. In your communication, please also mention your order number (#%2$s)."
+         ],
+         "Status": [
+            "Status"
+         ],
+         "Subtotal": [
+            "Subtotal"
+         ],
+         "Support": [
+            "Support"
+         ],
+         "Terms and conditions:": [
+            "Terms and conditions:"
+         ],
+         "The accepted file formats are JPEG, GIF, and PNG.": [
+            "The accepted file formats are JPEG, GIF, and PNG."
+         ],
+         "The combination of email address and password was unknown.": [
+            "The combination of email address and password was unknown."
+         ],
+         "The connection with Facebook could not be made.": [
+            "The connection with Facebook could not be made."
+         ],
+         "The current password is incorrect.": [
+            "The current password is incorrect."
+         ],
+         "The entered data is not valid.": [
+            "The entered data is not valid."
+         ],
+         "The event organizer requires that the names of all participants are set.": [
+            "The event organizer requires that the names of all participants are set."
+         ],
+         "The following events have requested additional information. This information is visible by the organization of the event.": [
+            "The following events have requested additional information. This information is visible by the organization of the event."
+         ],
+         "The name of the participant": [
+            "The name of the participant"
+         ],
+         "The password is incorrect.": [
+            "The password is incorrect."
+         ],
+         "The status of your payment is:": [
+            "The status of your payment is:"
+         ],
+         "The supplied passwords do not match.": [
+            "The supplied passwords do not match."
+         ],
+         "This payment method is currently unavailable.": [
+            "This payment method is currently unavailable."
+         ],
+         "This personal page allows you to easily download your tickets, view your data, and get insight in yuor order history. If required, you can always contact our support desk.": [
+            "This personal page allows you to easily download your tickets, view your data, and get insight in your order history. If required, you can always contact our support desk."
+         ],
+         "This sales channel requires authentication": [
+            "This sales channel requires authentication"
+         ],
+         "This token is no longer valid.": [
+            "This token is no longer valid."
+         ],
+         "This web shop for %1$s is currently unavailable.": [
+            "This web shop for %1$s is currently unavailable."
+         ],
+         "Ticketshop by inventid": [
+            "Ticketshop by inventid"
+         ],
+         "Total": [
+            "Total"
+         ],
+         "Unfortunately this amount is not possible.": [
+            "Unfortunately this amount is not possible."
+         ],
+         "VAT": [
+            "VAT 21%%"
+         ],
+         "VAT applicable": [
+            "VAT applicable"
+         ],
+         "Valid from": [
+            "Valid from"
+         ],
+         "Valid until": [
+            "Valid until"
+         ],
+         "We have sent your tickets to": [
+            "We have sent your tickets to"
+         ],
+         "WiretransferPaymentMethod": [
+            "Wire transfer"
+         ],
+         "You have access as crew to the following entities.": [
+            "You have access as crew to the following entities."
+         ],
+         "You have started the following orders with us.": [
+            "You have started the following orders with us."
+         ],
+         "Your E-mail address": [
+            "Your E-mail address"
+         ],
+         "Your etickets for %1$s - inventid": [
+            "Your tickets for %1$s - inventid"
+         ],
+         "Your name": [
+            "Your name"
+         ],
+         "Your personal data": [
+            "Your personal data"
+         ],
+         "Your personal page": [
+            "Your personal page"
+         ],
+         "Your picture": [
+            "Your picture"
+         ],
+         "active": [
+            "active"
+         ],
+         "cancelled": [
+            "cancelled"
+         ],
+         "completed": [
+            "completed"
+         ],
+         "coupon code": [
+            "coupon code"
+         ],
+         "email address": [
+            "email address"
+         ],
+         "excluding fees": [
+            "excluding fees"
+         ],
+         "expired": [
+            "expired"
+         ],
+         "inactive": [
+            "inactive"
+         ],
+         "inventid password reset request": [
+            "inventid password reset request"
+         ],
+         "open": [
+            "open"
+         ],
+         "or": [
+            "or"
+         ],
+         "password": [
+            "password"
+         ],
+         "refunded": [
+            "refunded"
+         ],
+         "required": [
+            "required"
+         ],
+         "success": [
+            "successful"
+         ]
+      }
+   }
+}
