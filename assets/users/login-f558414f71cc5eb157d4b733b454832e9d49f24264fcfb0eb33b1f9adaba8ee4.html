@@ -1,0 +1,40 @@
+<div class="container">
+	<div class="page-header">
+		<h1>inventid
+			<small style="margin-left: 15px;">{{ #login | i18n < $ }}</small>
+		</h1>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			Login
+		</div>
+		<div class="panel-body">
+			<form class="form-horizontal" role="form">
+
+				<div class="form-group">
+					<label for="email_address" class="col-sm-3 control-label text-capitalize">
+						{{ 'email address' | i18n < $ }}</label>
+
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="email_address"
+						       rv-placeholder="'email address' | i18n < $"/>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="password" class="col-sm-3 control-label text-capitalize">
+						{{ 'password' | i18n < $ }}</label>
+
+					<div class="col-sm-9">
+						<input type="password" class="form-control" id="password" rv-placeholder="'password' | i18n < $"
+						       autocomplete="off"/>
+					</div>
+				</div>
+
+				<button id="reset" type="button" class="btn">{{ 'Reset password' | i18n < $ }}</button>
+				<button id="login" class="btn btn-primary pull-right">{{ 'Continue' | i18n < $ }}</button>
+			</form>
+		</div>
+	</div>
+</div>

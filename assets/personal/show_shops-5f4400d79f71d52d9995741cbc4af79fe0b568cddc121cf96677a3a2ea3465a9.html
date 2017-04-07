@@ -1,0 +1,22 @@
+<div>
+
+	<p class="intro-text">
+		{{ 'Earlier you have bought products using the following shops.' | i18n < $ }}
+	</p>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading row">
+			<div class="col-xs-6 col-sm-3">{{ 'Event' | i18n < $ }}</div>
+			<div class="col-sm-3 hidden-xs">{{ 'Shop' | i18n < $ }}</div>
+			<div class="col-xs-6 col-sm-6">{{ "Let's go social" | i18n < $ }}</div>
+		</div>
+
+		<div class="panel-body list" rv-view="shopsView">
+			<!-- Here be the listing of order_product_identifier in the user -->
+		</div>
+	</div>
+
+	<div class="social">
+		<p>{{ 'Looking forward to go with friends? Let them know and share the event on Facebook!' | i18n < $ }}</p>
+	</div>
+</div>

@@ -1,0 +1,5 @@
+<li class="full-width hover sub-tab" rv-show="model:archived | negate | or config.showArchived">
+	<a href="#" data-target="#" class="clickable fill-to-parent no-underline">{{ model:name }}
+		<span rv-show="isAdmin">({{ model:organization:name }})</span>
+	</a>
+</li>

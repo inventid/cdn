@@ -1,0 +1,26 @@
+<div class="row list-item clickable" rv-show="model | call config.filter < config.filter">
+	<div class="col-xs-3 go-to-request">
+		{{ model:subject }}
+	</div>
+	<div class="col-xs-3 go-to-request" rv-show="model:user:name | blank">
+		{{ model:email_address }}
+	</div>
+	<div class="col-xs-3 go-to-request" rv-show="model:user:name | blank | negate">
+		{{ model:user:name}}
+	</div>
+	<div class="col-xs-3 go-to-request">
+		{{ model:created_at | time 'Europe/Amsterdam' }}
+	</div>
+	<div class="col-xs-1 go-to-request">
+		<span rv-show="model.isAssigned">{{ model:assignee:initials }}</span>
+		<span rv-hide="model.isAssigned" class="italic">?</span>
+	</div>
+
+	<div class="col-xs-2 go-to-request">
+		{{ model:status }}
+		<li class="fa fa-circle traffic-light-green pull-right pull-down" rv-show="model:status | eq 'open'"></li>
+		<li class="fa fa-circle traffic-light-orange pull-right pull-down" rv-show="model:status | eq 'pending'"></li>
+		<li class="fa fa-circle traffic-light-orange pull-right pull-down" rv-show="model:status | eq 'answered'"></li>
+		<li class="fa fa-circle traffic-light-red pull-right pull-down" rv-show="model:status | eq 'closed'"></li>
+	</div>
+</div>

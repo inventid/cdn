@@ -1,0 +1,31 @@
+<div class="row list-item clickable">
+
+	<div class="col-xs-8 no-cut" rv-show="#session:user:admin">
+		<div class="row">
+			<div class="col-xs-2 no-cut">
+        <span class="fa-stack info inline-text-icon" rv-show="#session:user:admin">
+          <i class="fa fa-square fa-lg fa-stack-1x"></i>
+          <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+        </span>
+			</div>
+			<div class="col-xs-10">
+				{{ model:name }}
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xs-8" rv-hide="#session:user:admin">
+		{{ model:name }}
+	</div>
+
+	<div class="col-xs-3">
+		<li title="Verkoopkanaal geopend" class="fa fa-circle traffic-light-green" rv-show="isGreen < model"></li>
+		<li title="Demo verkoopkanaal" class="fa fa-circle traffic-light-orange" rv-show="isOrange < model"></li>
+		<li title="Verkoopkanaal gesloten" class="fa fa-circle traffic-light-red" rv-show="isRed < model"></li>
+	</div>
+
+	<div class="col-xs-1">
+		<i class="fa fa-chevron-right"></i>
+	</div>
+
+</div>

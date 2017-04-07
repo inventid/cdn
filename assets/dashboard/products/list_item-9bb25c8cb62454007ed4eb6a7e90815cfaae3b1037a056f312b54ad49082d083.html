@@ -1,0 +1,23 @@
+<div class="row list-item" rv-class-clickable="clickable" rv-show="model:archived | negate">
+	<div class="col-xs-4 no-cut" rv-show="#session:user:admin">
+		<div class="row">
+			<div class="col-xs-2 no-cut">
+        <span class="fa-stack info inline-text-icon" rv-show="#session:user:admin">
+          <i class="fa fa-square fa-lg fa-stack-1x"></i>
+          <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+        </span>
+			</div>
+			<div class="col-xs-10">
+				{{ model:name }}
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-4" rv-hide="#session:user:admin">
+		{{ model:name }}
+	</div>
+	<div class="col-xs-4">
+		{{ model:sold_quantity | or 0 }}<span rv-if="model:max_quantity | gt 0"> / {{ model:max_quantity }}</span>
+	</div>
+	<div class="col-xs-3">{{ model:revenue | currency }}</div>
+	<div class="col-xs-1" rv-if="clickable"><i class="fa fa-chevron-right"></i></div>
+</div>

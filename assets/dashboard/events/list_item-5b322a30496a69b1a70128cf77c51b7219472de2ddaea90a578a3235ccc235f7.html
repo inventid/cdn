@@ -1,0 +1,25 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		{{ model:name }}
+
+		<div class="btn panel-heading-btn pull-right show-event">
+			{{ 'Details' | i18n < $ }}
+			<i class="fa fa-chevron-right"></i>
+		</div>
+	</div>
+	<div class="panel-body list">
+		<div class="row list-item list-item-heading">
+			<div class="col-xs-4">Product</div>
+			<div class="col-xs-4">Verkopen</div>
+			<div class="col-xs-4">Omzet</div>
+		</div>
+		<div rv-view="productsView">
+			<!-- Here be the listing of products in the event -->
+		</div>
+		<div class="row list-item list-item-summary">
+			<div class="col-xs-4">Totaal</div>
+			<div class="col-xs-4">{{ model.total.sold_quantity }}</div>
+			<div class="col-xs-4">{{ model.total.revenue | currency }}</div>
+		</div>
+	</div>
+</div>

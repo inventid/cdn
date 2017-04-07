@@ -1,0 +1,23 @@
+<div class="row clickable list-item">
+	<div class="col-sm-3 col-xs-6 open-shop">
+		{{ model:event:name }}
+	</div>
+	<div class="col-sm-3 hidden-xs open-shop">
+		{{ model:name }}
+	</div>
+	<div class="col-sm-6 hidden-xs share-facebook">
+		<i class="fa fa-facebook-square social-button"></i>
+		{{ 'Share on Facebook' | i18n < $ }}
+	</div>
+	<div class="col-xs-6 visible-xs-block share-facebook">
+		<i class="fa fa-facebook-square social-button"></i>
+		Facebook
+	</div>
+	<!--
+	  <div class="col-xs-3">
+		<i class="fa fa-twitter-square"></i>
+		Deel op Twitter
+	  </div>
+	-->
+	<div id="fb-root"></div>
+</div>

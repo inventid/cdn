@@ -1,0 +1,19 @@
+<div>
+
+	<p class="intro-text">
+		{{ 'You have started the following orders with us.' | i18n < $ }}
+	</p>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading row">
+			<div class="col-xs-5 col-sm-4">{{ 'Event' | i18n < $ }}</div>
+			<div class="col-sm-3 hidden-xs">{{ 'Sales channel' | i18n < $ }}</div>
+			<div class="col-xs-3 col-sm-2">#{{ 'Order' | i18n < $ }}</div>
+			<div class="col-xs-4 col-sm-3">{{ 'Status' | i18n < $ }}</div>
+		</div>
+
+		<div class="panel-body list" rv-view="ordersView">
+			<!-- Here be the listing of order_product_identifier in the user -->
+		</div>
+	</div>
+</div>

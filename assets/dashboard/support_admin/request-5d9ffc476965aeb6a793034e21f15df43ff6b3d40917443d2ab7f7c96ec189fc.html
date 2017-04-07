@@ -1,0 +1,182 @@
+<div class="panel panel-primary">
+	<div class="panel-heading row">
+		<div class="col-xs-9"><i class="back clickable fa fa-chevron-left"></i> {{ supportRequest:subject }}</div>
+		<div class="col-xs-3 italic text-right">{{ supportRequest:status }}</div>
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-xs-8">
+				<div class="panel">
+					<div class="panel-heading row">
+						<div class="col-xs-12">
+							Door: {{ supportRequest:user:name }} ({{ supportRequest:email_address }})
+							[{{ supportRequest:originated_through }}]
+							<span class="italic">{{ supportRequest:created_at | time 'Europe/Amsterdam' }}</span>
+						</div>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<!-- Do not autoformat the next line, since that will cause useless newlines in the support admin -->
+							<div class="col-xs-12" style="white-space: pre-wrap;"
+							     rv-text="supportRequest:question | newlines"></div>
+						</div>
+						<div class="row" rv-show="supportRequest:attachments | length | gt 0">
+							<div class="col-xs-12">
+                <span rv-each-attachment="supportRequest:attachments" class="clickable attachment"
+                      rv-href="attachment.url">
+                  <i class="fa fa-paperclip"></i> <span class="underline">{{attachment.filename}}</span><br>
+                </span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div rv-view="supportRequestRepliesCollectionView">
+					<!-- show the reply things here -->
+				</div>
+				<div class="panel">
+					<div class="panel-heading row">
+						<div class="col-xs-12">
+							Support acties
+						</div>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-4">
+								<button class="btn btn-primary answer">Beantwoorden</button>
+							</div>
+							<div class="col-xs-4">
+								<button class="btn change-assignee">Toewijzen</button>
+							</div>
+							<div class="col-xs-4">
+								<button class="btn change-status">Status wijzigen</button>
+							</div>
+						</div>
+						<div class="hide row answer-row actions">
+							<div class="col-xs-12">
+								<textarea class="form-control pull-down new-answer" rows="10"
+								          style="border-width: 1px"></textarea>
+							</div>
+							<div class="col-xs-12">
+                <span class="italic">Deze reply wordt verzonden als
+                  <span rv-show="supportRequest:id | modulo 3 | eq 0">Robert-Jan Bussum</span>
+                  <span rv-show="supportRequest:id | modulo 3 | eq 1">Peter den Haas</span>
+                  <span rv-show="supportRequest:id | modulo 3 | eq 2">Hanneke Visser</span>
+                </span>
+							</div>
+							<div class="col-xs-3">
+								<div class="pull-down">
+									<input type="checkbox" class="is-internal" id="internal_message">
+									<label for="internal_message"> Internal</label>
+								</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="pull-down">
+									<input type="checkbox" class="close-and-reply" id="close_message">
+									<label for="close_message"> Sluiten</label>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<button class="btn btn-primary pull-down right form-control respond">Beantwoorden
+								</button>
+							</div>
+						</div>
+						<div class="hide row assign-row actions">
+							<div class="col-xs-12">
+								<textarea class="form-control pull-down new-assign-text" rows="10"
+								          style="border-width: 1px"></textarea>
+							</div>
+							<div class="col-xs-6">
+								<select class="form-control new-assignee pull-down"></select>
+							</div>
+							<div class="col-xs-6">
+								<button class="btn btn-primary pull-down pull-right form-control save-assignee">
+									Wijzig supporter
+								</button>
+							</div>
+						</div>
+						<div class="hide row status-row actions">
+							<div class="col-xs-12 form-group">
+								<div class="col-xs-6">
+									<select class="form-control new-status pull-down">
+										<option value="" disabled="disabled" selected="selected">Kies een status
+										</option>
+										<option value="open">Open</option>
+										<option value="pending">Pending</option>
+										<option value="answered">Answered</option>
+										<option value="closed">Closed</option>
+									</select>
+								</div>
+								<div class="col-xs-6">
+									<button class="btn btn-primary pull-down pull-right form-control save-status">Wijzig
+										status
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<!-- show the user details here -->
+				<div class="panel" rv-show="user">
+					<div class="panel-heading row">
+						<div class="col-xs-12">
+							User details
+						</div>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12">
+								<span class="impersonate clickable text-underline"><i class="fa fa-external-link"></i> Impersonate</span>
+							</div>
+							<div class="col-xs-12">
+								<a href="#" class="clickable user-page">User page</a>
+							</div>
+							<div class="col-xs-12">
+								ID: {{ user:id }}
+							</div>
+							<div class="col-xs-12">
+								{{ user:name }}
+							</div>
+							<div class="col-xs-12">
+								{{ user:email_address }}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel" rv-show="user">
+					<div class="panel-heading row">
+						<div class="col-xs-12">
+							Order details
+						</div>
+					</div>
+					<div class="panel-body" rv-view="supportRequestOrdersCollectionView">
+						<!-- here be the orders of the user -->
+					</div>
+				</div>
+				<div class="panel" rv-show="user">
+					<div class="panel-heading row">
+						<div class="col-xs-12">
+							Orderacties
+						</div>
+					</div>
+					<div class="panel-body">
+						<form class="form-horizontal" role="form">
+
+							<div class="form-group">
+								<div class="col-xs-12">
+									<input type="text" placeholder="Ordernummer"
+									       class="form-control order-number-actions">
+								</div>
+								<div class="col-xs-12 pull-down">
+									<button class="btn order-actions">Orderacties</button>
+								</div>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

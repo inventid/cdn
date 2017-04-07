@@ -1,0 +1,6 @@
+<div class="row list-item clickable">
+	<div class="col-xs-4">{{ model:name }}</div>
+	<div class="col-xs-7" rv-show="#session:user:admin">{{ model:email_address }}</div>
+	<div class="col-xs-7" rv-show="#session:user:admin | negate"></div>
+	<div class="col-xs-1"><i class="fa fa-chevron-right"></i></div>
+</div>

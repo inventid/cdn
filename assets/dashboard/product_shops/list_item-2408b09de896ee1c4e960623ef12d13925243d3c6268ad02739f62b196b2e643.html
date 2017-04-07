@@ -1,0 +1,67 @@
+<div class="row list-item" rv-class-list-item-fade="model:archived"
+     rv-show="model:archived | negate | or config.showArchived">
+	<div class="col-xs-4" rv-class-col-xs-3="#session:user:admin">
+		{{ model:shop:name }}
+	</div>
+
+	<div class="col-xs-3 no-cut" rv-class-col-xs-2="#session:user:admin">
+		<div class="row">
+			<div class="col-xs-1 no-cut">&euro;</div>
+			<div class="col-xs-9">
+				<span class="form-control-static" rv-show="editable | negate">
+					{{ model:price_float | number 1 2 < model:price }}
+				</span>
+				<input type="text" class="form-control" rv-show="editable" placeholder="0,00"
+				       pattern="^[0-9]+[.,][0-9]*$" rv-value="model:price_float | number 1 2 < model:price"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="no-cut col-xs-2" rv-show="#session:user:admin">
+		<div class="row">
+			<div class="col-xs-1 no-cut">&euro;</div>
+			<div class="col-xs-9">
+				<span class="form-control-static" rv-show="editable | negate">
+					{{ model:fee_float | number 1 2 < model:price }}
+				</span>
+				<input type="text" class="form-control" rv-show="editable" placeholder="0,00"
+				       pattern="^[0-9]+[.,][0-9]*$" rv-value="model:fee_float | number 1 2 < model:price"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xs-3 no-cut">
+		<!-- non-editable -->
+		<div rv-show="editable | negate">
+      <span class="form-control-static">{{ model:sold_quantity | number }} /
+        <span rv-show="model:max_quantity | gt -1">{{ model:max_quantity | number }}</span>
+        <span rv-show="model:max_quantity | gt -1 | negate">&infin;</span>
+      </span>
+		</div>
+
+		<!-- editable -->
+		<div rv-show="editable">
+			<div class="col-xs-7">
+				<input type="number" class="form-control" placeholder="0"
+				       rv-value="model:max_quantity_number | number 1 0" rv-show="model:max_quantity | gt -1"/>
+			</div>
+			<div class="col-xs-5">
+				<input type="checkbox" class="unlimited-toggle" rv-checked="model:max_quantity_number | eq -1"> &infin;
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xs-2 no-cut text-right">
+    <span class="btn btn-round edit-shop-product" rv-show="editable | negate" rv-class-disabled="model:archived">
+      <i class="fa fa-edit"></i>
+    </span>
+
+		<span class="btn save-shop-product" rv-show="editable">
+      <i class="fa fa-check"></i>
+    </span>
+
+		<span class="btn destroy-shop-product" rv-class-disabled="model:archived">
+      <i class="fa fa-trash"></i>
+    </span>
+	</div>
+</div>
