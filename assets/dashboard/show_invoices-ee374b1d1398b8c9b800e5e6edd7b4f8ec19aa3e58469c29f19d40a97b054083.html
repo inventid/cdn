@@ -1,0 +1,39 @@
+<div>
+	<div class="alert alert-danger text-center"
+	     rv-show="#session:user:admin | negate| and organization:iban | blank | and organization:bic | blank">
+		<i class="fa fa-warning"></i>
+		{{ 'Do you want to get paid automatically as well? Please send your IBAN and BIC number to your account manager.' | i18n < $ }}
+	</div>
+
+	<div class="panel panel-primary">
+
+		<div class="panel-heading row bold">
+			<div class="col-xs-12">
+				<i class="fa fa-eur"></i>
+				{{ 'Invoices' | i18n < $ }}
+			</div>
+		</div>
+
+		<div class="panel-body list">
+			<div class="list-item row" rv-each-invoice="invoices.models">
+				<div class="col-xs-4 goto-invoice clickable" rv-invoice-id="invoice:id">
+					<i class="fa fa-close" rv-if="invoice:paid_out | negate"></i>
+					{{ invoice:reference }} ({{ invoice:event:name }})
+				</div>
+				<div class="col-xs-3">
+					{{ invoice:created_at | time 'Europe/Amsterdam' }}
+				</div>
+				<div class="col-xs-2">
+					{{ invoice:netto | currency }}
+				</div>
+				<div class="col-xs-3 no-cut">
+					<div class="btn btn-primary email clickable" rv-invoice-id="invoice:id">
+						<i class="fa fa-file-pdf-o"></i>
+						<span>Email PDF factuur</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

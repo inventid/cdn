@@ -1,0 +1,114 @@
+<div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<div class="panel panel-primary no-margin-top">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-xs-10 clickable support">
+							<i class="fa fa-medkit fa-lg"></i>
+							Open SupportRequests: {{ supportRequestsOpenCount }}
+						</div>
+						<div class="col-xs-2 refresh-support-requests clickable">
+							<i class="fa fa-refresh pull-right support-indicator"></i>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+					<form class="form-horizontal" role="form">
+
+						<div class="form-group">
+							<div class="col-xs-6 col-sm-8">
+								<input type="text" placeholder="Ordernummer" class="form-control order-number-actions">
+							</div>
+							<div class="col-xs-6 col-sm-4">
+								<button class="btn order-actions">Orderacties</button>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<div class="panel panel-primary no-margin-top">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-xs-10">
+							<i class="fa fa-money fa-lg"></i>
+							Status
+						</div>
+						<div class="col-xs-2 refresh-company-stats clickable">
+							<i class="fa fa-refresh pull-right company-stats-indicator"></i>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-6">
+							Incoming: {{incomingTotal | currency}}
+						</div>
+						<div class="col-xs-6">
+							Outgoing: {{outgoingTotal | currency}}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							Fees: &plusmn; {{incomingFeesTotal | currency}}
+						</div>
+						<div class="col-xs-6 finance-event-toggle text-underline clickable">
+							Overview per event
+						</div>
+					</div>
+					<div rv-show="showEventFinanceStatus" class="pull-down">
+						<div class="row" rv-each-line="outgoings">
+							<div class="col-xs-8 ellipsis">
+								<i class="fa fa-times" rv-if="line.isAutoInvoicable | negate" title="This event is missing attributes to be auto-invoicable. Add IBAN and BIC codes to enable auto-invoicing."></i>
+								<i class="fa fa-hand-stop-o" rv-if="line.hasBillingCodeAssigned | negate" title="This organization does not have a AFAS billing code assigned. Manual work required for accounting."></i>
+								{{ line.event_name }}
+							</div>
+							<div class="col-xs-4">
+								{{ line.netto | currency}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6">
+			<div class="panel panel-primary no-margin-top">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-xs-10">
+							Salesoverzicht
+						</div>
+						<div class="col-xs-2 refresh-summaries clickable">
+							<i class="fa fa-refresh pull-right summary-indicator"></i>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body list">
+					<div rv-each-event="user:events">
+						<div class="row list-item" rv-if="event.hasCurrentSales < :summaries">
+							<div class="col-xs-2 no-cut">
+                <span class="fa-stack clickable info inline-text-icon" rv-event-id="event.id">
+                  <i class="fa fa-square fa-lg fa-stack-1x"></i>
+                  <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+                </span>
+							</div>
+							<div class="col-xs-6">
+								<span class="clickable underline event-summary"
+								      rv-event-id="event.id">{{ event:name }}</span>
+							</div>
+							<div class="col-xs-2" rv-each-summary="event:summaries">
+								{{ summary:sales }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div rv-view="summariesView">
+		<!-- Here are the respective summaries -->
+	</div>
+</div>
