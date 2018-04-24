@@ -1,0 +1,83 @@
+<div>
+	<div class="panel panel-primary">
+
+		<div class="panel-heading row">
+			<div class="col-xs-12">{{ 'Your personal data' | i18n < $ }}</div>
+		</div>
+
+		<div class="panel-body">
+
+			<div class="row">
+				<div class="col-sm-6 left">
+
+					<button class="col-xs-12 btn facebook" id="connect-facebook">
+						<i class="fa fa-facebook"></i>
+						<span>{{ 'Connect with Facebook' | i18n < $ }}</span>
+					</button>
+
+					<em class="col-xs-12 text-center" style="margin: 1.5em 0">&mdash; {{ 'or' | i18n < $ }} &mdash;</em>
+
+					<form class="form-horizontal" role="form">
+
+						<div class="form-group">
+							<div class="col-xs-12">
+								<input type="text" class="form-control" id="name"
+								       rv-placeholder="'First and last name' | i18n < $"
+								       rv-value="user:name"/>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-12">
+								<input type="email" class="form-control" id="email-address"
+								       rv-placeholder="'Your E-mail address' | i18n < $"
+								       rv-value="user:email_address"/>
+							</div>
+							<div class="wrong-address-expectation hidden clickable alert alert-warning">
+								<p>
+									<li class="fa fa-question"></li>
+									{{ 'Did you mean' | i18n < $ }} <span class="wrong-address-suggestion"></span>?
+								</p>
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+
+				<div class="col-sm-6 right">
+					<div rv-show="shop:event:agreement">
+						{{ 'Terms and conditions:' | i18n < $ }}
+						<p>
+							{{ shop:event:agreement }}
+						</p>
+					</div>
+					<p rv-html="'On this sale the %1$sTerms and conditions%2$s of inventid are applicable. Of course we will also respect your %3$sprivacy%4$s.' | i18n '&lt;a href=&quot;https://www.inventid.nl/docs/algemene-voorwaarden.pdf&quot; target=&quot;_blank&quot;&gt;' '&lt;/a&gt;' '&lt;a href=&quot;https://www.inventid.nl/docs/privacy-statement.pdf&quot; target=&quot;_blank&quot;&gt;' '&lt;/a&gt;' < $ "></p>
+					<p class="italic" rv-show="shop:event:access_user_data">{{ 'This event will be able to access data such as your email address.' | i18n < $ }}</p>
+				</div>
+			</div>
+			<div id="fb-root"></div>
+		</div>
+
+	</div>
+
+	<div class="panel panel-primary" rv-show="shop:event:require_user_names">
+		<div class="panel-heading row">
+			<div class="col-xs-12">{{ 'Participants information' | i18n < $ }}</div>
+		</div>
+
+		<div class="panel-body">
+			<div rv-view="participantsCollection"></div>
+		</div>
+	</div>
+
+	<div class="panel panel-primary" rv-show="shop:custom_fields | length">
+		<div class="panel-heading row">
+			<div class="col-xs-12">{{ 'Additional information' | i18n < $ }}</div>
+		</div>
+
+		<div class="panel-body">
+			<div rv-view="customFieldsCollection"></div>
+		</div>
+	</div>
+</div>
